@@ -31,7 +31,7 @@
               <a href="/contacts.html" class="navigation__item-link">контакты</a>
             </li>
           </ul>
-          <button class="navigation__button">
+          <button class="navigation__button btn">
             <span class="navigation__button-element">Открыть меню</span>
           </button>
         </nav>
@@ -98,7 +98,7 @@
                   <p data-description="duration">Буэнос-Айрес</p>
                   <h4 data-title="cost">Цена</h4>
                   <p data-description="cost">от 14500 $</p>
-                  <button>Забронировать</button>
+                  <a href="#">Забронировать</a>
                 </div>
               </a>
             </li>
@@ -115,7 +115,7 @@
                   <p data-description="duration">Буэнос-Айрес</p>
                   <h4 data-title="cost">Цена</h4>
                   <p data-description="cost">от 14500 $</p>
-                  <button>Забронировать</button>
+                  <a href="#">Забронировать</a>
                 </div>
               </a>
             </li>
@@ -132,7 +132,7 @@
                   <p data-description="duration">Буэнос-Айрес</p>
                   <h4 data-title="cost">Цена</h4>
                   <p data-description="cost">от 14500 $</p>
-                  <button>Забронировать</button>
+                  <a href="#">Забронировать</a>
                 </div>
               </a>
             </li>
@@ -149,7 +149,7 @@
                   <p data-description="duration">Буэнос-Айрес</p>
                   <h4 data-title="cost">Цена</h4>
                   <p data-description="cost">от 14500 $</p>
-                  <button>Забронировать</button>
+                  <a href="#">Забронировать</a>
                 </div>
               </a>
             </li>
@@ -166,7 +166,7 @@
                   <p data-description="duration">Буэнос-Айрес</p>
                   <h4 data-title="cost">Цена</h4>
                   <p data-description="cost">от 14500 $</p>
-                  <button>Забронировать</button>
+                  <a href="#">Забронировать</a>
                 </div>
               </a>
             </li>
@@ -183,7 +183,7 @@
                   <p data-description="duration">Буэнос-Айрес</p>
                   <h4 data-title="cost">Цена</h4>
                   <p data-description="cost">от 14500 $</p>
-                  <button>Забронировать</button>
+                  <a href="#">Забронировать</a>
                 </div>
               </a>
             </li>
@@ -200,7 +200,7 @@
                   <p data-description="duration">Буэнос-Айрес</p>
                   <h4 data-title="cost">Цена</h4>
                   <p data-description="cost">от 14500 $</p>
-                  <button>Забронировать</button>
+                  <a href="#">Забронировать</a>
                 </div>
               </a>
             </li>
@@ -220,11 +220,12 @@
               <label aria-label="Емейл.">
                 <input type="email" placeholder="Email">
               </label>
-              <label aria-label="Согласие на обработку персональных данных.">
+              <label>
                 <input type="checkbox">
                 <span class="checkbox"></span>
+                Я согласен на обработку моих персональных данных
               </label>
-              <button type="submit"></button>
+              <button type="submit" class="btn">Отправить</button>
             </form>
           </div>
         </section>
@@ -237,10 +238,49 @@
           <p class="map__phone">8-800-200-00-00</p>
         </seciton>
       </main>
-      <footer>
-        <div class="container">
-          
-        </div>
+      <footer class="footer container">
+          <picture>
+            <source media="(min-width: 1023px)" srcset="./img/logo-desk.svg" width="70" height="38">
+            <source media="(min-width: 767px)" srcset="./img/logo-tab.svg" width="38" height="20">
+            <img src="./img/logo-mob.svg" alt="Логотип компании «Круизы в Антарктику»." class="footer__logo" width="42" height="22">
+          </picture>
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a href="/advantages.html" class="footer__item-link">Преимущества</a>
+            </li>
+            <li class="footer__item">
+              <a href="/destination.html" class="footer__item-link">Направления</a>
+            </li>
+            <li class="footer__item">
+              <a href="/upcoming.html" class="footer__item-link">Ближайшие круизы</a>
+            </li>
+            <li class="footer__item">
+              <a href="/contacts.html" class="footer__item-link">контакты</a>
+            </li>
+          </ul>
+          <ul class="footer__social-list">
+            <li class="footer__social-list-item">
+              <a href="#" class="footer__social-link">
+                <svg>
+                  <use></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer__social-list-item">
+              <a href="#" class="footer__social-link">
+                <svg>
+                  <use></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer__social-list-item">
+              <a href="#" class="footer__social-link">
+                <svg>
+                  <use></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
       </footer>
     </div>
 
