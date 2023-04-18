@@ -1,4 +1,34 @@
 @import '../mixins';
 
 .proposal {
+  display: grid;
+  grid-template-areas: "a c"
+                        "b c";
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  column-gap: 10%;
+}
+
+.proposal h2 {
+  grid-area: a;
+
+  font-family: "Montseratt", Arial, sans-serif;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 42px;
+  color: $color-default-black;
+}
+
+.proposal p {
+  grid-area: b;
+
+  font-family: "Montseratt", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: $color-default-black;
+}
+
+.proposal img {
+  grid-area: c;
 }

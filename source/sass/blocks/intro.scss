@@ -18,7 +18,7 @@
     background-size: cover;
   }
 
-  @include vp-767() {
+  @include vp-374() {
     background: url('../img/background-intro-mob.webp') no-repeat center,
     $color-background-plug;
     background-size: cover;
