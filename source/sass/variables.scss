@@ -3,9 +3,16 @@
 
 // Default
 
-$color-default-black:               #000000;
-$color-default-white:               #ffffff;
+$color-default-black:               #011C40;
+$color-default-white:               #F9FBFD;
 $color-transparent:                 rgba(255, 255, 255, 0);
+$color-background-plug:             #2A5EA3;
+
+$z-index-first-plan: 3;
+$z-index-regular: 2;
+$z-index-background: 1;
+$z-index-popup: 4;
+
 
 // Project palette
 // для нейминга цветов используем https://www.htmlcsscolor.com/hex/334482
