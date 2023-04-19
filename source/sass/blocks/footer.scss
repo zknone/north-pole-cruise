@@ -1,0 +1,82 @@
+@import "../mixins";
+@import "../variables";
+
+.footer {
+  background-color: $color-default-black;
+
+  width: 100%;
+  min-height: 140px;
+}
+
+.footer__logo {
+  display: block;
+  margin: 50px 40px 50px 0;
+}
+
+a .footer__logo {
+  @include hover-focus {
+    opacity: 0.8;
+    transition: opacity 300ms ease-in;
+  }
+}
+
+
+.footer__container {
+  display: flex;
+  align-self: flex-start;
+}
+
+.footer__list {
+  display: flex;
+  align-self: flex-start;
+
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+
+  column-gap: 33px;
+}
+
+.footer__item {
+  padding: 63px 0;
+}
+
+.footer__item-link {
+  padding: 30px 0;
+
+  font-style: medium;
+  font-family: "Montseratt", Arial, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: $color-default-white;
+
+  @include hover-focus {
+    opacity: 0.8;
+    text-decoration: underline;
+    transition: opacity 300ms ease-in;
+  }
+}
+
+.footer__social-list {
+  display: flex;
+
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  column-gap: 8px;
+
+  margin-left: auto;
+
+  align-self: center;
+}
+
+.footer__social-link {
+  padding: 10px;
+  color: $color-default-white;
+
+  @include hover-focus {
+    opacity: 0.8;
+    transition: opacity 100ms ease;
+  }
+}

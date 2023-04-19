@@ -41,10 +41,10 @@
         </nav>
       </header>
       <main>
-        <section class="intro">
-          <div class="intro__container container">
-            <h1 class="intro__header">Круизы в Антарктику </h1>
-            <p class="intro__description">Волшебный мир айсбергов и пингвинов</p>
+        <section class="hero">
+          <div class="hero__container container">
+            <h1 class="hero__header">Круизы в Антарктику </h1>
+            <p class="hero__description">Волшебный мир айсбергов и пингвинов</p>
           </div>
         </section>
         <sectinon class="proposal container">
@@ -61,22 +61,22 @@
             <h2 class="advantages__header">Преимущества</h2>
             <ul class="advantages__list">
               <li data-advantages="ship">
-                <svg>
-                  <use></use>
+                <svg aria-label="Небольшой круизный лайнер." width="27" height="32" focusable="false">
+                  <use xlink:href="./img/sprite.svg#ship-icon"></use>
                 </svg>
                 <h3>Небольшой круизный лайнер</h3>
                 <p>Круизный лайнер, рассчитанный всего лишь на 300 гостей, поможет избежать шума и очередей и даст возможность насладиться видами и природой.</p>
               </li>
               <li data-advantages="all-inclusive">
-                <svg>
-                  <use></use>
+                <svg aria-label="Все включено." width="27" height="32" focusable="false">
+                  <use xlink:href="./img/sprite.svg#tick-icon"></use>
                 </svg>
                 <h3>Система все включено</h3>
                 <p>Все наши круизы работают по системе “Все Включено”. Великолепные блюда и безлимитный бар доступны для вас 24 часа.</p>
               </li>
               <li data-advantages="tours">
-                <svg>
-                  <use></use>
+                <svg aria-label="Экскурсии." width="27" height="32" focusable="false">
+                  <use xlink:href="./img/sprite.svg#cruise-icon"></use>
                 </svg>
                 <h3>Экскурсионные туры на Zodiac</h3>
                 <p>Экскурсионные туры к берегам Антарктиды совершаются на оборудованных лодках типа Zodiac c опытными экскурсоводами.</p>
@@ -259,12 +259,15 @@
           <p class="map__phone">8-800-200-00-00</p>
         </seciton>
       </main>
-      <footer class="footer container">
-          <picture>
-            <source media="(min-width: 1023px)" srcset="./img/logo-desk.svg" width="70" height="38">
-            <source media="(min-width: 767px)" srcset="./img/logo-tab.svg" width="38" height="20">
-            <img src="./img/logo-mob.svg" alt="Логотип компании «Круизы в Антарктику»." class="footer__logo" width="42" height="22">
-          </picture>
+      <footer class="footer">
+        <div class="footer__container container">
+          <a href="#">
+            <picture>
+              <source media="(min-width: 1023px)" srcset="./img/svg/logo-desk.svg" width="70" height="38">
+              <source media="(min-width: 767px)" srcset="./img/svg/logo-tab.svg" width="38" height="20">
+              <img src="./img/svg/logo-mob.svg" alt="Логотип компании «Круизы в Антарктику»." class="footer__logo" width="42" height="22">
+            </picture>
+          </a>
           <ul class="footer__list">
             <li class="footer__item">
               <a href="/advantages.html" class="footer__item-link">Преимущества</a>
@@ -276,32 +279,34 @@
               <a href="/upcoming.html" class="footer__item-link">Ближайшие круизы</a>
             </li>
             <li class="footer__item">
-              <a href="/contacts.html" class="footer__item-link">контакты</a>
+              <a href="/contacts.html" class="footer__item-link">Контакты</a>
             </li>
           </ul>
           <ul class="footer__social-list">
             <li class="footer__social-list-item">
               <a href="#" class="footer__social-link">
-                <svg>
-                  <use></use>
+                <svg aria-label="Одноклассники." width="12" height="20" focusable="false">
+                  <use xlink:href="./img/sprite.svg#ok-icon"></use>
                 </svg>
               </a>
             </li>
             <li class="footer__social-list-item">
               <a href="#" class="footer__social-link">
-                <svg>
-                  <use></use>
+                <svg aria-label="Яндекс Дзен." width="20" height="20" focusable="false">
+                  <use xlink:href="./img/sprite.svg#dzen-icon"></use>
                 </svg>
               </a>
             </li>
             <li class="footer__social-list-item">
               <a href="#" class="footer__social-link">
-                <svg>
-                  <use></use>
+                <svg aria-label="Reddit." width="20" height="20" focusable="false">
+                  <use xlink:href="./img/sprite.svg#reddit-icon"></use>
                 </svg>
               </a>
             </li>
           </ul>
+        </div>
+
       </footer>
     </div>
 

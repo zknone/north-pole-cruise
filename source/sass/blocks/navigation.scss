@@ -8,13 +8,19 @@
   justify-content: space-between;
 
   width: 100%;
-  max-height: 110px;
+  min-height: 110px;
 }
 
 .navigation__logo {
   display: block;
 
   margin: 38px 0;
+
+  @include hover-focus {
+    text-decoration: underline;
+    opacity: 0.8;
+    transition: opacity 300ms ease-in;
+  }
 }
 .navigation__list {
   display: flex;
@@ -42,8 +48,10 @@
   line-height: 20px;
   color: $color-default-white;
 
-  @include hover {
+  @include hover-focus {
     text-decoration: underline;
+    opacity: 0.8;
+    transition: opacity 300ms ease-in;
   }
 }
 .navigation__button {

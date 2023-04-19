@@ -5,7 +5,7 @@
   grid-template-areas: "a c"
                         "b c";
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-rows: 20% 70%;
   column-gap: 10%;
 }
 
