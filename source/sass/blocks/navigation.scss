@@ -2,13 +2,18 @@
 @import '../variables';
 
 .navigation {
-  position: relative;
+  position: absolute;
   z-index: $z-index-first-plan;
-  display: flex;
-  justify-content: space-between;
+
 
   width: 100%;
   min-height: 110px;
+}
+
+.navigation__container {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
 }
 
 .navigation__logo {
