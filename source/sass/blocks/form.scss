@@ -1,24 +1,49 @@
 @import '../mixins';
 
 .form {
+  background: url('../img/background-form-desk.webp') no-repeat center,
+  $color-background-plug;
+  background-size: cover;
+
+  @include vp-1023() {
+    background: url('../img/background-form-tab.webp') no-repeat center,
+    $color-background-plug;
+    background-size: cover;
+  }
+
+  @include vp-374() {
+    background: url('../img/background-form-mob.webp') no-repeat center,
+    $color-background-plug;
+    background-size: cover;
+  }
+
 }
 .form__container {
+  display: grid;
+  grid-template-columns: 50% 40%;
+  grid-template-areas: "title form"
+                        "text form";
+  column-gap: 10%;
 }
 .form__header {
+  grid-area: title;
 }
 .form__description {
+  grid-area: text;
 }
 
 .form__form {
+  grid-area: form;
 
+  display: flex;
+  flex-direction: column;
 }
 
 .form__form label {
-
 }
 
 .form__form input {
-
+  width: 100%;
 }
 
 

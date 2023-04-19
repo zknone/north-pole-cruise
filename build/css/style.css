@@ -1487,8 +1487,8 @@ button,
 .tours__list {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1rf)[4];
-  grid-template-columns: repeat(4, 1rf);
+  -ms-grid-columns: (auto)[4];
+  grid-template-columns: repeat(4, auto);
   -ms-grid-rows: auto;
   grid-template-rows: auto;
   margin: 0;
@@ -1499,6 +1499,8 @@ button,
 .tours__item {
   position: relative;
   z-index: 2;
+  max-width: 260px;
+  min-height: 386px;
 }
 
 .tours__item div {
@@ -1508,16 +1510,33 @@ button,
 .tours__item.focus-visible:focus div {
   position: absolute;
   display: block;
-  z-index: 3;
+  z-index: 4;
   top: 0;
+  width: 100%;
+  max-width: 260px;
+  min-height: 386px;
   background-color: #011C40;
 }
 
 .tours__item h3 {
+  position: relative;
+  left: 30px;
+  top: -45px;
+  z-index: 3;
+  margin: 0;
+  padding: 0;
+  color: #F9FBFD;
+}
+
+.tours__item h4 {
+  margin: 0;
+  padding: 0;
   color: #F9FBFD;
 }
 
 .tours__item p {
+  margin: 0;
+  padding: 0;
   color: #F9FBFD;
 }
 
@@ -1611,6 +1630,52 @@ a .footer__logo.focus-visible:focus {
   transition: opacity 100ms ease;
 }
 
+.form {
+  background: url("../img/background-form-desk.webp") no-repeat center, #2A5EA3;
+  background-size: cover;
+}
+
+.form__container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 10% 40%;
+  grid-template-columns: 50% 40%;
+  grid-template-areas: "title form" "text form";
+  -webkit-column-gap: 10%;
+  -moz-column-gap: 10%;
+  column-gap: 10%;
+}
+
+.form__header {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: title;
+}
+
+.form__description {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: text;
+}
+
+.form__form {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 3;
+  grid-area: form;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.form__form input {
+  width: 100%;
+}
+
 /* @mixin hover-focus {
     @media (hover: hover) {
       &:hover:not(.focus-visible) {
@@ -1669,6 +1734,11 @@ a .footer__logo.focus-visible:focus {
 
   .hero__description {
     margin: 0;
+  }
+
+  .form {
+    background: url("../img/background-form-tab.webp") no-repeat center, #2A5EA3;
+    background-size: cover;
   }
 }
 
@@ -1777,6 +1847,11 @@ a .footer__logo.focus-visible:focus {
     background: url("../img/background-intro-mob.webp") no-repeat center, #2A5EA3;
     background-size: cover;
   }
+
+  .form {
+    background: url("../img/background-form-mob.webp") no-repeat center, #2A5EA3;
+    background-size: cover;
+  }
 }
 
 @media (hover: hover) {
@@ -1811,8 +1886,11 @@ a .footer__logo.focus-visible:focus {
   .tours__item:hover:not(.focus-visible) div {
     position: absolute;
     display: block;
-    z-index: 3;
+    z-index: 4;
     top: 0;
+    width: 100%;
+    max-width: 260px;
+    min-height: 386px;
     background-color: #011C40;
   }
 
