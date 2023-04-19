@@ -29,6 +29,7 @@
   color: $color-default-black;
 }
 
-.proposal img {
+.proposal picture {
+  display: block;
   grid-area: c;
 }

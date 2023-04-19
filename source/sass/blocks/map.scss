@@ -1,4 +1,6 @@
 .map {
+  display: flex;
+  flex-direction: column;
 }
 
 .map__header {
@@ -7,4 +9,9 @@
 .map__adress {
 }
 .map__phone {
+}
+
+
+.map__wrapper {
+  height: 420px;
 }

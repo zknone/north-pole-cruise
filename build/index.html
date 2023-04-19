@@ -11,6 +11,17 @@
     <link rel="preload" href="fonts/montserrat_semibold.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="fonts/montserrat_regular.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="stylesheet" href="css/style.min.css">
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+      integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
+      crossorigin=""
+    />
+    <script
+      src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+      integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
+      crossorigin=""
+    ></script>
   </head>
   <body>
     <div class="wrapper">
@@ -287,12 +298,15 @@
           </div>
         </section>
         <seciton class="map container">
-          <!-- вставка карты -->
-          <h2 class="visually-hidden">Наш адрес</h2>
-          <h3 class="map__header">У вас ещё остались вопросы или сомнения?
-            Приезжайте к нам в офис и мы вам все расскажем.</h3>
-          <p class="map__adress">г. Санкт Петербург, ул. Большая Конюшенная, 19/8</p>
-          <p class="map__phone">8-800-200-00-00</p>
+          <div class="map__wrapper" id="map"></div>
+          <div class="map__info-container">
+            <h2 class="visually-hidden">Наш адрес</h2>
+            <h3 class="map__header">У вас ещё остались вопросы или сомнения?
+              Приезжайте к нам в офис и мы вам все расскажем.</h3>
+            <p class="map__adress">г. Санкт Петербург, ул. Большая Конюшенная, 19/8</p>
+            <p class="map__phone">8-800-200-00-00</p>
+          </div>
+
         </seciton>
       </main>
       <footer class="footer">

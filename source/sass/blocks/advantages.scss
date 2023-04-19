@@ -11,11 +11,13 @@
 }
 
 .advantages__header {
+  text-align: center;
 }
 
 .advantages__list {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  column-gap: 30px;
 
   margin: 0;
   padding: 0;

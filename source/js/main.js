@@ -21,6 +21,15 @@ window.addEventListener('DOMContentLoaded', () => {
     const form = new Form();
     window.form = form;
     form.init();
+
+
+    const map = L.map("map").setView([59.9686902, 30.3174989], 16);
+    const icon = L.icon({
+      iconUrl: "../img/map-pin.svg",
+      iconSize: [38, 50],
+    });
+
+    L.marker([59.9686902, 30.3174989], { icon: icon }).addTo(map).openPopup();
   });
 });
 
