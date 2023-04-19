@@ -14,18 +14,30 @@
   list-style-type: none;
 }
 .tours__item {
-
-
-
-  @include hover-focus {
-    div {
-      display: block;
-    }
-  }
+  position: relative;
+  z-index: $z-index-regular;
 
   div {
     display: none;
+  }
+
+  @include hover-focus {
+    div {
+      position: absolute;
+      display: block;
+      z-index: $z-index-first-plan;
+      top: 0;
 
 
+      background-color: $color-default-black;
+    }
   }
 }
+
+.tours__item h3 {
+ color: $color-default-white;
+}
+
+.tours__item p {
+  color: $color-default-white;
+ }

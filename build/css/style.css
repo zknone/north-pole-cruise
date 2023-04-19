@@ -1496,12 +1496,29 @@ button,
   list-style-type: none;
 }
 
-.tours__item.focus-visible:focus div {
-  display: block;
+.tours__item {
+  position: relative;
+  z-index: 2;
 }
 
 .tours__item div {
   display: none;
+}
+
+.tours__item.focus-visible:focus div {
+  position: absolute;
+  display: block;
+  z-index: 3;
+  top: 0;
+  background-color: #011C40;
+}
+
+.tours__item h3 {
+  color: #F9FBFD;
+}
+
+.tours__item p {
+  color: #F9FBFD;
 }
 
 .footer {
@@ -1792,7 +1809,11 @@ a .footer__logo.focus-visible:focus {
   }
 
   .tours__item:hover:not(.focus-visible) div {
+    position: absolute;
     display: block;
+    z-index: 3;
+    top: 0;
+    background-color: #011C40;
   }
 
   a .footer__logo:hover:not(.focus-visible) {
