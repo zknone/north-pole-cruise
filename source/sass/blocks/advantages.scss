@@ -1,11 +1,24 @@
 @import '../mixins';
 
 .advantages {
+
+  background: url('../img/advantages-background.webp') no-repeat center,
+              $color-background-plug-light;
+  background-size: cover;
 }
+
 .advantages__container {
+
 }
 
 .advantages__header {
 }
+
 .advantages__list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
 }

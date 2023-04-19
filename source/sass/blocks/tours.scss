@@ -5,6 +5,27 @@
 .tours__header {
 }
 .tours__list {
+  display: grid;
+  grid-template-columns: repeat(4, 1rf);
+  grid-template-rows: auto;
+
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
 }
 .tours__item {
+
+
+
+  @include hover-focus {
+    div {
+      display: block;
+    }
+  }
+
+  div {
+    display: none;
+
+
+  }
 }

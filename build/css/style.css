@@ -1469,6 +1469,41 @@ button,
   grid-area: c;
 }
 
+.advantages {
+  background: url("../img/advantages-background.webp") no-repeat center, #a6d2fe;
+  background-size: cover;
+}
+
+.advantages__list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+  grid-template-columns: repeat(3, 1fr);
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.tours__list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1rf)[4];
+  grid-template-columns: repeat(4, 1rf);
+  -ms-grid-rows: auto;
+  grid-template-rows: auto;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.tours__item.focus-visible:focus div {
+  display: block;
+}
+
+.tours__item div {
+  display: none;
+}
+
 .footer {
   background-color: #011C40;
   width: 100%;
@@ -1754,6 +1789,10 @@ a .footer__logo.focus-visible:focus {
     -webkit-transition: opacity 300ms ease-in;
     -o-transition: opacity 300ms ease-in;
     transition: opacity 300ms ease-in;
+  }
+
+  .tours__item:hover:not(.focus-visible) div {
+    display: block;
   }
 
   a .footer__logo:hover:not(.focus-visible) {
