@@ -1,11 +1,18 @@
 .btn {
-  display: inline-flex;
-  padding: 10px 20px;
+  display: block;
+  padding: 15px 10px;
+  width: 100%;
 
-  color: $color-default-white;
+  text-align: center;
 
-  background-color: $color-neon-blue;
+  font-family: "Montseratt", Arial, sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+  color: $color-default-black;
+
   border: none;
+  background-color: $color-default-white;
   cursor: pointer;
 
   transition: opacity $trans-default;

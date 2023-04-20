@@ -646,13 +646,17 @@ button,
 }
 
 .btn {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  padding: 10px 20px;
-  color: #F9FBFD;
-  background-color: #2c39f2;
+  display: block;
+  padding: 15px 10px;
+  width: 100%;
+  text-align: center;
+  font-family: "Montseratt", Arial, sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+  color: #011C40;
   border: none;
+  background-color: #F9FBFD;
   cursor: pointer;
   -webkit-transition: opacity 0.3s ease;
   -o-transition: opacity 0.3s ease;
@@ -1598,7 +1602,7 @@ button,
 }
 
 .tours__item h4 {
-  margin: 0 0 15px 0;
+  margin: 0;
   padding: 0;
   font-family: "Montseratt", Arial, sans-serif;
   font-weight: 500;
@@ -1608,7 +1612,7 @@ button,
 }
 
 .tours__item p {
-  margin: 0 0 5px 0;
+  margin: 0 0 20px 0;
   padding: 0;
   font-family: "Montseratt", Arial, sans-serif;
   font-weight: 400;
