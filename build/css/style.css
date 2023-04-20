@@ -1683,6 +1683,7 @@ a .footer__logo.focus-visible:focus {
 }
 
 .form {
+  padding: 50px 60px;
   background: url("../img/background-form-desk.webp") no-repeat center, #2A5EA3;
   background-size: cover;
 }
@@ -1692,27 +1693,34 @@ a .footer__logo.focus-visible:focus {
   display: grid;
   -ms-grid-columns: 50% 10% 40%;
   grid-template-columns: 50% 40%;
+  -ms-grid-rows: auto 30px auto;
   grid-template-areas: "title form" "text form";
   -webkit-column-gap: 10%;
   -moz-column-gap: 10%;
   column-gap: 10%;
+  row-gap: 30px;
 }
 
 .form__header {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: title;
+  margin: 0;
+  padding: 0;
+  align-self: flex-end;
 }
 
 .form__description {
-  -ms-grid-row: 2;
+  -ms-grid-row: 3;
   -ms-grid-column: 1;
+  margin: 0;
+  padding: 0;
   grid-area: text;
 }
 
 .form__form {
   -ms-grid-row: 1;
-  -ms-grid-row-span: 2;
+  -ms-grid-row-span: 3;
   -ms-grid-column: 3;
   grid-area: form;
   display: -webkit-box;
@@ -1722,6 +1730,8 @@ a .footer__logo.focus-visible:focus {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
+  padding: 50px;
+  background-color: #011C40;
 }
 
 .form__form label {
@@ -1741,6 +1751,7 @@ a .footer__logo.focus-visible:focus {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  padding: 120px 0;
 }
 
 .map__wrapper {
@@ -1750,6 +1761,21 @@ a .footer__logo.focus-visible:focus {
 
 .map__info-container {
   max-width: 40%;
+}
+
+.map__header {
+  margin: 0;
+  padding: 0;
+}
+
+.map__adress {
+  margin: 0;
+  padding: 0;
+}
+
+.map__phone {
+  margin: 0;
+  padding: 0;
 }
 
 /* @mixin hover-focus {
