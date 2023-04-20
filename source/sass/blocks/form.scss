@@ -34,13 +34,25 @@
   margin: 0;
   padding: 0;
   align-self: flex-end;
+
+  font-family: "Montseratt", Arial, sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 60px;
+  color: $color-default-black;
 }
 
 .form__description {
+  grid-area: b;
+
   margin: 0;
   padding: 0;
 
-  grid-area: b;
+  font-family: "Montseratt", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  color: $color-default-black;
 }
 
 .form div {
