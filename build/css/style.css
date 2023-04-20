@@ -1559,22 +1559,34 @@ button,
   display: none;
 }
 
-.tours__item.focus-visible:focus div {
-  position: absolute;
-  display: block;
-  z-index: 4;
-  top: 0;
-  padding: 35px 25px;
-  width: 100%;
-  max-width: 260px;
-  min-height: 386px;
+.tours__item.focus-visible:focus {
   background-color: #011C40;
 }
 
-.tours__item h3 {
+.tours__item.focus-visible:focus picture {
+  display: none;
+}
+
+.tours__item.focus-visible:focus h3 {
+  position: absolute;
+  top: 5%;
+  left: 10%;
+}
+
+.tours__item.focus-visible:focus div {
   position: relative;
-  left: 30px;
-  top: -45px;
+  display: block;
+  z-index: 4;
+  top: 5%;
+  height: auto;
+  padding: 35px 25px 0;
+  max-width: 260px;
+}
+
+.tours__item h3 {
+  position: absolute;
+  top: 87%;
+  left: 10%;
   z-index: 3;
   margin: 0;
   padding: 0;
@@ -1590,16 +1602,6 @@ button,
   padding: 0;
   font-family: "Montseratt", Arial, sans-serif;
   font-weight: 500;
-  font-size: 18px;
-  line-height: 27px;
-  color: #F9FBFD;
-}
-
-.tours__item h5 {
-  margin: 0;
-  padding: 0;
-  font-family: "Montseratt", Arial, sans-serif;
-  font-weight: 500;
   font-size: 14px;
   line-height: 20px;
   color: #F9FBFD;
@@ -1610,8 +1612,8 @@ button,
   padding: 0;
   font-family: "Montseratt", Arial, sans-serif;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 14px;
+  line-height: 20px;
   color: #F9FBFD;
 }
 
@@ -2018,16 +2020,28 @@ a .footer__logo.focus-visible:focus {
     transition: opacity 300ms ease-in;
   }
 
-  .tours__item:hover:not(.focus-visible) div {
+  .tours__item:hover:not(.focus-visible) {
+    background-color: #011C40;
+  }
+
+  .tours__item:hover:not(.focus-visible) picture {
+    display: none;
+  }
+
+  .tours__item:hover:not(.focus-visible) h3 {
     position: absolute;
+    top: 5%;
+    left: 10%;
+  }
+
+  .tours__item:hover:not(.focus-visible) div {
+    position: relative;
     display: block;
     z-index: 4;
-    top: 0;
-    padding: 35px 25px;
-    width: 100%;
+    top: 5%;
+    height: auto;
+    padding: 35px 25px 0;
     max-width: 260px;
-    min-height: 386px;
-    background-color: #011C40;
   }
 
   a .footer__logo:hover:not(.focus-visible) {
