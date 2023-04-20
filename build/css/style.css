@@ -1752,7 +1752,7 @@ a .footer__logo.focus-visible:focus {
   -ms-grid-columns: 50% 10% 40%;
   grid-template-columns: 50% 40%;
   -ms-grid-rows: auto 30px auto;
-  grid-template-areas: "title form" "text form";
+  grid-template-areas: "a c" "b c";
   -webkit-column-gap: 10%;
   -moz-column-gap: 10%;
   column-gap: 10%;
@@ -1762,25 +1762,38 @@ a .footer__logo.focus-visible:focus {
 .form__header {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
-  grid-area: title;
+  grid-area: a;
   margin: 0;
   padding: 0;
   align-self: flex-end;
 }
 
+.form__container > .form__header {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+}
+
 .form__description {
-  -ms-grid-row: 3;
+  -ms-grid-row: 2;
   -ms-grid-column: 1;
   margin: 0;
   padding: 0;
-  grid-area: text;
+  grid-area: b;
+}
+
+.form__container > .form__description {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+}
+
+.form div {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 3;
+  grid-area: c;
 }
 
 .form__form {
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 3;
-  -ms-grid-column: 3;
-  grid-area: form;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1788,6 +1801,7 @@ a .footer__logo.focus-visible:focus {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
+  row-gap: 20px;
   padding: 50px;
   background-color: #011C40;
 }
@@ -1796,10 +1810,27 @@ a .footer__logo.focus-visible:focus {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  font-family: "Montseratt", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 13px;
+  color: #F9FBFD;
 }
 
 .form__form input {
   width: 100%;
+  min-height: 43px;
+  padding: 10px 15px;
+  border: none;
+}
+
+.form__form h3 {
+  max-width: 303px;
+  font-family: "Montseratt", Arial, sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  color: #F9FBFD;
 }
 
 .map {

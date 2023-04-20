@@ -257,23 +257,26 @@
           <div class="form__container container">
             <h2 class="form__header">Раннее бронирование</h2>
             <p class="form__description">Забронируйте тур за 3-6 месяцев до даты выезда и сэкономьте до 50%</p>
-            <form action="post" class="form__form">
-              <label aria-label="Имя.">
-                <input type="text" placeholder="Имя">
-              </label>
-              <label aria-label="Телефон.">
-                <input type="text" placeholder="Телефон">
-              </label>
-              <label aria-label="Емейл.">
-                <input type="email" placeholder="Email">
-              </label>
-              <label>
-                <input type="checkbox">
-                <span class="checkbox"></span>
-                Я согласен на обработку моих персональных данных
-              </label>
-              <button type="submit" class="btn">Отправить</button>
-            </form>
+            <div data-form-validate data-callback="base">
+              <form action="https://echo.htmlacademy.ru/" method="post" class="form__form">
+                <h3>Оставьте заявку и мы свяжемся с вами в ближайшее время</h3>
+                <label aria-label="Имя.">
+                  <input type="text" placeholder="Имя">
+                </label>
+                <label aria-label="Телефон.">
+                  <input type="text" placeholder="Телефон">
+                </label>
+                <label aria-label="Емейл.">
+                  <input type="email" placeholder="Email">
+                </label>
+                <label>
+                  <input type="checkbox">
+                  <span class="checkbox"></span>
+                  Я согласен на обработку моих персональных данных
+                </label>
+                <button type="submit" class="btn">Отправить</button>
+              </form>
+            </div>
           </div>
         </section>
         <seciton class="map container">
