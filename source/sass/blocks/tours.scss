@@ -16,58 +16,62 @@
   padding: 0 15px;
 
   display: grid;
-  grid-template-columns: repeat(4, auto);
+  grid-template-columns: repeat(4, 260px);
   grid-template-rows: auto;
-
+  column-gap: 30px;
+  row-gap: 30px;
   list-style-type: none;
 }
 
 .tours__item {
   position: relative;
   z-index: $z-index-regular;
+  display: flex;
+  flex-direction: column-reverse;
 
-  max-width: 260px;
-  min-height: 386px;
+  padding: 35px 25px;
+
+  width: 100%;
+  min-height: fit-content;
+
+  img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    z-index: $z-index-regular;
+  }
 
   div {
-    display: none;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: $z-index-background;
+    top: 5%;
+
+    padding: 0;
+
+    max-width: 260px;
   }
 
   @include hover-focus {
+    flex-direction: column;
+    background-color: $color-default-black;
     picture {
       display: none;
-    }
-
-    background-color: $color-default-black;
-
-    h3 {
-      position: absolute;
-      top: 5%;
-      left: 10%;
-    }
-
-    div {
-      position: relative;
-      display: block;
-      z-index: $z-index-popup;
-      top: 5%;
-      height: auto;
-
-      padding: 35px 25px 0;
-
-      max-width: 260px;
     }
   }
 }
 
 .tours__item h3 {
-  position: absolute;
-  top: 87%;
-  left: 10%;
-
-  z-index: $z-index-first-plan;
   margin: 0;
   padding: 0;
+
+  max-width: 200px;
 
   font-family: "Montseratt", Arial, sans-serif;
   font-weight: 500;
@@ -75,6 +79,7 @@
   line-height: 27px;
 
   color: $color-default-white;
+  z-index: $z-index-first-plan;
 }
 
 .tours__item h4 {
@@ -97,4 +102,8 @@
   font-size: 14px;
   line-height: 20px;
   color: $color-default-white;
+}
+
+.tours__item a {
+  margin-top: auto;
 }
