@@ -4,11 +4,13 @@
   padding-top: 95px;
   padding-bottom: 120px;
 }
+
 .tours__header {
   margin: 0 0 60px 0;
   padding: 0;
   text-align: center;
 }
+
 .tours__list {
   margin: 0;
   padding: 0 15px;
@@ -19,6 +21,7 @@
 
   list-style-type: none;
 }
+
 .tours__item {
   position: relative;
   z-index: $z-index-regular;
@@ -37,6 +40,8 @@
       z-index: $z-index-popup;
       top: 0;
 
+      padding: 35px 25px;
+
       width: 100%;
       max-width: 260px;
       min-height: 386px;
@@ -53,17 +58,44 @@
   z-index: $z-index-first-plan;
   margin: 0;
   padding: 0;
+
+  font-family: "Montseratt", Arial, sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+
   color: $color-default-white;
 }
 
 .tours__item h4 {
+  margin: 0 0 15px 0;
+  padding: 0;
+
+  font-family: "Montseratt", Arial, sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  color: $color-default-white;
+}
+
+.tours__item h5 {
   margin: 0;
   padding: 0;
+
+  font-family: "Montseratt", Arial, sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
   color: $color-default-white;
 }
 
 .tours__item p {
-  margin: 0;
+  margin: 0 0 5px 0;
   padding: 0;
+
+  font-family: "Montseratt", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
   color: $color-default-white;
 }

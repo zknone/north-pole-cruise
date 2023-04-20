@@ -1,5 +1,5 @@
-@import '../mixins';
-@import '../variables';
+@import "../mixins";
+@import "../variables";
 
 .hero {
   position: relative;
@@ -8,23 +8,21 @@
   min-height: 650px;
   z-index: $z-index-regular;
 
-  background: url('../img/background-intro-desk.webp') no-repeat center,
-  $color-background-plug;
+  background: url("../img/background-intro-desk.webp") no-repeat center,
+    $color-background-plug;
   background-size: cover;
 
   @include vp-1023() {
-    background: url('../img/background-intro-tab.webp') no-repeat center,
-    $color-background-plug;
+    background: url("../img/background-intro-tab.webp") no-repeat center,
+      $color-background-plug;
     background-size: cover;
   }
 
   @include vp-374() {
-    background: url('../img/background-intro-mob.webp') no-repeat center,
-    $color-background-plug;
+    background: url("../img/background-intro-mob.webp") no-repeat center,
+      $color-background-plug;
     background-size: cover;
   }
-
-
 }
 .hero__container {
   padding-top: 170px;

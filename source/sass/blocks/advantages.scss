@@ -1,15 +1,14 @@
-@import '../mixins';
+@import "../mixins";
 
 .advantages {
   padding: 120px 0;
 
-  background: url('../img/advantages-background.webp') no-repeat center,
-              $color-background-plug-light;
+  background: url("../img/advantages-background.webp") no-repeat center,
+    $color-background-plug-light;
   background-size: cover;
 }
 
 .advantages__container {
-
 }
 
 .advantages__header {
