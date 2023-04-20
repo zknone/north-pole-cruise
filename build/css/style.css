@@ -639,7 +639,7 @@ button,
 .container {
   display: block;
   width: 100%;
-  max-width: 1160px;
+  max-width: 1240px;
   margin: 0 auto;
   padding-left: 40px;
   padding-right: 40px;
@@ -1506,12 +1506,17 @@ button,
 }
 
 .advantages__item {
-  padding: 30px;
+  max-width: 360px;
+  padding: 30px 30px 50px 30px;
   background-color: #F9FBFD;
 }
 
+.advantages__item svg {
+  margin-bottom: 25px;
+}
+
 .advantages__item h3 {
-  margin: 0;
+  margin: 0 0 20px 0;
   padding: 0;
 }
 
@@ -1520,15 +1525,26 @@ button,
   padding: 0;
 }
 
+.tours {
+  padding-top: 95px;
+  padding-bottom: 120px;
+}
+
+.tours__header {
+  margin: 0 0 60px 0;
+  padding: 0;
+  text-align: center;
+}
+
 .tours__list {
+  margin: 0;
+  padding: 0 15px;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (auto)[4];
   grid-template-columns: repeat(4, auto);
   -ms-grid-rows: auto;
   grid-template-rows: auto;
-  margin: 0;
-  padding: 0;
   list-style-type: none;
 }
 
