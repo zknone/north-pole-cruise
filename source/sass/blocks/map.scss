@@ -1,17 +1,32 @@
 .map {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+}
+.container {
 }
 
+.map__wrapper {
+  width: 560px;
+  height: 306px;
+
+  @include vp-1023() {
+    width: 324px;
+    height: 335px;
+  }
+
+  @include vp-767() {
+    width: 100%;
+    height: 316px;
+  }
+}
+.map__info-container {
+  max-width: 40%;
+}
+.visually-hidden {
+}
 .map__header {
 }
-
 .map__adress {
 }
 .map__phone {
-}
-
-
-.map__wrapper {
-  height: 420px;
 }

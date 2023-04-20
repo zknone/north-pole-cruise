@@ -1,11 +1,10 @@
-import {iosVhFix} from './utils/ios-vh-fix';
-import {initModals} from './modules/modals/init-modals';
-import {Form} from './modules/form-validate/form';
+import { iosVhFix } from "./utils/ios-vh-fix";
+import { initModals } from "./modules/modals/init-modals";
+import { Form } from "./modules/form-validate/form";
 
 // ---------------------------------
 
-window.addEventListener('DOMContentLoaded', () => {
-
+window.addEventListener("DOMContentLoaded", () => {
   // Utils
   // ---------------------------------
 
@@ -16,20 +15,24 @@ window.addEventListener('DOMContentLoaded', () => {
 
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
   // в load следует добавить скрипты, не участвующие в работе первого экрана
-  window.addEventListener('load', () => {
+  window.addEventListener("load", () => {
     initModals();
     const form = new Form();
     window.form = form;
     form.init();
 
-
-    const map = L.map("map").setView([59.9686902, 30.3174989], 16);
+    const map = L.map("map").setView([59.9387165, 30.3230474], 13);
+    L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
+      maxZoom: 19,
+      attribution:
+        '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+    }).addTo(map);
     const icon = L.icon({
       iconUrl: "../img/map-pin.svg",
       iconSize: [38, 50],
     });
 
-    L.marker([59.9686902, 30.3174989], { icon: icon }).addTo(map).openPopup();
+    L.marker([59.9387165, 30.3230474], { icon: icon }).addTo(map).openPopup();
   });
 });
 

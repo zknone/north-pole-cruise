@@ -11,17 +11,12 @@
     <link rel="preload" href="fonts/montserrat_semibold.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="fonts/montserrat_regular.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="stylesheet" href="css/style.min.css">
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
-      integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
-      crossorigin=""
-    />
-    <script
-      src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
-      integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
-      crossorigin=""
-    ></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+    integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
+    crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+    integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
+    crossorigin=""></script>
   </head>
   <body>
     <div class="wrapper">
@@ -75,21 +70,21 @@
           <div class="advantages__container container">
             <h2 class="advantages__header">Преимущества</h2>
             <ul class="advantages__list">
-              <li data-advantages="ship">
+              <li class="advantages__item" data-advantages="ship">
                 <svg aria-label="Небольшой круизный лайнер." width="27" height="32" focusable="false">
                   <use xlink:href="./img/sprite.svg#ship-icon"></use>
                 </svg>
                 <h3>Небольшой круизный лайнер</h3>
                 <p>Круизный лайнер, рассчитанный всего лишь на 300 гостей, поможет избежать шума и очередей и даст возможность насладиться видами и природой.</p>
               </li>
-              <li data-advantages="all-inclusive">
+              <li class="advantages__item" data-advantages="all-inclusive">
                 <svg aria-label="Все включено." width="27" height="32" focusable="false">
                   <use xlink:href="./img/sprite.svg#tick-icon"></use>
                 </svg>
                 <h3>Система все включено</h3>
                 <p>Все наши круизы работают по системе “Все Включено”. Великолепные блюда и безлимитный бар доступны для вас 24 часа.</p>
               </li>
-              <li data-advantages="tours">
+              <li class="advantages__item" data-advantages="tours">
                 <svg aria-label="Экскурсии." width="27" height="32" focusable="false">
                   <use xlink:href="./img/sprite.svg#cruise-icon"></use>
                 </svg>
