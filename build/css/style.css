@@ -909,12 +909,23 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 500px;
-  padding: 14px 0 10px 36px;
+  padding: 0 0 10px 36px;
+  cursor: pointer;
+}
+
+.custom-toggle.focus-visible:focus {
+  opacity: 0.8;
+  -webkit-transition: opacity 3ms ease-in;
+  -o-transition: opacity 3ms ease-in;
+  transition: opacity 3ms ease-in;
+}
+
+.custom-toggle.focus-visible:focus {
+  outline: 1px solid #F9FBFD;
 }
 
 .custom-toggle:last-of-type {
-  padding: 14px 0 58px 36px;
+  padding: 0 0 0 30px;
 }
 
 .custom-toggle input {
@@ -928,7 +939,6 @@ button,
 .custom-toggle label {
   position: relative;
   padding-left: 52px;
-  cursor: pointer;
 }
 
 .custom-toggle label span {
@@ -936,32 +946,35 @@ button,
   margin-left: 0;
 }
 
+.custom-toggle input:focus + .custom-toggle__icon {
+  opacity: 0.8;
+  -webkit-transition: opacity 3ms ease-in;
+  -o-transition: opacity 3ms ease-in;
+  transition: opacity 3ms ease-in;
+}
+
 .custom-toggle--checkbox .custom-toggle__icon {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 28px;
-  height: 28px;
-  border: 1.5px solid #2c39f2;
-  -webkit-transition: border 0.3s ease;
-  -o-transition: border 0.3s ease;
-  transition: border 0.3s ease;
+  top: 10px;
+  left: 10px;
+  width: 15px;
+  height: 15px;
+  -webkit-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+  transition: 0.3s ease;
+  border: 1.5px solid #F9FBFD;
+  cursor: pointer;
 }
 
 .custom-toggle--checkbox .custom-toggle__icon::before {
-  content: "";
+  content: url("data:image/svg+xml,%3Csvg width='12' height='9' viewBox='0 0 9 6' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0.988525 2.33333L3.7778 5L7.96171 1' stroke='white'/%3E%3C/svg%3E%0A");
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 20px;
-  height: 20px;
-  background-color: rgba(44, 57, 242, 0);
+  color: #F9FBFD;
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  -webkit-transition: background-color 0.3s ease;
-  -o-transition: background-color 0.3s ease;
-  transition: background-color 0.3s ease;
 }
 
 .custom-toggle--radio .custom-toggle__icon {
@@ -972,6 +985,7 @@ button,
   height: 28px;
   border: 1px solid #2c39f2;
   border-radius: 50%;
+  cursor: pointer;
   -webkit-transition: border 0.3s ease;
   -o-transition: border 0.3s ease;
   transition: border 0.3s ease;
@@ -994,12 +1008,12 @@ button,
   transition: color 0.3s ease;
 }
 
-.custom-toggle input:checked + .custom-toggle__icon {
-  border: 1.5px solid #2c39f2;
+.custom-toggle input + .custom-toggle__icon::before {
+  display: none;
 }
 
 .custom-toggle input:checked + .custom-toggle__icon::before {
-  background-color: #2c39f2;
+  display: block;
 }
 
 .custom-toggle.is-invalid label span {
@@ -1009,7 +1023,7 @@ button,
 .custom-toggle .input-message {
   position: absolute;
   right: 0;
-  bottom: -5px;
+  bottom: 40px;
 }
 
 .custom-toggle .input-message.is-invalid {
@@ -1408,7 +1422,7 @@ button,
 
 .hero__container {
   padding-top: 280px;
-  padding-bottom: 180px;
+  padding-bottom: 280px;
 }
 
 .hero__header {
@@ -1859,6 +1873,7 @@ a .footer__logo.focus-visible:focus {
 
 .map__info-container {
   max-width: 40%;
+  margin: auto 0;
 }
 
 .map__header {
@@ -1944,6 +1959,15 @@ a .footer__logo.focus-visible:focus {
     padding-right: 45px;
   }
 
+  .custom-toggle--checkbox .custom-toggle__icon {
+    left: 0;
+  }
+
+  .navigation__item-link {
+    font-size: 14px;
+    line-height: 17px;
+  }
+
   .hero {
     background: url("../img/background-intro-tab.webp") no-repeat center, #2A5EA3;
     background-size: cover;
@@ -1951,15 +1975,47 @@ a .footer__logo.focus-visible:focus {
 
   .hero__header {
     margin: 0 0 30px 0;
+    font-size: 50px;
+    line-height: 60px;
   }
 
   .hero__description {
     margin: 0;
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .tours__list {
+    -ms-grid-columns: (1fr)[2];
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .form {
     background: url("../img/background-form-tab.webp") no-repeat center, #2A5EA3;
     background-size: cover;
+  }
+
+  .form__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .form__header {
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+    align-self: center;
+  }
+
+  .form__description {
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+    align-self: center;
+    max-width: 352px;
   }
 
   .map__wrapper {
@@ -2000,8 +2056,56 @@ a .footer__logo.focus-visible:focus {
   }
 
   .hero__container {
-    padding-top: 120px;
-    padding-bottom: 280px;
+    padding-top: 185px;
+    padding-bottom: 185px;
+  }
+
+  .hero__header {
+    font-size: 36px;
+    line-height: 45px;
+  }
+
+  .hero__description {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .advantages__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    row-gap: 30px;
+  }
+
+  .advantages__item {
+    max-width: 100%;
+  }
+
+  .tours__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  .map {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
   }
 
   .map__wrapper {
@@ -2047,12 +2151,12 @@ a .footer__logo.focus-visible:focus {
   }
 
   .custom-toggle {
-    padding: 14px 0 10px 0;
+    padding: 0 0 10px 0;
     width: 100%;
   }
 
   .custom-toggle:last-of-type {
-    padding: 14px 0 58px 0;
+    padding: 0 0 0 30px;
   }
 
   .custom-select {
@@ -2088,6 +2192,13 @@ a .footer__logo.focus-visible:focus {
 @media (hover: hover) {
   .btn:hover:not(.focus-visible) {
     opacity: 0.8;
+  }
+
+  .custom-toggle:hover:not(.focus-visible) {
+    opacity: 0.8;
+    -webkit-transition: opacity 3ms ease-in;
+    -o-transition: opacity 3ms ease-in;
+    transition: opacity 3ms ease-in;
   }
 
   .custom-select__item[aria-selected=true]:hover:not(.focus-visible) {

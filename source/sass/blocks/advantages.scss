@@ -26,6 +26,14 @@
   margin: 0;
   padding: 0;
   list-style-type: none;
+
+  @include vp-767() {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    row-gap: 30px;
+  }
 }
 
 .advantages__item {
@@ -33,6 +41,10 @@
 
   padding: 30px 30px 50px 30px;
   background-color: $color-default-white;
+
+  @include vp-767() {
+    max-width: 100%;
+  }
 }
 
 .advantages__item svg {

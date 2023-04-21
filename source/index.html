@@ -269,9 +269,9 @@
                 <label aria-label="Емейл.">
                   <input type="email" placeholder="Email">
                 </label>
-                <label>
-                  <input type="checkbox">
-                  <span class="checkbox"></span>
+                <label class="custom-toggle custom-toggle--checkbox" data-validate-type="checkbox" data-form="checkbox" data-message-extra="Обязательное для заполнения поле" data-required>
+                  <input type="checkbox" checked required>
+                  <span class="custom-toggle__icon"></span>
                   Я согласен на обработку моих персональных данных
                 </label>
                 <button type="submit" class="btn">Отправить</button>

@@ -57,6 +57,11 @@
     opacity: 0.8;
     transition: opacity 300ms ease-in;
   }
+
+  @include vp-1023() {
+    font-size: 14px;
+    line-height: 17px;
+  }
 }
 .navigation__button {
   display: none;
