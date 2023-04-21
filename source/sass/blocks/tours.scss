@@ -37,7 +37,7 @@
   position: relative;
   z-index: $z-index-regular;
   display: grid;
-  grid-template-areas: "b" "h-route" "p-route" "h-departure" "p-departure" "h-duration" "p-duration" "h-cost" "p-cost" "bh";
+  grid-template-areas: "t-button" "t-info" "t-header";
   grid-template-columns: auto;
   grid-template-rows: repeat(10, auto);
 
@@ -59,7 +59,8 @@
 
   @include hover-focus {
     background-color: $color-default-black;
-    grid-template-areas: "bh" "h-route" "p-route" "h-departure" "p-departure" "h-duration" "p-duration" "h-cost" "p-cost" "b";
+    grid-template-areas: "t-header" "t-info" "t-button";
+
     picture {
       display: none;
     }
@@ -67,13 +68,13 @@
 }
 
 .tours__item h3 {
-  grid-area: bh;
+  grid-area: t-header;
   margin: 0 0 30px;
   padding: 0;
 
   max-width: 200px;
 
-  font-family: "Montseratt", Arial, sans-serif;
+  font-family: "Montseratt", "Arial", sans-serif;
   font-weight: 500;
   font-size: 18px;
   line-height: 27px;
@@ -82,54 +83,32 @@
   z-index: $z-index-first-plan;
 }
 
-.tours__item h4 {
+.tours__item dt {
   margin: 0;
   padding: 0;
 
-  font-family: "Montseratt", Arial, sans-serif;
+  font-family: "Montseratt", "Arial", sans-serif;
   font-weight: 500;
   font-size: 14px;
   line-height: 20px;
   color: $color-default-white;
-
-  &[data-title="route"] {
-    grid-area: h-route;
-  }
-  &[data-title="departure"] {
-    grid-area: h-departure;
-  }
-  &[data-title="duration"] {
-    grid-area: h-duration;
-  }
-  &[data-title="cost"] {
-    grid-area: h-cost;
-  }
 }
 
-.tours__item p {
+.tours__item dd {
   margin: 0 0 20px 0;
   padding: 0;
 
-  font-family: "Montseratt", Arial, sans-serif;
+  font-family: "Montseratt", "Arial", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
   color: $color-default-white;
+}
 
-  &[data-title="route"] {
-    grid-area: p-route;
-  }
-  &[data-title="departure"] {
-    grid-area: p-departure;
-  }
-  &[data-title="duration"] {
-    grid-area: p-duration;
-  }
-  &[data-title="cost"] {
-    grid-area: p-cost;
-  }
+.tours__item dl {
+  grid-area: t-info;
 }
 
 .tours__item a {
-  grid-area: b;
+  grid-area: t-button;
 }

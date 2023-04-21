@@ -436,7 +436,7 @@ html {
   font-size: 16px;
   line-height: 24px;
   font-family: "Placeholder", "Arial", sans-serif;
-  color: #011C40;
+  color: #011c40;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
@@ -445,11 +445,11 @@ html {
 body {
   width: 100%;
   height: 100%;
-  background-color: #F9FBFD;
+  background-color: #f9fbfd;
 }
 
 a {
-  color: #011C40;
+  color: #011c40;
   text-decoration: none;
 }
 
@@ -465,9 +465,9 @@ textarea {
 }
 
 input:-webkit-autofill {
-  -webkit-box-shadow: inset 0 0 0 1000px #F9FBFD;
-  box-shadow: inset 0 0 0 1000px #F9FBFD;
-  -webkit-text-fill-color: #011C40;
+  -webkit-box-shadow: inset 0 0 0 1000px #f9fbfd;
+  box-shadow: inset 0 0 0 1000px #f9fbfd;
+  -webkit-text-fill-color: #011c40;
 }
 
 input,
@@ -650,13 +650,13 @@ button,
   padding: 15px 10px;
   width: 100%;
   text-align: center;
-  font-family: "Montseratt", Arial, sans-serif;
+  font-family: "Montseratt", "Arial", sans-serif;
   font-weight: 600;
   font-size: 14px;
   line-height: 21px;
-  color: #011C40;
+  color: #011c40;
   border: none;
-  background-color: #F9FBFD;
+  background-color: #f9fbfd;
   cursor: pointer;
   -webkit-transition: opacity 0.3s ease;
   -o-transition: opacity 0.3s ease;
@@ -743,7 +743,7 @@ button,
   position: relative;
   width: 600px;
   padding: 40px;
-  background-color: #F9FBFD;
+  background-color: #f9fbfd;
 }
 
 .modal__close-btn {
@@ -921,7 +921,7 @@ button,
 }
 
 .custom-toggle.focus-visible:focus {
-  outline: 1px solid #F9FBFD;
+  outline: 1px solid #f9fbfd;
 }
 
 .custom-toggle:last-of-type {
@@ -962,8 +962,8 @@ button,
   -webkit-transition: 0.3s ease;
   -o-transition: 0.3s ease;
   transition: 0.3s ease;
-  border: 1.5px solid #011C40;
-  background-color: #F9FBFD;
+  border: 1.5px solid #011c40;
+  background-color: #f9fbfd;
   cursor: pointer;
 }
 
@@ -972,7 +972,7 @@ button,
   position: absolute;
   top: 50%;
   left: 50%;
-  color: #011C40;
+  color: #011c40;
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
@@ -984,7 +984,7 @@ button,
   left: 0;
   width: 28px;
   height: 28px;
-  border: 1px solid #F9FBFD;
+  border: 1px solid #f9fbfd;
   border-radius: 50%;
   cursor: pointer;
   -webkit-transition: border 0.3s ease;
@@ -999,7 +999,7 @@ button,
   left: 50%;
   width: 20px;
   height: 20px;
-  color: #011C40;
+  color: #011c40;
   border-radius: 50%;
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
@@ -1365,11 +1365,11 @@ button,
   display: block;
   padding: 48px 0;
   font-style: medium;
-  font-family: "Montseratt", Arial, sans-serif;
+  font-family: "Montseratt", "Arial", sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 20px;
-  color: #F9FBFD;
+  color: #f9fbfd;
 }
 
 .navigation__item-link.focus-visible:focus {
@@ -1388,7 +1388,7 @@ button,
   display: block;
   width: 24px;
   height: 2px;
-  background-color: #F9FBFD;
+  background-color: #f9fbfd;
 }
 
 .navigation__button-element::before {
@@ -1398,7 +1398,7 @@ button,
   top: -8px;
   width: 24px;
   height: 2px;
-  background-color: #F9FBFD;
+  background-color: #f9fbfd;
 }
 
 .navigation__button-element::after {
@@ -1408,7 +1408,7 @@ button,
   top: 6px;
   width: 24px;
   height: 2px;
-  background-color: #F9FBFD;
+  background-color: #f9fbfd;
 }
 
 .navigation__button-element.is-activate {
@@ -1425,7 +1425,7 @@ button,
   left: 0;
   width: 24px;
   height: 2px;
-  background-color: #F9FBFD;
+  background-color: #f9fbfd;
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
@@ -1439,7 +1439,7 @@ button,
   left: 0;
   width: 24px;
   height: 2px;
-  background-color: #F9FBFD;
+  background-color: #f9fbfd;
   -webkit-transform: rotate(-45deg);
   -ms-transform: rotate(-45deg);
   transform: rotate(-45deg);
@@ -1450,7 +1450,7 @@ button,
   top: 0;
   width: 100%;
   z-index: 2;
-  background: url("../img/background-intro-desk.webp") no-repeat center, #2A5EA3;
+  background: url("../img/background-intro-desk.webp") no-repeat center, #2a5ea3;
   background-size: cover;
 }
 
@@ -1463,23 +1463,23 @@ button,
   margin: 0 0 30px 90px;
   padding: 0;
   font-style: bold;
-  font-family: "Montseratt", Arial, sans-serif;
+  font-family: "Montseratt", "Arial", sans-serif;
   font-weight: 700;
   font-size: 54px;
   line-height: 66px;
-  color: #F9FBFD;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  color: #f9fbfd;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .hero__description {
   margin: 0 0 0 90px;
   padding: 0;
-  font-family: "Montseratt", Arial, sans-serif;
+  font-family: "Montseratt", "Arial", sans-serif;
   font-weight: 400;
   font-size: 20px;
   line-height: 24px;
-  color: #F9FBFD;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  color: #f9fbfd;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .proposal {
@@ -1503,11 +1503,11 @@ button,
   margin: 0 0 40px 0;
   padding: 0;
   grid-area: a;
-  font-family: "Montseratt", Arial, sans-serif;
+  font-family: "Montseratt", "Arial", sans-serif;
   font-weight: 600;
   font-size: 28px;
   line-height: 42px;
-  color: #011C40;
+  color: #011c40;
 }
 
 .proposal p {
@@ -1516,11 +1516,11 @@ button,
   margin: 0;
   padding: 0;
   grid-area: b;
-  font-family: "Montseratt", Arial, sans-serif;
+  font-family: "Montseratt", "Arial", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  color: #011C40;
+  color: #011c40;
 }
 
 .proposal picture {
@@ -1540,11 +1540,11 @@ button,
 .advantages__header {
   margin: 0 0 60px 0;
   padding: 0;
-  font-family: "Montseratt", Arial, sans-serif;
+  font-family: "Montseratt", "Arial", sans-serif;
   font-weight: 600;
   font-size: 28px;
   line-height: 42px;
-  color: #011C40;
+  color: #011c40;
   text-align: center;
 }
 
@@ -1564,7 +1564,7 @@ button,
 .advantages__item {
   max-width: 360px;
   padding: 30px 30px 50px 30px;
-  background-color: #F9FBFD;
+  background-color: #f9fbfd;
 }
 
 .advantages__item svg {
@@ -1574,21 +1574,21 @@ button,
 .advantages__item h3 {
   margin: 0 0 20px 0;
   padding: 0;
-  font-family: "Montseratt", Arial, sans-serif;
+  font-family: "Montseratt", "Arial", sans-serif;
   font-weight: 500;
   font-size: 18px;
   line-height: 27px;
-  color: #011C40;
+  color: #011c40;
 }
 
 .advantages__item p {
   margin: 0;
   padding: 0;
-  font-family: "Montseratt", Arial, sans-serif;
+  font-family: "Montseratt", "Arial", sans-serif;
   font-weight: 500;
   font-size: 14px;
   line-height: 20px;
-  color: #011C40;
+  color: #011c40;
 }
 
 .tours {
@@ -1623,7 +1623,7 @@ button,
   z-index: 2;
   display: -ms-grid;
   display: grid;
-  grid-template-areas: "b" "h-route" "p-route" "h-departure" "p-departure" "h-duration" "p-duration" "h-cost" "p-cost" "bh";
+  grid-template-areas: "t-button" "t-info" "t-header";
   -ms-grid-columns: auto;
   grid-template-columns: auto;
   -ms-grid-rows: (auto)[10];
@@ -1647,8 +1647,8 @@ button,
 }
 
 .tours__item.focus-visible:focus {
-  background-color: #011C40;
-  grid-template-areas: "bh" "h-route" "p-route" "h-departure" "p-departure" "h-duration" "p-duration" "h-cost" "p-cost" "b";
+  background-color: #011c40;
+  grid-template-areas: "t-header" "t-info" "t-button";
 }
 
 .tours__item.focus-visible:focus picture {
@@ -1656,96 +1656,54 @@ button,
 }
 
 .tours__item h3 {
-  -ms-grid-row: 10;
+  -ms-grid-row: 3;
   -ms-grid-column: 1;
-  grid-area: bh;
+  grid-area: t-header;
   margin: 0 0 30px;
   padding: 0;
   max-width: 200px;
-  font-family: "Montseratt", Arial, sans-serif;
+  font-family: "Montseratt", "Arial", sans-serif;
   font-weight: 500;
   font-size: 18px;
   line-height: 27px;
-  color: #F9FBFD;
+  color: #f9fbfd;
   z-index: 3;
 }
 
-.tours__item h4 {
+.tours__item dt {
   margin: 0;
   padding: 0;
-  font-family: "Montseratt", Arial, sans-serif;
+  font-family: "Montseratt", "Arial", sans-serif;
   font-weight: 500;
   font-size: 14px;
   line-height: 20px;
-  color: #F9FBFD;
+  color: #f9fbfd;
 }
 
-.tours__item h4[data-title=route] {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-  grid-area: h-route;
-}
-
-.tours__item h4[data-title=departure] {
-  -ms-grid-row: 4;
-  -ms-grid-column: 1;
-  grid-area: h-departure;
-}
-
-.tours__item h4[data-title=duration] {
-  -ms-grid-row: 6;
-  -ms-grid-column: 1;
-  grid-area: h-duration;
-}
-
-.tours__item h4[data-title=cost] {
-  -ms-grid-row: 8;
-  -ms-grid-column: 1;
-  grid-area: h-cost;
-}
-
-.tours__item p {
+.tours__item dd {
   margin: 0 0 20px 0;
   padding: 0;
-  font-family: "Montseratt", Arial, sans-serif;
+  font-family: "Montseratt", "Arial", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
-  color: #F9FBFD;
+  color: #f9fbfd;
 }
 
-.tours__item p[data-title=route] {
-  -ms-grid-row: 3;
+.tours__item dl {
+  -ms-grid-row: 2;
   -ms-grid-column: 1;
-  grid-area: p-route;
-}
-
-.tours__item p[data-title=departure] {
-  -ms-grid-row: 5;
-  -ms-grid-column: 1;
-  grid-area: p-departure;
-}
-
-.tours__item p[data-title=duration] {
-  -ms-grid-row: 7;
-  -ms-grid-column: 1;
-  grid-area: p-duration;
-}
-
-.tours__item p[data-title=cost] {
-  -ms-grid-row: 9;
-  -ms-grid-column: 1;
-  grid-area: p-cost;
+  grid-area: t-info;
 }
 
 .tours__item a {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
-  grid-area: b;
+  grid-area: t-button;
 }
 
 .footer {
-  background-color: #011C40;
+  background-color: #011c40;
   width: 100%;
   min-height: 140px;
 }
@@ -1791,11 +1749,11 @@ a .footer__logo.focus-visible:focus {
 .footer__item-link {
   padding: 30px 0;
   font-style: medium;
-  font-family: "Montseratt", Arial, sans-serif;
+  font-family: "Montseratt", "Arial", sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 20px;
-  color: #F9FBFD;
+  color: #f9fbfd;
 }
 
 .footer__item-link.focus-visible:focus {
@@ -1824,7 +1782,7 @@ a .footer__logo.focus-visible:focus {
 
 .footer__social-link {
   padding: 10px;
-  color: #F9FBFD;
+  color: #f9fbfd;
 }
 
 .footer__social-link.focus-visible:focus {
@@ -1836,7 +1794,7 @@ a .footer__logo.focus-visible:focus {
 
 .form {
   padding: 50px 60px;
-  background: url("../img/background-form-desk.webp") no-repeat center, #2A5EA3;
+  background: url("../img/background-form-desk.webp") no-repeat center, #2a5ea3;
   background-size: cover;
 }
 
@@ -1867,11 +1825,11 @@ a .footer__logo.focus-visible:focus {
   margin: 0;
   padding: 0;
   align-self: flex-end;
-  font-family: "Montseratt", Arial, sans-serif;
+  font-family: "Montseratt", "Arial", sans-serif;
   font-weight: 700;
   font-size: 40px;
   line-height: 60px;
-  color: #011C40;
+  color: #011c40;
 }
 
 .form__description {
@@ -1880,11 +1838,11 @@ a .footer__logo.focus-visible:focus {
   grid-area: ft;
   margin: 0;
   padding: 0;
-  font-family: "Montseratt", Arial, sans-serif;
+  font-family: "Montseratt", "Arial", sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 27px;
-  color: #011C40;
+  color: #011c40;
 }
 
 .form__form {
@@ -1897,18 +1855,18 @@ a .footer__logo.focus-visible:focus {
   flex-direction: column;
   row-gap: 20px;
   padding: 50px;
-  background-color: #011C40;
+  background-color: #011c40;
 }
 
 .form__form label {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-family: "Montseratt", Arial, sans-serif;
+  font-family: "Montseratt", "Arial", sans-serif;
   font-weight: 400;
   font-size: 10px;
   line-height: 13px;
-  color: #F9FBFD;
+  color: #f9fbfd;
 }
 
 .form__form input {
@@ -1921,7 +1879,7 @@ a .footer__logo.focus-visible:focus {
 .form__form input:-webkit-autofill {
   -webkit-box-shadow: inset 0 0 0 1000px rgb(10, 130, 181);
   box-shadow: inset 0 0 0 1000px rgb(10, 130, 181);
-  -webkit-text-fill-color: #F9FBFD;
+  -webkit-text-fill-color: #f9fbfd;
   font-size: 16px;
   line-height: 21px;
 }
@@ -1932,11 +1890,11 @@ a .footer__logo.focus-visible:focus {
 
 .form__form h3 {
   max-width: 303px;
-  font-family: "Montseratt", Arial, sans-serif;
+  font-family: "Montseratt", "Arial", sans-serif;
   font-weight: 500;
   font-size: 18px;
   line-height: 27px;
-  color: #F9FBFD;
+  color: #f9fbfd;
 }
 
 .map {
@@ -1966,7 +1924,7 @@ a .footer__logo.focus-visible:focus {
 .map__header {
   margin: 0 0 45px;
   padding: 0;
-  font-family: "Montseratt", Arial, sans-serif;
+  font-family: "Montseratt", "Arial", sans-serif;
   font-weight: 500;
   font-size: 18px;
   line-height: 27px;
@@ -1976,7 +1934,7 @@ a .footer__logo.focus-visible:focus {
   position: relative;
   margin: 0 0 33px 0;
   padding: 0;
-  font-family: "Montseratt", Arial, sans-serif;
+  font-family: "Montseratt", "Arial", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
@@ -1989,7 +1947,7 @@ a .footer__logo.focus-visible:focus {
 .map__phone {
   margin: 0;
   padding: 0;
-  font-family: "Montseratt", Arial, sans-serif;
+  font-family: "Montseratt", "Arial", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
@@ -2056,7 +2014,7 @@ a .footer__logo.focus-visible:focus {
   }
 
   .hero {
-    background: url("../img/background-intro-tab.webp") no-repeat center, #2A5EA3;
+    background: url("../img/background-intro-tab.webp") no-repeat center, #2a5ea3;
     background-size: cover;
   }
 
@@ -2088,7 +2046,7 @@ a .footer__logo.focus-visible:focus {
   }
 
   .form {
-    background: url("../img/background-form-tab.webp") no-repeat center, #2A5EA3;
+    background: url("../img/background-form-tab.webp") no-repeat center, #2a5ea3;
     background-size: cover;
   }
 
@@ -2166,7 +2124,7 @@ a .footer__logo.focus-visible:focus {
   }
 
   .hero {
-    background: url("../img/background-intro-mob.webp") no-repeat center, #2A5EA3;
+    background: url("../img/background-intro-mob.webp") no-repeat center, #2a5ea3;
     background-size: cover;
   }
 
@@ -2369,7 +2327,7 @@ a .footer__logo.focus-visible:focus {
 
 @media (max-width: 374px) {
   .form {
-    background: url("../img/background-form-mob.webp") no-repeat center, #2A5EA3;
+    background: url("../img/background-form-mob.webp") no-repeat center, #2a5ea3;
     background-size: cover;
   }
 }
@@ -2411,17 +2369,12 @@ a .footer__logo.focus-visible:focus {
   }
 
   .tours__item:hover:not(.focus-visible) {
-    background-color: #011C40;
-    grid-template-areas: "bh" "h-route" "p-route" "h-departure" "p-departure" "h-duration" "p-duration" "h-cost" "p-cost" "b";
+    background-color: #011c40;
+    grid-template-areas: "t-header" "t-info" "t-button";
   }
 
   .tours__item:hover:not(.focus-visible) picture {
     display: none;
-  }
-
-  .tours__item:hover:not(.focus-visible) > p {
-    -ms-grid-row: 10;
-    -ms-grid-column: 1;
   }
 
   .tours__item:hover:not(.focus-visible) > h3 {
@@ -2429,48 +2382,13 @@ a .footer__logo.focus-visible:focus {
     -ms-grid-column: 1;
   }
 
-  .tours__item:hover:not(.focus-visible) > h4[data-title=route] {
+  .tours__item:hover:not(.focus-visible) > dl {
     -ms-grid-row: 2;
     -ms-grid-column: 1;
   }
 
-  .tours__item:hover:not(.focus-visible) > h4[data-title=departure] {
-    -ms-grid-row: 4;
-    -ms-grid-column: 1;
-  }
-
-  .tours__item:hover:not(.focus-visible) > h4[data-title=duration] {
-    -ms-grid-row: 6;
-    -ms-grid-column: 1;
-  }
-
-  .tours__item:hover:not(.focus-visible) > h4[data-title=cost] {
-    -ms-grid-row: 8;
-    -ms-grid-column: 1;
-  }
-
-  .tours__item:hover:not(.focus-visible) > p[data-title=route] {
-    -ms-grid-row: 3;
-    -ms-grid-column: 1;
-  }
-
-  .tours__item:hover:not(.focus-visible) > p[data-title=departure] {
-    -ms-grid-row: 5;
-    -ms-grid-column: 1;
-  }
-
-  .tours__item:hover:not(.focus-visible) > p[data-title=duration] {
-    -ms-grid-row: 7;
-    -ms-grid-column: 1;
-  }
-
-  .tours__item:hover:not(.focus-visible) > p[data-title=cost] {
-    -ms-grid-row: 9;
-    -ms-grid-column: 1;
-  }
-
   .tours__item:hover:not(.focus-visible) > a {
-    -ms-grid-row: 10;
+    -ms-grid-row: 3;
     -ms-grid-column: 1;
   }
 

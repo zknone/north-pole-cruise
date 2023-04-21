@@ -23,6 +23,7 @@
     background-size: cover;
   }
 }
+
 .hero__container {
   padding-top: 280px;
   padding-bottom: 280px;
@@ -38,12 +39,12 @@
   padding: 0;
 
   font-style: bold;
-  font-family: "Montseratt", Arial, sans-serif;
+  font-family: "Montseratt", "Arial", sans-serif;
   font-weight: 700;
   font-size: 54px;
   line-height: 66px;
   color: $color-default-white;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 
   @include vp-1023 {
     margin: 0 0 30px 0;
@@ -62,13 +63,13 @@
   margin: 0 0 0 90px;
   padding: 0;
 
-  font-family: "Montseratt", Arial, sans-serif;
+  font-family: "Montseratt", "Arial", sans-serif;
   font-weight: 400;
   font-size: 20px;
   line-height: 24px;
   color: $color-default-white;
 
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 
   @include vp-1023 {
     margin: 0;

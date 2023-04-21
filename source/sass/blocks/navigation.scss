@@ -26,6 +26,7 @@
     transition: opacity 300ms ease-in;
   }
 }
+
 .navigation__list {
   display: flex;
   list-style-type: none;
@@ -39,14 +40,13 @@
     display: none;
   }
 }
-.navigation__item {
-}
+
 .navigation__item-link {
   display: block;
   padding: 48px 0;
 
   font-style: medium;
-  font-family: "Montseratt", Arial, sans-serif;
+  font-family: "Montseratt", "Arial", sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 20px;
@@ -63,6 +63,7 @@
     line-height: 17px;
   }
 }
+
 .navigation__button {
   display: none;
 
@@ -74,6 +75,7 @@
     border: none;
   }
 }
+
 .navigation__button-element {
   display: block;
   width: 24px;
@@ -106,6 +108,7 @@
     width: 24px;
     height: 2px;
     background-color: transparent;
+
     &::before {
       content: "";
       position: relative;
