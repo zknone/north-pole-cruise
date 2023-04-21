@@ -29,7 +29,6 @@
   @include vp-767() {
     display: flex;
     flex-direction: column;
-
     align-items: center;
   }
 }
@@ -37,10 +36,10 @@
 .tours__item {
   position: relative;
   z-index: $z-index-regular;
-  // display: flex;
-  // flex-direction: column-reverse;
   display: grid;
-  grid-template-areas: "d" "d" "d" "d" "d" "h";
+  grid-template-areas: "b" "h-route" "p-route" "h-departure" "p-departure" "h-duration" "p-duration" "h-cost" "p-cost" "bh";
+  grid-template-columns: auto;
+  grid-template-rows: repeat(10, auto);
 
   padding: 35px 25px;
 
@@ -58,26 +57,9 @@
     z-index: $z-index-regular;
   }
 
-  div {
-    grid-area: d;
-
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    z-index: $z-index-background;
-    top: 5%;
-
-    padding: 0;
-
-    max-width: 260px;
-  }
-
   @include hover-focus {
-    flex-direction: column;
     background-color: $color-default-black;
-    grid-template-areas: "h" "d" "d" "d" "d" "d";
-
+    grid-template-areas: "bh" "h-route" "p-route" "h-departure" "p-departure" "h-duration" "p-duration" "h-cost" "p-cost" "b";
     picture {
       display: none;
     }
@@ -85,7 +67,7 @@
 }
 
 .tours__item h3 {
-  grid-area: h;
+  grid-area: bh;
   margin: 0;
   padding: 0;
 
@@ -109,6 +91,19 @@
   font-size: 14px;
   line-height: 20px;
   color: $color-default-white;
+
+  &[data-title="route"] {
+    grid-area: h-route;
+  }
+  &[data-title="departure"] {
+    grid-area: h-departure;
+  }
+  &[data-title="duration"] {
+    grid-area: h-duration;
+  }
+  &[data-title="cost"] {
+    grid-area: h-cost;
+  }
 }
 
 .tours__item p {
@@ -120,8 +115,21 @@
   font-size: 14px;
   line-height: 20px;
   color: $color-default-white;
+
+  &[data-title="route"] {
+    grid-area: p-route;
+  }
+  &[data-title="departure"] {
+    grid-area: p-departure;
+  }
+  &[data-title="duration"] {
+    grid-area: p-duration;
+  }
+  &[data-title="cost"] {
+    grid-area: p-cost;
+  }
 }
 
 .tours__item a {
-  margin-top: auto;
+  grid-area: b;
 }

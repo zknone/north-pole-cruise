@@ -1590,7 +1590,11 @@ button,
   z-index: 2;
   display: -ms-grid;
   display: grid;
-  grid-template-areas: "d" "d" "d" "d" "d" "h";
+  grid-template-areas: "b" "h-route" "p-route" "h-departure" "p-departure" "h-duration" "p-duration" "h-cost" "p-cost" "bh";
+  -ms-grid-columns: auto;
+  grid-template-columns: auto;
+  -ms-grid-rows: (auto)[10];
+  grid-template-rows: repeat(10, auto);
   padding: 35px 25px;
   width: 100%;
   min-height: -webkit-fit-content;
@@ -1609,35 +1613,9 @@ button,
   z-index: 2;
 }
 
-.tours__item div {
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 5;
-  -ms-grid-column: 1;
-  grid-area: d;
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  z-index: 1;
-  top: 5%;
-  padding: 0;
-  max-width: 260px;
-}
-
 .tours__item.focus-visible:focus {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
   background-color: #011C40;
-  grid-template-areas: "h" "d" "d" "d" "d" "d";
+  grid-template-areas: "bh" "h-route" "p-route" "h-departure" "p-departure" "h-duration" "p-duration" "h-cost" "p-cost" "b";
 }
 
 .tours__item.focus-visible:focus picture {
@@ -1645,9 +1623,9 @@ button,
 }
 
 .tours__item h3 {
-  -ms-grid-row: 6;
+  -ms-grid-row: 10;
   -ms-grid-column: 1;
-  grid-area: h;
+  grid-area: bh;
   margin: 0;
   padding: 0;
   max-width: 200px;
@@ -1669,6 +1647,30 @@ button,
   color: #F9FBFD;
 }
 
+.tours__item h4[data-title=route] {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: h-route;
+}
+
+.tours__item h4[data-title=departure] {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: h-departure;
+}
+
+.tours__item h4[data-title=duration] {
+  -ms-grid-row: 6;
+  -ms-grid-column: 1;
+  grid-area: h-duration;
+}
+
+.tours__item h4[data-title=cost] {
+  -ms-grid-row: 8;
+  -ms-grid-column: 1;
+  grid-area: h-cost;
+}
+
 .tours__item p {
   margin: 0 0 20px 0;
   padding: 0;
@@ -1679,8 +1681,34 @@ button,
   color: #F9FBFD;
 }
 
+.tours__item p[data-title=route] {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: p-route;
+}
+
+.tours__item p[data-title=departure] {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  grid-area: p-departure;
+}
+
+.tours__item p[data-title=duration] {
+  -ms-grid-row: 7;
+  -ms-grid-column: 1;
+  grid-area: p-duration;
+}
+
+.tours__item p[data-title=cost] {
+  -ms-grid-row: 9;
+  -ms-grid-column: 1;
+  grid-area: p-cost;
+}
+
 .tours__item a {
-  margin-top: auto;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: b;
 }
 
 .footer {
@@ -1822,6 +1850,16 @@ a .footer__logo.focus-visible:focus {
   font-size: 18px;
   line-height: 27px;
   color: #011C40;
+}
+
+.tours__item > .form__description {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+}
+
+.tours__item.focus-visible:focus > .form__description {
+  -ms-grid-row: 10;
+  -ms-grid-column: 1;
 }
 
 .form__container > .form__description {
@@ -2339,26 +2377,16 @@ a .footer__logo.focus-visible:focus {
   }
 
   .tours__item:hover:not(.focus-visible) {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
     background-color: #011C40;
-    grid-template-areas: "h" "d" "d" "d" "d" "d";
+    grid-template-areas: "bh" "h-route" "p-route" "h-departure" "p-departure" "h-duration" "p-duration" "h-cost" "p-cost" "b";
   }
 
   .tours__item:hover:not(.focus-visible) picture {
     display: none;
   }
 
-  .tours__item:hover:not(.focus-visible) > div {
-    -ms-grid-row: 2;
-    -ms-grid-row-span: 5;
-    -ms-grid-column: 1;
-  }
-
-  .tours__item:hover:not(.focus-visible) > h3 {
-    -ms-grid-row: 1;
+  .tours__item:hover:not(.focus-visible) > p {
+    -ms-grid-row: 10;
     -ms-grid-column: 1;
   }
 
@@ -2382,6 +2410,61 @@ a .footer__logo.focus-visible:focus {
     -webkit-transition: opacity 100ms ease;
     -o-transition: opacity 100ms ease;
     transition: opacity 100ms ease;
+  }
+
+  .tours__item:hover:not(.focus-visible) > h3 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+  }
+
+  .tours__item:hover:not(.focus-visible) > h4[data-title=route] {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+  }
+
+  .tours__item:hover:not(.focus-visible) > h4[data-title=departure] {
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
+  }
+
+  .tours__item:hover:not(.focus-visible) > h4[data-title=duration] {
+    -ms-grid-row: 6;
+    -ms-grid-column: 1;
+  }
+
+  .tours__item:hover:not(.focus-visible) > h4[data-title=cost] {
+    -ms-grid-row: 8;
+    -ms-grid-column: 1;
+  }
+
+  .tours__item:hover:not(.focus-visible) > p[data-title=route] {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+  }
+
+  .tours__item:hover:not(.focus-visible) > p[data-title=departure] {
+    -ms-grid-row: 5;
+    -ms-grid-column: 1;
+  }
+
+  .tours__item:hover:not(.focus-visible) > p[data-title=duration] {
+    -ms-grid-row: 7;
+    -ms-grid-column: 1;
+  }
+
+  .tours__item:hover:not(.focus-visible) > p[data-title=cost] {
+    -ms-grid-row: 9;
+    -ms-grid-column: 1;
+  }
+
+  .tours__item:hover:not(.focus-visible) > a {
+    -ms-grid-row: 10;
+    -ms-grid-column: 1;
+  }
+
+  .tours__item:hover:not(.focus-visible) > .form__description {
+    -ms-grid-row: 10;
+    -ms-grid-column: 1;
   }
 
   .form__form input:hover:not(.focus-visible) {
