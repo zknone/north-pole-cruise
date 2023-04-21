@@ -1626,13 +1626,10 @@ button,
   grid-template-areas: "t-button" "t-info" "t-header";
   -ms-grid-columns: auto;
   grid-template-columns: auto;
-  -ms-grid-rows: (auto)[10];
-  grid-template-rows: repeat(10, auto);
+  -ms-grid-rows: 15% 72% 13%;
+  grid-template-rows: 15% 72% 13%;
   padding: 35px 25px;
   width: 100%;
-  min-height: -webkit-fit-content;
-  min-height: -moz-fit-content;
-  min-height: fit-content;
 }
 
 .tours__item img {

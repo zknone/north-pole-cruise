@@ -39,12 +39,11 @@
   display: grid;
   grid-template-areas: "t-button" "t-info" "t-header";
   grid-template-columns: auto;
-  grid-template-rows: repeat(10, auto);
+  grid-template-rows: 15% 72% 13%;
 
   padding: 35px 25px;
 
   width: 100%;
-  min-height: fit-content;
 
   img {
     position: absolute;
