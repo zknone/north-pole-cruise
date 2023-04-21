@@ -1415,7 +1415,6 @@ button,
   position: relative;
   top: 0;
   width: 100%;
-  min-height: 650px;
   z-index: 2;
   background: url("../img/background-intro-desk.webp") no-repeat center, #2A5EA3;
   background-size: cover;
@@ -1807,13 +1806,20 @@ a .footer__logo.focus-visible:focus {
   background-size: cover;
 }
 
+.form div {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 3;
+  grid-area: fdiv;
+}
+
 .form__container {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 50% 10% 40%;
   grid-template-columns: 50% 40%;
   -ms-grid-rows: auto 30px auto;
-  grid-template-areas: "a c" "b c";
+  grid-template-areas: "fh fdiv" "ft fdiv";
   -webkit-column-gap: 10%;
   -moz-column-gap: 10%;
   column-gap: 10%;
@@ -1823,7 +1829,7 @@ a .footer__logo.focus-visible:focus {
 .form__header {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
-  grid-area: a;
+  grid-area: fh;
   margin: 0;
   padding: 0;
   align-self: flex-end;
@@ -1834,15 +1840,10 @@ a .footer__logo.focus-visible:focus {
   color: #011C40;
 }
 
-.form__container > .form__header {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-}
-
 .form__description {
-  -ms-grid-row: 2;
+  -ms-grid-row: 3;
   -ms-grid-column: 1;
-  grid-area: b;
+  grid-area: ft;
   margin: 0;
   padding: 0;
   font-family: "Montseratt", Arial, sans-serif;
@@ -1850,28 +1851,6 @@ a .footer__logo.focus-visible:focus {
   font-size: 18px;
   line-height: 27px;
   color: #011C40;
-}
-
-.tours__item > .form__description {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-}
-
-.tours__item.focus-visible:focus > .form__description {
-  -ms-grid-row: 10;
-  -ms-grid-column: 1;
-}
-
-.form__container > .form__description {
-  -ms-grid-row: 3;
-  -ms-grid-column: 1;
-}
-
-.form div {
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 2;
-  -ms-grid-column: 3;
-  grid-area: c;
 }
 
 .form__form {
@@ -2145,9 +2124,14 @@ a .footer__logo.focus-visible:focus {
     border: none;
   }
 
+  .hero {
+    background: url("../img/background-intro-mob.webp") no-repeat center, #2A5EA3;
+    background-size: cover;
+  }
+
   .hero__container {
-    padding-top: 185px;
-    padding-bottom: 185px;
+    padding-top: 200px;
+    padding-bottom: 200px;
   }
 
   .hero__header {
@@ -2343,11 +2327,6 @@ a .footer__logo.focus-visible:focus {
 }
 
 @media (max-width: 374px) {
-  .hero {
-    background: url("../img/background-intro-mob.webp") no-repeat center, #2A5EA3;
-    background-size: cover;
-  }
-
   .form {
     background: url("../img/background-form-mob.webp") no-repeat center, #2A5EA3;
     background-size: cover;
@@ -2404,28 +2383,6 @@ a .footer__logo.focus-visible:focus {
     -ms-grid-column: 1;
   }
 
-  a .footer__logo:hover:not(.focus-visible) {
-    opacity: 0.8;
-    -webkit-transition: opacity 300ms ease-in;
-    -o-transition: opacity 300ms ease-in;
-    transition: opacity 300ms ease-in;
-  }
-
-  .footer__item-link:hover:not(.focus-visible) {
-    opacity: 0.8;
-    text-decoration: underline;
-    -webkit-transition: opacity 300ms ease-in;
-    -o-transition: opacity 300ms ease-in;
-    transition: opacity 300ms ease-in;
-  }
-
-  .footer__social-link:hover:not(.focus-visible) {
-    opacity: 0.8;
-    -webkit-transition: opacity 100ms ease;
-    -o-transition: opacity 100ms ease;
-    transition: opacity 100ms ease;
-  }
-
   .tours__item:hover:not(.focus-visible) > h3 {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
@@ -2476,9 +2433,26 @@ a .footer__logo.focus-visible:focus {
     -ms-grid-column: 1;
   }
 
-  .tours__item:hover:not(.focus-visible) > .form__description {
-    -ms-grid-row: 10;
-    -ms-grid-column: 1;
+  a .footer__logo:hover:not(.focus-visible) {
+    opacity: 0.8;
+    -webkit-transition: opacity 300ms ease-in;
+    -o-transition: opacity 300ms ease-in;
+    transition: opacity 300ms ease-in;
+  }
+
+  .footer__item-link:hover:not(.focus-visible) {
+    opacity: 0.8;
+    text-decoration: underline;
+    -webkit-transition: opacity 300ms ease-in;
+    -o-transition: opacity 300ms ease-in;
+    transition: opacity 300ms ease-in;
+  }
+
+  .footer__social-link:hover:not(.focus-visible) {
+    opacity: 0.8;
+    -webkit-transition: opacity 100ms ease;
+    -o-transition: opacity 100ms ease;
+    transition: opacity 100ms ease;
   }
 
   .form__form input:hover:not(.focus-visible) {

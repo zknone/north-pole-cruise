@@ -18,13 +18,17 @@
       $color-background-plug;
     background-size: cover;
   }
+
+  div {
+    grid-area: fdiv;
+  }
 }
 .form__container {
   display: grid;
   grid-template-columns: 50% 40%;
   grid-template-areas:
-    "a c"
-    "b c";
+    "fh fdiv"
+    "ft fdiv";
   column-gap: 10%;
   row-gap: 30px;
 
@@ -34,7 +38,7 @@
   }
 }
 .form__header {
-  grid-area: a;
+  grid-area: fh;
 
   margin: 0;
   padding: 0;
@@ -52,7 +56,7 @@
 }
 
 .form__description {
-  grid-area: b;
+  grid-area: ft;
 
   margin: 0;
   padding: 0;
@@ -67,10 +71,6 @@
     align-self: center;
     max-width: 352px;
   }
-}
-
-.form div {
-  grid-area: c;
 }
 
 .form__form {
