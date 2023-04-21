@@ -1507,6 +1507,11 @@ button,
 .advantages__header {
   margin: 0 0 60px 0;
   padding: 0;
+  font-family: "Montseratt", Arial, sans-serif;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 42px;
+  color: #011C40;
   text-align: center;
 }
 
@@ -1536,11 +1541,21 @@ button,
 .advantages__item h3 {
   margin: 0 0 20px 0;
   padding: 0;
+  font-family: "Montseratt", Arial, sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  color: #011C40;
 }
 
 .advantages__item p {
   margin: 0;
   padding: 0;
+  font-family: "Montseratt", Arial, sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: #011C40;
 }
 
 .tours {
@@ -1573,13 +1588,9 @@ button,
 .tours__item {
   position: relative;
   z-index: 2;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: reverse;
-  -ms-flex-direction: column-reverse;
-  flex-direction: column-reverse;
+  display: -ms-grid;
+  display: grid;
+  grid-template-areas: "d" "d" "d" "d" "d" "h";
   padding: 35px 25px;
   width: 100%;
   min-height: -webkit-fit-content;
@@ -1599,6 +1610,10 @@ button,
 }
 
 .tours__item div {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 5;
+  -ms-grid-column: 1;
+  grid-area: d;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1622,6 +1637,7 @@ button,
   -ms-flex-direction: column;
   flex-direction: column;
   background-color: #011C40;
+  grid-template-areas: "h" "d" "d" "d" "d" "d";
 }
 
 .tours__item.focus-visible:focus picture {
@@ -1629,6 +1645,9 @@ button,
 }
 
 .tours__item h3 {
+  -ms-grid-row: 6;
+  -ms-grid-column: 1;
+  grid-area: h;
   margin: 0;
   padding: 0;
   max-width: 200px;
@@ -1999,6 +2018,16 @@ a .footer__logo.focus-visible:focus {
     line-height: 22px;
   }
 
+  .advantages__header {
+    font-size: 26px;
+    line-height: 39px;
+  }
+
+  .advantages__item h3 {
+    font-size: 18px;
+    line-height: 26px;
+  }
+
   .tours__list {
     -ms-grid-columns: (1fr)[2];
     grid-template-columns: repeat(2, 1fr);
@@ -2114,6 +2143,11 @@ a .footer__logo.focus-visible:focus {
     height: auto;
     -o-object-fit: cover;
     object-fit: cover;
+  }
+
+  .advantages__header {
+    font-size: 24px;
+    line-height: 36px;
   }
 
   .advantages__list {
@@ -2310,10 +2344,22 @@ a .footer__logo.focus-visible:focus {
     -ms-flex-direction: column;
     flex-direction: column;
     background-color: #011C40;
+    grid-template-areas: "h" "d" "d" "d" "d" "d";
   }
 
   .tours__item:hover:not(.focus-visible) picture {
     display: none;
+  }
+
+  .tours__item:hover:not(.focus-visible) > div {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 5;
+    -ms-grid-column: 1;
+  }
+
+  .tours__item:hover:not(.focus-visible) > h3 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
   }
 
   a .footer__logo:hover:not(.focus-visible) {
