@@ -36,42 +36,46 @@
 .tours__item {
   position: relative;
   z-index: $z-index-regular;
+  background-color: $color-default-black;
   display: grid;
-  grid-template-areas: "t-button" "t-info" "t-header";
-  grid-template-columns: auto;
-  grid-template-rows: 15% 72% 13%;
-
-  padding: 35px 25px;
-
-  width: 100%;
-
-  img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-
-    z-index: $z-index-regular;
-  }
-
+  grid-template-rows: repeat(3, min-content);
+  justify-items: stretch;
   @include hover-focus {
-    background-color: $color-default-black;
-    grid-template-areas: "t-header" "t-info" "t-button";
-
     picture {
-      display: none;
+      opacity: 0;
+    }
+
+    h3 {
+      grid-row: 1/2;
+      margin: 35px 0 0 25px;
+      padding: 12px 0;
+    }
+
+    a {
+      grid-row: 3/-1;
+      margin: 0 0 20px 25px;
     }
   }
 }
 
-.tours__item h3 {
-  grid-area: t-header;
-  margin: 0 0 30px;
-  padding: 0;
+.tours__item picture {
+  position: absolute;
+  grid-row: 1/ -1;
+  top: 0;
+  left: 0;
+  width: 260px;
+  height: auto;
+  object-fit: cover;
 
-  max-width: 200px;
+  opacity: 0;
+
+  z-index: $z-index-regular;
+}
+
+.tours__item h3 {
+  grid-row: 3/-1;
+  margin: 0 0 12px 25px;
+  padding: 16px 0;
 
   font-family: "Montseratt", "Arial", sans-serif;
   font-weight: 500;
@@ -80,6 +84,17 @@
 
   color: $color-default-white;
   z-index: $z-index-first-plan;
+}
+
+.tours__item a {
+  grid-row: 1/2;
+  width: 80%;
+  margin: 35px 0 0 25px;
+}
+
+.tours__item dl {
+  grid-row: 2/3;
+  margin: 0 0 0 25px;
 }
 
 .tours__item dt {
@@ -94,20 +109,12 @@
 }
 
 .tours__item dd {
-  margin: 0 0 20px 0;
-  padding: 0;
+  margin: 0;
+  padding-bottom: 10px;
 
   font-family: "Montseratt", "Arial", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
   color: $color-default-white;
-}
-
-.tours__item dl {
-  grid-area: t-info;
-}
-
-.tours__item a {
-  grid-area: t-button;
 }

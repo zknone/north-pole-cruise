@@ -1621,50 +1621,71 @@ button,
 .tours__item {
   position: relative;
   z-index: 2;
+  background-color: #011c40;
   display: -ms-grid;
   display: grid;
-  grid-template-areas: "t-button" "t-info" "t-header";
-  -ms-grid-columns: auto;
-  grid-template-columns: auto;
-  -ms-grid-rows: 15% 72% 13%;
-  grid-template-rows: 15% 72% 13%;
-  padding: 35px 25px;
-  width: 100%;
-}
-
-.tours__item img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-  object-fit: cover;
-  z-index: 2;
-}
-
-.tours__item.focus-visible:focus {
-  background-color: #011c40;
-  grid-template-areas: "t-header" "t-info" "t-button";
+  -ms-grid-rows: (-webkit-min-content)[3];
+  -ms-grid-rows: (min-content)[3];
+  grid-template-rows: repeat(3, -webkit-min-content);
+  grid-template-rows: repeat(3, min-content);
+  justify-items: stretch;
 }
 
 .tours__item.focus-visible:focus picture {
-  display: none;
+  opacity: 0;
+}
+
+.tours__item.focus-visible:focus h3 {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+  margin: 35px 0 0 25px;
+  padding: 12px 0;
+}
+
+.tours__item.focus-visible:focus a {
+  grid-row: 3/-1;
+  margin: 0 0 20px 25px;
+}
+
+.tours__item picture {
+  position: absolute;
+  grid-row: 1/-1;
+  top: 0;
+  left: 0;
+  width: 260px;
+  height: auto;
+  -o-object-fit: cover;
+  object-fit: cover;
+  opacity: 0;
+  z-index: 2;
 }
 
 .tours__item h3 {
-  -ms-grid-row: 3;
-  -ms-grid-column: 1;
-  grid-area: t-header;
-  margin: 0 0 30px;
-  padding: 0;
-  max-width: 200px;
+  grid-row: 3/-1;
+  margin: 0 0 12px 25px;
+  padding: 16px 0;
   font-family: "Montseratt", "Arial", sans-serif;
   font-weight: 500;
   font-size: 18px;
   line-height: 27px;
   color: #f9fbfd;
   z-index: 3;
+}
+
+.tours__item a {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+  width: 80%;
+  margin: 35px 0 0 25px;
+}
+
+.tours__item dl {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+  margin: 0 0 0 25px;
 }
 
 .tours__item dt {
@@ -1678,25 +1699,13 @@ button,
 }
 
 .tours__item dd {
-  margin: 0 0 20px 0;
-  padding: 0;
+  margin: 0;
+  padding-bottom: 10px;
   font-family: "Montseratt", "Arial", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
   color: #f9fbfd;
-}
-
-.tours__item dl {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-  grid-area: t-info;
-}
-
-.tours__item a {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  grid-area: t-button;
 }
 
 .footer {
@@ -2365,28 +2374,21 @@ a .footer__logo.focus-visible:focus {
     transition: opacity 300ms ease-in;
   }
 
-  .tours__item:hover:not(.focus-visible) {
-    background-color: #011c40;
-    grid-template-areas: "t-header" "t-info" "t-button";
-  }
-
   .tours__item:hover:not(.focus-visible) picture {
-    display: none;
+    opacity: 0;
   }
 
-  .tours__item:hover:not(.focus-visible) > h3 {
+  .tours__item:hover:not(.focus-visible) h3 {
     -ms-grid-row: 1;
-    -ms-grid-column: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1/2;
+    margin: 35px 0 0 25px;
+    padding: 12px 0;
   }
 
-  .tours__item:hover:not(.focus-visible) > dl {
-    -ms-grid-row: 2;
-    -ms-grid-column: 1;
-  }
-
-  .tours__item:hover:not(.focus-visible) > a {
-    -ms-grid-row: 3;
-    -ms-grid-column: 1;
+  .tours__item:hover:not(.focus-visible) a {
+    grid-row: 3/-1;
+    margin: 0 0 20px 25px;
   }
 
   a .footer__logo:hover:not(.focus-visible) {
