@@ -1683,7 +1683,7 @@ button,
   top: 0;
   left: 0;
   width: 260px;
-  height: auto;
+  height: 100%;
   -o-object-fit: cover;
   object-fit: cover;
   z-index: 1;
@@ -2044,14 +2044,6 @@ a .footer__logo.focus-visible:focus {
     -ms-grid-columns: (1fr)[3];
     grid-template-columns: repeat(3, 1fr);
   }
-
-  .tours__item {
-    max-width: 290px;
-  }
-
-  .tours__item picture {
-    width: 309px;
-  }
 }
 
 @media (max-width: 1023px) {
@@ -2103,6 +2095,10 @@ a .footer__logo.focus-visible:focus {
 
   .tours__item {
     max-width: 309px;
+  }
+
+  .tours__item picture {
+    width: 309px;
   }
 
   .form {
@@ -2270,10 +2266,6 @@ a .footer__logo.focus-visible:focus {
     max-width: 270px;
   }
 
-  .tours__item picture {
-    width: 270px;
-  }
-
   .footer__logo {
     margin: 40px 0 30px;
   }
@@ -2394,6 +2386,10 @@ a .footer__logo.focus-visible:focus {
 }
 
 @media (max-width: 374px) {
+  .tours__item picture {
+    width: 270px;
+  }
+
   .form {
     background: url("../img/background-form-mob.webp") no-repeat center, #2a5ea3;
     background-size: cover;

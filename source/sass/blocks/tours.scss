@@ -46,10 +46,6 @@
 
   max-width: 260px;
 
-  @include vp-1439() {
-    max-width: 290px;
-  }
-
   @include vp-1023() {
     max-width: 309px;
   }
@@ -111,16 +107,16 @@
   top: 0;
   left: 0;
   width: 260px;
-  height: auto;
+  height: 100%;
   object-fit: cover;
 
   z-index: $z-index-background;
 
-  @include vp-1439() {
+  @include vp-1023() {
     width: 309px;
   }
 
-  @include vp-767() {
+  @include vp-374() {
     width: 270px;
   }
 }
