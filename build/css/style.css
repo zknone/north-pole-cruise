@@ -2044,6 +2044,14 @@ a .footer__logo.focus-visible:focus {
     -ms-grid-columns: (1fr)[3];
     grid-template-columns: repeat(3, 1fr);
   }
+
+  .tours__item {
+    max-width: 309px;
+  }
+
+  .tours__item picture {
+    width: 309px;
+  }
 }
 
 @media (max-width: 1023px) {
@@ -2091,14 +2099,6 @@ a .footer__logo.focus-visible:focus {
   .tours__list {
     -ms-grid-columns: (1fr)[2];
     grid-template-columns: repeat(2, 1fr);
-  }
-
-  .tours__item {
-    max-width: 309px;
-  }
-
-  .tours__item picture {
-    width: 309px;
   }
 
   .form {

@@ -46,7 +46,7 @@
 
   max-width: 260px;
 
-  @include vp-1023() {
+  @include vp-1439() {
     max-width: 309px;
   }
 
@@ -112,7 +112,7 @@
 
   z-index: $z-index-background;
 
-  @include vp-1023() {
+  @include vp-1439() {
     width: 309px;
   }
 
