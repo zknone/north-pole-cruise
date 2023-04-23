@@ -1624,10 +1624,10 @@ button,
   background-color: #011c40;
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: -webkit-min-content auto -webkit-min-content;
-  -ms-grid-rows: min-content auto min-content;
-  grid-template-rows: -webkit-min-content auto -webkit-min-content;
-  grid-template-rows: min-content auto min-content;
+  -ms-grid-rows: -webkit-min-content -webkit-min-content -webkit-min-content;
+  -ms-grid-rows: min-content min-content min-content;
+  grid-template-rows: -webkit-min-content -webkit-min-content -webkit-min-content;
+  grid-template-rows: min-content min-content min-content;
 }
 
 .tours__item.focus-visible:focus picture {
@@ -1639,7 +1639,6 @@ button,
   -ms-grid-row-span: 1;
   grid-row: 1/2;
   margin: 35px 0 0 25px;
-  padding: 12px 0;
   z-index: 3;
 }
 
@@ -1667,8 +1666,9 @@ button,
 
 .tours__item h3 {
   grid-row: 3/-1;
-  margin: 0 0 12px 25px;
-  padding: 22px 0 10px 0;
+  margin: 0 0 35px 25px;
+  padding: 0;
+  min-height: 40px;
   font-family: "Montseratt", "Arial", sans-serif;
   font-weight: 500;
   font-size: 18px;
@@ -1682,14 +1682,17 @@ button,
   -ms-grid-row-span: 1;
   grid-row: 1/2;
   width: 80%;
-  margin: 35px 0 0 25px;
+  margin: 25px 0 0 25px;
+  min-height: 40px;
 }
 
 .tours__item dl {
   -ms-grid-row: 2;
   -ms-grid-row-span: 1;
   grid-row: 2/3;
-  margin: 0 0 0 25px;
+  margin: 0 0 10px 25px;
+  max-height: 220px;
+  overflow-y: auto;
 }
 
 .tours__item dt {
@@ -2387,7 +2390,6 @@ a .footer__logo.focus-visible:focus {
     -ms-grid-row-span: 1;
     grid-row: 1/2;
     margin: 35px 0 0 25px;
-    padding: 12px 0;
     z-index: 3;
   }
 

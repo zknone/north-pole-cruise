@@ -38,7 +38,7 @@
   z-index: $z-index-regular;
   background-color: $color-default-black;
   display: grid;
-  grid-template-rows: min-content auto min-content;
+  grid-template-rows: min-content min-content min-content;
 
   @include hover-focus {
     picture {
@@ -48,7 +48,6 @@
     h3 {
       grid-row: 1/2;
       margin: 35px 0 0 25px;
-      padding: 12px 0;
       z-index: $z-index-first-plan;
     }
 
@@ -78,8 +77,10 @@
 
 .tours__item h3 {
   grid-row: 3/-1;
-  margin: 0 0 12px 25px;
-  padding: 22px 0 10px 0;
+  margin: 0 0 35px 25px;
+  padding: 0;
+
+  min-height: 40px;
 
   font-family: "Montseratt", "Arial", sans-serif;
   font-weight: 500;
@@ -93,12 +94,16 @@
 .tours__item a {
   grid-row: 1/2;
   width: 80%;
-  margin: 35px 0 0 25px;
+  margin: 25px 0 0 25px;
+  min-height: 40px;
 }
 
 .tours__item dl {
   grid-row: 2/3;
-  margin: 0 0 0 25px;
+  margin: 0 0 10px 25px;
+
+  max-height: 220px;
+  overflow-y: auto;
 }
 
 .tours__item dt {
