@@ -1624,11 +1624,10 @@ button,
   background-color: #011c40;
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: (-webkit-min-content)[3];
-  -ms-grid-rows: (min-content)[3];
-  grid-template-rows: repeat(3, -webkit-min-content);
-  grid-template-rows: repeat(3, min-content);
-  justify-items: stretch;
+  -ms-grid-rows: -webkit-min-content auto -webkit-min-content;
+  -ms-grid-rows: min-content auto min-content;
+  grid-template-rows: -webkit-min-content auto -webkit-min-content;
+  grid-template-rows: min-content auto min-content;
 }
 
 .tours__item.focus-visible:focus picture {
@@ -1641,11 +1640,17 @@ button,
   grid-row: 1/2;
   margin: 35px 0 0 25px;
   padding: 12px 0;
+  z-index: 3;
 }
 
 .tours__item.focus-visible:focus a {
   grid-row: 3/-1;
   margin: 0 0 20px 25px;
+  z-index: 3;
+}
+
+.tours__item.focus-visible:focus dl {
+  z-index: 3;
 }
 
 .tours__item picture {
@@ -1657,14 +1662,13 @@ button,
   height: auto;
   -o-object-fit: cover;
   object-fit: cover;
-  opacity: 0;
-  z-index: 2;
+  z-index: 1;
 }
 
 .tours__item h3 {
   grid-row: 3/-1;
   margin: 0 0 12px 25px;
-  padding: 16px 0;
+  padding: 22px 0 10px 0;
   font-family: "Montseratt", "Arial", sans-serif;
   font-weight: 500;
   font-size: 18px;
@@ -2384,11 +2388,17 @@ a .footer__logo.focus-visible:focus {
     grid-row: 1/2;
     margin: 35px 0 0 25px;
     padding: 12px 0;
+    z-index: 3;
   }
 
   .tours__item:hover:not(.focus-visible) a {
     grid-row: 3/-1;
     margin: 0 0 20px 25px;
+    z-index: 3;
+  }
+
+  .tours__item:hover:not(.focus-visible) dl {
+    z-index: 3;
   }
 
   a .footer__logo:hover:not(.focus-visible) {
