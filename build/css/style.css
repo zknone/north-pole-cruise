@@ -1325,7 +1325,7 @@ button,
   min-height: 110px;
 }
 
-.navigation__container {
+.navigation__overlay {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1335,9 +1335,15 @@ button,
   position: relative;
 }
 
+.navigation__logo-link {
+  color: #f9fbfd;
+}
+
 .navigation__logo {
   display: block;
   margin: 38px 0;
+  width: 70px;
+  height: 38px;
 }
 
 .navigation__logo.focus-visible:focus {
@@ -1381,7 +1387,16 @@ button,
 }
 
 .navigation__button {
+  grid-area: eks;
+  cursor: pointer;
   display: none;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin: 25px 0;
 }
 
 .navigation__button-element {
@@ -1411,13 +1426,45 @@ button,
   background-color: #f9fbfd;
 }
 
-.navigation__button.is-activate .navigation__button-element {
+.navigation__overlay.is-activate .navigation__list {
+  grid-area: menu;
+  display: block;
+  max-width: 100%;
+  row-gap: 10px;
+  padding: 0 15px;
+}
+
+.navigation__overlay.is-activate .navigation__item {
+  width: 100%;
+}
+
+.navigation__overlay.is-activate .navigation__item-link {
+  color: #011c40;
+  padding: 10px;
+}
+
+.navigation__overlay.is-activate .navigation__logo-link {
+  grid-area: logo;
+  color: #011c40;
+  margin-left: 15px;
+  width: 42px;
+  height: 22px;
+}
+
+.navigation__overlay.is-activate .navigation__button {
+  cursor: pointer;
+  width: 42px;
+  height: 42px;
+  margin-right: 15px;
+}
+
+.navigation__overlay.is-activate .navigation__button-element {
   width: 24px;
   height: 2px;
   background-color: transparent;
 }
 
-.navigation__button.is-activate .navigation__button-element::before {
+.navigation__overlay.is-activate .navigation__button-element::before {
   content: "";
   position: relative;
   display: block;
@@ -1425,13 +1472,13 @@ button,
   left: 0;
   width: 24px;
   height: 2px;
-  background-color: #f9fbfd;
+  background-color: #011c40;
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
 }
 
-.navigation__button.is-activate .navigation__button-element::after {
+.navigation__overlay.is-activate .navigation__button-element::after {
   content: "";
   position: relative;
   display: block;
@@ -1439,7 +1486,7 @@ button,
   left: 0;
   width: 24px;
   height: 2px;
-  background-color: #f9fbfd;
+  background-color: #011c40;
   -webkit-transform: rotate(-45deg);
   -ms-transform: rotate(-45deg);
   transform: rotate(-45deg);
@@ -2065,6 +2112,11 @@ a .footer__logo.focus-visible:focus {
     left: 0;
   }
 
+  .navigation__logo {
+    width: 28px;
+    height: 20px;
+  }
+
   .navigation__item-link {
     font-size: 14px;
     line-height: 17px;
@@ -2172,6 +2224,8 @@ a .footer__logo.focus-visible:focus {
 
   .navigation__logo {
     margin: 20px 0;
+    width: 42px;
+    height: 22px;
   }
 
   .navigation__list {
@@ -2184,6 +2238,38 @@ a .footer__logo.focus-visible:focus {
     font-size: 0;
     background-color: transparent;
     border: none;
+  }
+
+  .navigation__overlay.is-activate {
+    position: absolute;
+    margin-left: 30px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: -webkit-min-content auto;
+    -ms-grid-columns: min-content auto;
+    grid-template-columns: -webkit-min-content auto;
+    grid-template-columns: min-content auto;
+    grid-template-areas: "logo eks" "menu menu";
+    width: calc(100% - 45px);
+    height: 100vh;
+    z-index: 1;
+    background-color: #f9fbfd;
+  }
+
+  .navigation__button {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+  }
+
+  .navigation__overlay.is-activate .navigation__list {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+  }
+
+  .navigation__overlay.is-activate .navigation__logo-link {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
   }
 
   .hero {

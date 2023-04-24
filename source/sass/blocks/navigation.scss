@@ -9,16 +9,21 @@
   min-height: 110px;
 }
 
-.navigation__container {
+.navigation__overlay {
   display: flex;
   justify-content: space-between;
   position: relative;
 }
 
+.navigation__logo-link {
+  color: $color-default-white;
+}
+
 .navigation__logo {
   display: block;
-
   margin: 38px 0;
+  width: 70px;
+  height: 38px;
 
   @include hover-focus {
     text-decoration: underline;
@@ -26,8 +31,15 @@
     transition: opacity 300ms ease-in;
   }
 
+  @include vp-1023() {
+    width: 28px;
+    height: 20px;
+  }
+
   @include vp-767() {
     margin: 20px 0;
+    width: 42px;
+    height: 22px;
   }
 }
 
@@ -69,7 +81,12 @@
 }
 
 .navigation__button {
+  grid-area: eks;
+  cursor: pointer;
   display: none;
+  width: fit-content;
+  height: fit-content;
+  margin: 25px 0;
 
   @include vp-767 {
     display: block;
@@ -109,7 +126,54 @@
   }
 }
 
-.navigation__button.is-activate {
+.navigation__overlay.is-activate {
+
+  @include vp-767() {
+    position: absolute;
+
+    margin-left: 30px;
+    display: grid;
+    grid-template-columns: min-content auto;
+    grid-template-areas: "logo eks" "menu menu";
+    width: calc(100% - 45px);
+    height: 100vh;
+    z-index: $z-index-background;
+    background-color: $color-default-white;
+  }
+
+  .navigation__list {
+    grid-area: menu;
+    display: block;
+    max-width: 100%;
+    row-gap: 10px;
+
+    padding: 0 15px;
+  }
+
+  .navigation__item {
+    width: 100%;
+  }
+
+  .navigation__item-link {
+    color: $color-default-black;
+    padding: 10px;
+  }
+
+  .navigation__logo-link {
+    grid-area: logo;
+    color: $color-default-black;
+    margin-left: 15px;
+    width: 42px;
+    height: 22px
+  }
+
+  .navigation__button {
+    cursor: pointer;
+    width: 42px;
+    height: 42px;
+    margin-right: 15px;
+  }
+
   .navigation__button-element {
     width: 24px;
     height: 2px;
@@ -124,7 +188,7 @@
 
       width: 24px;
       height: 2px;
-      background-color: $color-default-white;
+      background-color: $color-default-black;
 
       transform: rotate(45deg);
     }
@@ -138,7 +202,7 @@
 
       width: 24px;
       height: 2px;
-      background-color: $color-default-white;
+      background-color: $color-default-black;
       transform: rotate(-45deg);
     }
   }

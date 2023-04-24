@@ -1,6 +1,7 @@
 import { iosVhFix } from "./utils/ios-vh-fix";
 import { initModals } from "./modules/modals/init-modals";
 import { Form } from "./modules/form-validate/form";
+import { onClickMenu } from "./modules/switch-class";
 
 // ---------------------------------
 
@@ -21,6 +22,11 @@ window.addEventListener("DOMContentLoaded", () => {
     window.form = form;
     form.init();
 
+    const menuButton = document.querySelector("[data-button]");
+    console.log(menuButton);
+
+    menuButton.addEventListener("click", onClickMenu);
+
     const map = L.map("map").setView([59.9387165, 30.3230474], 13);
     L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
       maxZoom: 19,
@@ -32,7 +38,7 @@ window.addEventListener("DOMContentLoaded", () => {
       iconSize: [38, 50],
     });
 
-    L.marker([59.9387165, 30.3230474], { icon: icon }).addTo(map).openPopup();
+    L.marker([59.9387165, 30.3230474], { icon }).addTo(map).openPopup();
   });
 });
 
