@@ -4,6 +4,20 @@
   }
 }
 
+@mixin retina-vp-767 {
+  @media (min-resolution: $retina-dpi) and (max-width: ($vp-768 - 1px)),
+    (min-resolution: $retina-dppx) and (max-width: ($vp-768 - 1px)) {
+    @content;
+  }
+}
+
+@mixin retina-vp-1023 {
+  @media (min-resolution: $retina-dpi) and (max-width: ($vp-1024 - 1px)),
+    (min-resolution: $retina-dppx) and (max-width: ($vp-1024 - 1px)) {
+    @content;
+  }
+}
+
 @mixin hover {
   @media (hover: hover) {
     &:hover:not(.focus-visible) {
