@@ -2290,7 +2290,6 @@ button,
     grid-template-areas: "logo eks" "menu menu";
     width: calc(100% - 45px);
     height: 100vh;
-    z-index: 1;
     background-color: #f9fbfd;
   }
 

@@ -19,6 +19,7 @@
 
 .footer__logo-link {
   color: $color-default-white;
+
   @include hover-focus {
     opacity: 0.8;
     transition: opacity 300ms ease-in;
