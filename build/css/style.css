@@ -1833,7 +1833,11 @@ button,
   margin: 50px 40px 50px 0;
 }
 
-a .footer__logo.focus-visible:focus {
+.footer__logo-link {
+  color: #f9fbfd;
+}
+
+.footer__logo-link.focus-visible:focus {
   opacity: 0.8;
   -webkit-transition: opacity 300ms ease-in;
   -o-transition: opacity 300ms ease-in;
@@ -2592,7 +2596,7 @@ a .footer__logo.focus-visible:focus {
     z-index: 3;
   }
 
-  a .footer__logo:hover:not(.focus-visible) {
+  .footer__logo-link:hover:not(.focus-visible) {
     opacity: 0.8;
     -webkit-transition: opacity 300ms ease-in;
     -o-transition: opacity 300ms ease-in;
