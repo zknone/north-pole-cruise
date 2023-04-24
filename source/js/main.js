@@ -33,7 +33,7 @@ window.addEventListener('DOMContentLoaded', () => {
         '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
     }).addTo(map);
     const icon = L.icon({
-      iconUrl: '../img/map-pin.svg',
+      iconUrl: './img/map-pin.svg',
       iconSize: [38, 50],
     });
 
