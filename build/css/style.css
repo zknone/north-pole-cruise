@@ -1411,13 +1411,13 @@ button,
   background-color: #f9fbfd;
 }
 
-.navigation__button-element.is-activate {
+.navigation__button.is-activate .navigation__button-element {
   width: 24px;
   height: 2px;
   background-color: transparent;
 }
 
-.navigation__button-element.is-activate::before {
+.navigation__button.is-activate .navigation__button-element::before {
   content: "";
   position: relative;
   display: block;
@@ -1431,7 +1431,7 @@ button,
   transform: rotate(45deg);
 }
 
-.navigation__button-element.is-activate::after {
+.navigation__button.is-activate .navigation__button-element::after {
   content: "";
   position: relative;
   display: block;
@@ -2121,6 +2121,8 @@ a .footer__logo.focus-visible:focus {
     -ms-flex-item-align: center;
     -ms-grid-row-align: center;
     align-self: center;
+    font-size: 34px;
+    line-height: 51px;
   }
 
   .form__description {
@@ -2166,6 +2168,10 @@ a .footer__logo.focus-visible:focus {
 
   .modal--fit-content .modal__content {
     width: 100%;
+  }
+
+  .navigation__logo {
+    margin: 20px 0;
   }
 
   .navigation__list {
@@ -2302,6 +2308,15 @@ a .footer__logo.focus-visible:focus {
     margin: 0 auto 30px 0;
   }
 
+  .form__header {
+    font-size: 24px;
+    line-height: 31px;
+  }
+
+  .form__form {
+    padding: 40px 30px;
+  }
+
   .map {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
@@ -2394,6 +2409,7 @@ a .footer__logo.focus-visible:focus {
   .form {
     background: url("../img/background-form-mob.webp") no-repeat center, #2a5ea3;
     background-size: cover;
+    padding: 0;
   }
 }
 

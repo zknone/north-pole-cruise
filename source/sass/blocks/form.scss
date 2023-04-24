@@ -17,6 +17,7 @@
     background: url("../img/background-form-mob.webp") no-repeat center,
       $color-background-plug;
     background-size: cover;
+    padding: 0;
   }
 
   div {
@@ -54,6 +55,13 @@
 
   @include vp-1023() {
     align-self: center;
+    font-size: 34px;
+    line-height: 51px;
+  }
+
+  @include vp-767() {
+    font-size: 24px;
+    line-height: 31px;
   }
 }
 
@@ -82,6 +90,10 @@
 
   padding: 50px;
   background-color: $color-default-black;
+
+  @include vp-767() {
+    padding: 40px 30px;
+  }
 }
 
 .form__form label {
