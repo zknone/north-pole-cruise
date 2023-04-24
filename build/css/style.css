@@ -2238,6 +2238,18 @@ button,
   }
 }
 
+@media (-webkit-min-device-pixel-ratio: 1.5) and (max-width: 1023px), (-o-min-device-pixel-ratio: 3/2) and (max-width: 1023px), (min-resolution: 144dpi) and (max-width: 1023px), (min-resolution: 1.5dppx) and (max-width: 1023px) {
+  .hero {
+    background: url("../img/background-intro-tab@2x.webp") no-repeat center, #2a5ea3;
+    background-size: cover;
+  }
+
+  .form {
+    background: url("../img/background-form-tab@2x.webp") no-repeat center, #2a5ea3;
+    background-size: cover;
+  }
+}
+
 @media (max-width: 767px) {
   .container {
     padding-right: 15px;
@@ -2528,9 +2540,24 @@ button,
   }
 }
 
+@media (-webkit-min-device-pixel-ratio: 1.5) and (max-width: 767px), (-o-min-device-pixel-ratio: 3/2) and (max-width: 767px), (min-resolution: 144dpi) and (max-width: 767px), (min-resolution: 1.5dppx) and (max-width: 767px) {
+  .hero {
+    background: url("../img/background-intro-mob@2x.webp") no-repeat center, #2a5ea3;
+    background-size: cover;
+  }
+}
+
 @media (max-width: 374px) {
   .form {
     background: url("../img/background-form-mob.webp") no-repeat center, #2a5ea3;
+    background-size: cover;
+    padding: 0;
+  }
+}
+
+@media (-webkit-min-device-pixel-ratio: 1.5) and (max-width: 374px), (-o-min-device-pixel-ratio: 3/2) and (max-width: 374px), (min-resolution: 144dpi) and (max-width: 374px), (min-resolution: 1.5dppx) and (max-width: 374px) {
+  .form {
+    background: url("../img/background-form-mob@2x.webp") no-repeat center, #2a5ea3;
     background-size: cover;
     padding: 0;
   }
@@ -2619,5 +2646,22 @@ button,
 
   .form__form input:hover:not(.focus-visible) {
     background-color: #f0f2f4;
+  }
+}
+
+@media (-webkit-min-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+  .hero {
+    background: url("../img/background-intro-desk@2x.webp") no-repeat center, #2a5ea3;
+    background-size: cover;
+  }
+
+  .advantages {
+    background: url("../img/advantages-background@2x.webp") no-repeat center, #a6d2fe;
+    background-size: cover;
+  }
+
+  .form {
+    background: url("../img/background-form-desk@2x.webp") no-repeat center, #2a5ea3;
+    background-size: cover;
   }
 }

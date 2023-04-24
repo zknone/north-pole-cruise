@@ -11,14 +11,32 @@
     $color-background-plug;
   background-size: cover;
 
+  @include retina() {
+    background: url("../img/background-intro-desk@2x.webp") no-repeat center,
+      $color-background-plug;
+    background-size: cover;
+  }
+
   @include vp-1023() {
     background: url("../img/background-intro-tab.webp") no-repeat center,
       $color-background-plug;
     background-size: cover;
   }
 
+  @include retina-vp-1023() {
+    background: url("../img/background-intro-tab@2x.webp") no-repeat center,
+      $color-background-plug;
+    background-size: cover;
+  }
+
   @include vp-767() {
     background: url("../img/background-intro-mob.webp") no-repeat center,
+      $color-background-plug;
+    background-size: cover;
+  }
+
+  @include retina-vp-767() {
+    background: url("../img/background-intro-mob@2x.webp") no-repeat center,
       $color-background-plug;
     background-size: cover;
   }

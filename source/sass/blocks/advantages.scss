@@ -6,6 +6,12 @@
   background: url("../img/advantages-background.webp") no-repeat center,
     $color-background-plug-light;
   background-size: cover;
+
+  @include retina {
+    background: url("../img/advantages-background@2x.webp") no-repeat center,
+      $color-background-plug-light;
+    background-size: cover;
+  }
 }
 
 .advantages__header {
