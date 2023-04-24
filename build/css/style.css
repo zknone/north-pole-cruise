@@ -1719,7 +1719,8 @@ button,
   -ms-grid-row-span: 1;
   grid-row: 2/3;
   margin: 0 25px 13px 25px;
-  max-height: 220px;
+  min-width: 218px;
+  height: 220px;
   overflow-y: auto;
 }
 
@@ -2266,6 +2267,10 @@ a .footer__logo.focus-visible:focus {
     max-width: 270px;
   }
 
+  .tours__item picture {
+    width: 270px;
+  }
+
   .footer__logo {
     margin: 40px 0 30px;
   }
@@ -2386,10 +2391,6 @@ a .footer__logo.focus-visible:focus {
 }
 
 @media (max-width: 374px) {
-  .tours__item picture {
-    width: 270px;
-  }
-
   .form {
     background: url("../img/background-form-mob.webp") no-repeat center, #2a5ea3;
     background-size: cover;

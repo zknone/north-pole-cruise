@@ -116,7 +116,7 @@
     width: 309px;
   }
 
-  @include vp-374() {
+  @include vp-767() {
     width: 270px;
   }
 }
@@ -152,7 +152,8 @@
   grid-row: 2/3;
   margin: 0 25px 13px 25px;
 
-  max-height: 220px;
+  min-width: 218px;
+  height: 220px;
   overflow-y: auto;
 }
 
