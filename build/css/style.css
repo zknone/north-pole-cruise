@@ -2309,7 +2309,7 @@ button,
   padding-bottom: 280px;
 }
 
-.hero__header {
+.hero h1 {
   margin: 0 0 30px 90px;
   padding: 0;
   font-style: bold;
@@ -2321,7 +2321,7 @@ button,
   text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.hero__description {
+.hero p {
   margin: 0 0 0 90px;
   padding: 0;
   font-family: "Montseratt", "Arial", sans-serif;
@@ -2387,7 +2387,7 @@ button,
   background-size: cover;
 }
 
-.advantages__header {
+.advantages h2 {
   margin: 0 0 60px 0;
   padding: 0;
   font-family: "Montseratt", "Arial", sans-serif;
@@ -2446,7 +2446,7 @@ button,
   padding-bottom: 120px;
 }
 
-.tours__header {
+.tours h2 {
   margin: 0 0 60px 0;
   padding: 0;
   text-align: center;
@@ -2714,7 +2714,7 @@ button,
   row-gap: 30px;
 }
 
-.form__header {
+.form h2 {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: fh;
@@ -2728,7 +2728,7 @@ button,
   color: #011c40;
 }
 
-.form__description {
+.form p {
   -ms-grid-row: 3;
   -ms-grid-column: 1;
   grid-area: ft;
@@ -2817,7 +2817,7 @@ button,
   margin: auto 0;
 }
 
-.map__header {
+.map h3 {
   margin: 0 0 45px;
   padding: 0;
   font-family: "Montseratt", "Arial", sans-serif;
@@ -2934,19 +2934,19 @@ button,
     background-size: cover;
   }
 
-  .hero__header {
+  .hero h1 {
     margin: 0 0 30px 0;
     font-size: 50px;
     line-height: 60px;
   }
 
-  .hero__description {
+  .hero p {
     margin: 0;
     font-size: 18px;
     line-height: 22px;
   }
 
-  .advantages__header {
+  .advantages h2 {
     font-size: 26px;
     line-height: 39px;
   }
@@ -2976,7 +2976,7 @@ button,
     flex-direction: column;
   }
 
-  .form__header {
+  .form h2 {
     -ms-flex-item-align: center;
     -ms-grid-row-align: center;
     align-self: center;
@@ -2984,7 +2984,7 @@ button,
     line-height: 51px;
   }
 
-  .form__description {
+  .form p {
     -ms-flex-item-align: center;
     -ms-grid-row-align: center;
     align-self: center;
@@ -3005,7 +3005,7 @@ button,
     max-width: 324px;
   }
 
-  .map__header {
+  .map h3 {
     margin: 0 0 40px;
   }
 }
@@ -3103,12 +3103,12 @@ button,
     padding-bottom: 200px;
   }
 
-  .hero__header {
+  .hero h1 {
     font-size: 36px;
     line-height: 45px;
   }
 
-  .hero__description {
+  .hero p {
     font-size: 16px;
     line-height: 22px;
   }
@@ -3140,7 +3140,7 @@ button,
     object-fit: cover;
   }
 
-  .advantages__header {
+  .advantages h2 {
     font-size: 24px;
     line-height: 36px;
   }
@@ -3215,7 +3215,7 @@ button,
     margin: 0 auto 30px 0;
   }
 
-  .form__header {
+  .form h2 {
     font-size: 24px;
     line-height: 31px;
   }
