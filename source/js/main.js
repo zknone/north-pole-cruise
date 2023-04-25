@@ -2,7 +2,6 @@ import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
 import {onClickMenu} from './modules/switch-class';
-import {L} from './vendor/leaflet';
 
 // ---------------------------------
 
@@ -26,7 +25,7 @@ window.addEventListener('DOMContentLoaded', () => {
     const menuButton = document.querySelector('[data-button]');
 
     menuButton.addEventListener('click', onClickMenu);
-
+    const L = window.L;
     const map = L.map('map').setView([59.9387165, 30.3230474], 13);
     L.tileLayer('http://{s}.google.com/vt?lyrs=m&x={x}&y={y}&z={z}', {
       maxZoom: 20,
