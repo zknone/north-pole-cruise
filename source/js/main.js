@@ -1,11 +1,12 @@
-import { iosVhFix } from "./utils/ios-vh-fix";
-import { initModals } from "./modules/modals/init-modals";
-import { Form } from "./modules/form-validate/form";
-import { onClickMenu } from "./modules/switch-class";
+import {iosVhFix} from './utils/ios-vh-fix';
+import {initModals} from './modules/modals/init-modals';
+import {Form} from './modules/form-validate/form';
+import {onClickMenu} from './modules/switch-class';
+import {L} from './vendor/leaflet';
 
 // ---------------------------------
 
-window.addEventListener("DOMContentLoaded", () => {
+window.addEventListener('DOMContentLoaded', () => {
   // Utils
   // ---------------------------------
 
@@ -16,30 +17,30 @@ window.addEventListener("DOMContentLoaded", () => {
 
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
   // в load следует добавить скрипты, не участвующие в работе первого экрана
-  window.addEventListener("load", () => {
+  window.addEventListener('load', () => {
     initModals();
     const form = new Form();
     window.form = form;
     form.init();
 
-    const menuButton = document.querySelector("[data-button]");
+    const menuButton = document.querySelector('[data-button]');
 
-    menuButton.addEventListener("click", onClickMenu);
+    menuButton.addEventListener('click', onClickMenu);
 
-    const map = L.map("map").setView([59.9387165, 30.3230474], 13);
-    L.tileLayer("http://{s}.google.com/vt?lyrs=m&x={x}&y={y}&z={z}", {
+    const map = L.map('map').setView([59.9387165, 30.3230474], 13);
+    L.tileLayer('http://{s}.google.com/vt?lyrs=m&x={x}&y={y}&z={z}', {
       maxZoom: 20,
-      subdomains: ["mt0", "mt1", "mt2", "mt3"],
+      subdomains: ['mt0', 'mt1', 'mt2', 'mt3'],
       attribution:
         '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
     }).addTo(map);
 
     const icon = L.icon({
-      iconUrl: "./img/map-pin.svg",
+      iconUrl: './img/map-pin.svg',
       iconSize: [38, 50],
     });
 
-    L.marker([59.9387165, 30.3230474], { icon }).addTo(map).openPopup();
+    L.marker([59.9387165, 30.3230474], {icon}).addTo(map).openPopup();
   });
 });
 
