@@ -2499,10 +2499,10 @@ button,
   background-color: #011c40;
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: -webkit-min-content auto -webkit-min-content;
-  -ms-grid-rows: min-content auto min-content;
-  grid-template-rows: -webkit-min-content auto -webkit-min-content;
-  grid-template-rows: min-content auto min-content;
+  -ms-grid-rows: -webkit-min-content 220px -webkit-min-content;
+  -ms-grid-rows: min-content 220px min-content;
+  grid-template-rows: -webkit-min-content 220px -webkit-min-content;
+  grid-template-rows: min-content 220px min-content;
   width: 260px;
 }
 
@@ -2514,14 +2514,14 @@ button,
   -ms-grid-row: 1;
   -ms-grid-row-span: 1;
   grid-row: 1/2;
-  margin: 35px 25px 0 25px;
-  padding: 0 0 15px 0;
+  margin: 25px 25px 0 25px;
+  padding: 0 0 14px 0;
   z-index: 3;
 }
 
 .tours__item.focus-visible:focus a {
   grid-row: 3/-1;
-  margin: 0 25px 35px 25px;
+  margin: 26px 30px 35px 25px;
   z-index: 3;
 }
 
@@ -2537,14 +2537,14 @@ button,
   -ms-grid-row: 1;
   -ms-grid-row-span: 1;
   grid-row: 1/2;
-  margin: 35px 25px 0 25px;
+  margin: 25px 25px 0 25px;
   padding: 0 0 15px 0;
   z-index: 3;
 }
 
 .tours__item:focus-within a {
   grid-row: 3/-1;
-  margin: 0 25px 35px 25px;
+  margin: 26px 30px 35px 25px;
   z-index: 3;
 }
 
@@ -2566,8 +2566,8 @@ button,
 
 .tours__item h3 {
   grid-row: 3/-1;
-  margin: 0 25px 35px 25px;
-  padding: 15px 0 0 0;
+  margin: 0 30px 25px 25px;
+  padding: 50px 0 0 0;
   min-height: 40px;
   width: auto;
   vertical-align: bottom;
@@ -2586,7 +2586,7 @@ button,
   width: auto;
   max-width: 210px;
   overflow-wrap: break-word;
-  margin: 35px 25px 0 25px;
+  margin: 25px 25px 0 25px;
   padding: 10px;
   min-height: 40px;
 }
@@ -2595,7 +2595,7 @@ button,
   -ms-grid-row: 2;
   -ms-grid-row-span: 1;
   grid-row: 2/3;
-  margin: 0 25px 13px 25px;
+  margin: 0 25px 0 25px;
   min-width: 218px;
   height: 220px;
   overflow-y: auto;
@@ -2614,6 +2614,7 @@ button,
 .tours__item dd {
   margin: 0;
   padding-bottom: 10px;
+  display: block;
   font-family: "Montseratt", "Arial", sans-serif;
   font-weight: 400;
   font-size: 14px;
@@ -3435,14 +3436,14 @@ button,
     -ms-grid-row: 1;
     -ms-grid-row-span: 1;
     grid-row: 1/2;
-    margin: 35px 25px 0 25px;
-    padding: 0 0 15px 0;
+    margin: 25px 25px 0 25px;
+    padding: 0 0 14px 0;
     z-index: 3;
   }
 
   .tours__item:hover:not(.focus-visible) a {
     grid-row: 3/-1;
-    margin: 0 25px 35px 25px;
+    margin: 26px 30px 35px 25px;
     z-index: 3;
   }
 
