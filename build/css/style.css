@@ -1736,9 +1736,9 @@ button,
 .custom-toggle--checkbox .custom-toggle__icon {
   position: absolute;
   top: 0;
-  left: 10px;
-  width: 15px;
-  height: 15px;
+  left: 0;
+  width: 20px;
+  height: 20px;
   -webkit-transition: 0.3s ease;
   -o-transition: 0.3s ease;
   transition: 0.3s ease;
