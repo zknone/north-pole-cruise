@@ -2142,6 +2142,8 @@ button,
   margin: 0;
   padding: 0;
   max-width: 70%;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-column-gap: 33px;
   -moz-column-gap: 33px;
   column-gap: 33px;
@@ -2312,6 +2314,7 @@ button,
 .hero h1 {
   margin: 0 0 30px 90px;
   padding: 0;
+  max-width: 900px;
   font-style: bold;
   font-family: "Montseratt", "Arial", sans-serif;
   font-weight: 700;
@@ -2324,6 +2327,7 @@ button,
 .hero p {
   margin: 0 0 0 90px;
   padding: 0;
+  max-width: 900px;
   font-family: "Montseratt", "Arial", sans-serif;
   font-weight: 400;
   font-size: 20px;
@@ -2338,8 +2342,9 @@ button,
   grid-template-areas: "a c" "b c";
   -ms-grid-columns: 1fr 10% 1fr;
   grid-template-columns: repeat(2, 1fr);
-  -ms-grid-rows: 30% 60%;
-  grid-template-rows: 30% 60%;
+  -ms-grid-rows: (min-content)[2];
+  grid-template-rows: repeat(2, -webkit-min-content);
+  grid-template-rows: repeat(2, min-content);
   -webkit-column-gap: 10%;
   -moz-column-gap: 10%;
   column-gap: 10%;
@@ -2353,6 +2358,8 @@ button,
   margin: 0 0 40px 0;
   padding: 0;
   grid-area: a;
+  -ms-grid-row-align: end;
+  align-self: end;
   font-family: "Montseratt", "Arial", sans-serif;
   font-weight: 600;
   font-size: 28px;

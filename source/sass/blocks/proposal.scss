@@ -6,7 +6,7 @@
     "a c"
     "b c";
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 30% 60%;
+  grid-template-rows: repeat(2, min-content);
   column-gap: 10%;
 
   padding-top: 120px;
@@ -26,6 +26,7 @@
   padding: 0;
 
   grid-area: a;
+  align-self: end;
 
   font-family: "Montseratt", "Arial", sans-serif;
   font-weight: 600;
