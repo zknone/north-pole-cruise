@@ -2121,7 +2121,7 @@ button,
 
 .navigation__logo {
   display: block;
-  margin: 38px 0;
+  margin: 35px 0;
   width: 70px;
   height: 38px;
 }
@@ -2144,14 +2144,14 @@ button,
   max-width: 70%;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  -webkit-column-gap: 33px;
-  -moz-column-gap: 33px;
-  column-gap: 33px;
+  -webkit-column-gap: 34px;
+  -moz-column-gap: 34px;
+  column-gap: 34px;
 }
 
 .navigation__item-link {
   display: block;
-  padding: 48px 0;
+  padding: 45px 0;
   font-style: medium;
   font-family: "Montseratt", "Arial", sans-serif;
   font-weight: 500;
@@ -2307,12 +2307,12 @@ button,
 }
 
 .hero__container {
-  padding-top: 280px;
-  padding-bottom: 280px;
+  padding-top: 270px;
+  padding-bottom: 278px;
 }
 
 .hero h1 {
-  margin: 0 0 30px 90px;
+  margin: 0 0 12px 95px;
   padding: 0;
   max-width: 900px;
   font-style: bold;
@@ -2325,7 +2325,7 @@ button,
 }
 
 .hero p {
-  margin: 0 0 0 90px;
+  margin: 0 0 0 95px;
   padding: 0;
   max-width: 900px;
   font-family: "Montseratt", "Arial", sans-serif;
@@ -2339,15 +2339,14 @@ button,
 .proposal {
   display: -ms-grid;
   display: grid;
-  grid-template-areas: "a c" "b c";
-  -ms-grid-columns: 1fr 10% 1fr;
-  grid-template-columns: repeat(2, 1fr);
-  -ms-grid-rows: (min-content)[2];
-  grid-template-rows: repeat(2, -webkit-min-content);
-  grid-template-rows: repeat(2, min-content);
-  -webkit-column-gap: 10%;
-  -moz-column-gap: 10%;
-  column-gap: 10%;
+  grid-template-areas: "a c" ". c" "b c";
+  -ms-grid-columns: auto 85px 560px;
+  grid-template-columns: auto 560px;
+  -ms-grid-rows: auto 8% auto;
+  grid-template-rows: auto 8% auto;
+  -webkit-column-gap: 85px;
+  -moz-column-gap: 85px;
+  column-gap: 85px;
   padding-top: 120px;
   padding-bottom: 145px;
 }
@@ -2355,7 +2354,7 @@ button,
 .proposal h2 {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
-  margin: 0 0 40px 0;
+  margin: 0 0 5px 0;
   padding: 0;
   grid-area: a;
   -ms-grid-row-align: end;
@@ -2368,7 +2367,7 @@ button,
 }
 
 .proposal p {
-  -ms-grid-row: 2;
+  -ms-grid-row: 3;
   -ms-grid-column: 1;
   margin: 0;
   padding: 0;
@@ -2382,20 +2381,25 @@ button,
 
 .proposal picture {
   -ms-grid-row: 1;
-  -ms-grid-row-span: 2;
+  -ms-grid-row-span: 3;
   -ms-grid-column: 3;
   display: block;
   grid-area: c;
 }
 
+.proposal img {
+  width: 560px;
+  height: 301px;
+}
+
 .advantages {
-  padding: 120px 0;
+  padding: 110px 0;
   background: url("../img/advantages-background.webp") no-repeat center, #a6d2fe;
   background-size: cover;
 }
 
 .advantages h2 {
-  margin: 0 0 60px 0;
+  margin: 0 0 50px 0;
   padding: 0;
   font-family: "Montseratt", "Arial", sans-serif;
   font-weight: 600;
@@ -2410,9 +2414,9 @@ button,
   display: grid;
   -ms-grid-columns: (1fr)[3];
   grid-template-columns: repeat(3, 1fr);
-  -webkit-column-gap: 30px;
-  -moz-column-gap: 30px;
-  column-gap: 30px;
+  -webkit-column-gap: 35px;
+  -moz-column-gap: 35px;
+  column-gap: 35px;
   margin: 0;
   padding: 0;
   list-style-type: none;
@@ -2425,11 +2429,21 @@ button,
 }
 
 .advantages__item svg {
-  margin-bottom: 25px;
+  margin-bottom: 10px;
+}
+
+.advantages__item[data-advantages=all-inclusive] svg {
+  width: 35px;
+  height: 35px;
+}
+
+.advantages__item[data-advantages=tours] svg {
+  width: 45px;
+  height: 35px;
 }
 
 .advantages__item h3 {
-  margin: 0 0 20px 0;
+  margin: 0 0 10px 0;
   padding: 0;
   font-family: "Montseratt", "Arial", sans-serif;
   font-weight: 500;
@@ -2441,6 +2455,7 @@ button,
 .advantages__item p {
   margin: 0;
   padding: 0;
+  max-width: 295px;
   font-family: "Montseratt", "Arial", sans-serif;
   font-weight: 500;
   font-size: 14px;
@@ -2921,7 +2936,7 @@ button,
   }
 
   .tours__item a {
-    max-width: 239px;
+    max-width: 259px;
   }
 }
 
@@ -2969,6 +2984,11 @@ button,
     margin: 0;
     font-size: 18px;
     line-height: 22px;
+  }
+
+  .proposal img {
+    width: 324px;
+    height: 175px;
   }
 
   .advantages h2 {

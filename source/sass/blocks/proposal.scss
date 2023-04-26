@@ -4,10 +4,11 @@
   display: grid;
   grid-template-areas:
     "a c"
+    ". c"
     "b c";
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, min-content);
-  column-gap: 10%;
+  grid-template-columns: auto 560px;
+  grid-template-rows: auto 8% auto;
+  column-gap: 85px;
 
   padding-top: 120px;
   padding-bottom: 145px;
@@ -22,7 +23,7 @@
 }
 
 .proposal h2 {
-  margin: 0 0 40px 0;
+  margin: 0 0 5px 0;
   padding: 0;
 
   grid-area: a;
@@ -63,6 +64,14 @@
 }
 
 .proposal img {
+  width: 560px;
+  height: 301px;
+
+  @include vp-1023() {
+    width: 324px;
+    height: 175px;
+  }
+
   @include vp-767() {
     width: 100%;
     height: auto;
