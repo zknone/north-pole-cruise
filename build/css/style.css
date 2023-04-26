@@ -3147,6 +3147,9 @@ button,
 
   .proposal h2 {
     margin-bottom: 30px;
+    -ms-flex-item-align: start;
+    -ms-grid-row-align: start;
+    align-self: start;
   }
 
   .proposal p {
