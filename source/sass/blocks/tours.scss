@@ -144,9 +144,19 @@
 .tours__item a {
   grid-row: 1/2;
   width: auto;
+  max-width: 210px;
+  overflow-wrap: break-word;
   margin: 35px 25px 0 25px;
   padding: 10px;
   min-height: 40px;
+
+  @include vp-1439() {
+    max-width: 239px;
+  }
+
+  @include vp-767() {
+    max-width: 220px;
+  }
 }
 
 .tours__item dl {
