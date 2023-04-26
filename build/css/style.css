@@ -2723,7 +2723,7 @@ button,
 
 .form div {
   -ms-grid-row: 1;
-  -ms-grid-row-span: 3;
+  -ms-grid-row-span: 2;
   -ms-grid-column: 3;
   grid-area: fdiv;
 }
@@ -2733,19 +2733,17 @@ button,
   display: grid;
   -ms-grid-columns: 50% 10% 40%;
   grid-template-columns: 50% 40%;
-  -ms-grid-rows: auto 30px auto;
   grid-template-areas: "fh fdiv" "ft fdiv";
   -webkit-column-gap: 10%;
   -moz-column-gap: 10%;
   column-gap: 10%;
-  row-gap: 30px;
 }
 
 .form h2 {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: fh;
-  margin: 0;
+  margin: 0 0 0 60px;
   padding: 0;
   align-self: flex-end;
   font-family: "Montseratt", "Arial", sans-serif;
@@ -2756,10 +2754,10 @@ button,
 }
 
 .form p {
-  -ms-grid-row: 3;
+  -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: ft;
-  margin: 0;
+  margin: 0 0 0 60px;
   padding: 0;
   font-family: "Montseratt", "Arial", sans-serif;
   font-weight: 400;
@@ -2777,7 +2775,8 @@ button,
   -ms-flex-direction: column;
   flex-direction: column;
   row-gap: 20px;
-  padding: 50px;
+  margin-right: 60px;
+  padding: 40px 50px;
   background-color: #011c40;
 }
 
@@ -2813,11 +2812,17 @@ button,
 
 .form__form h3 {
   max-width: 303px;
+  margin: 0;
+  margin-bottom: 10px;
   font-family: "Montseratt", "Arial", sans-serif;
   font-weight: 500;
   font-size: 18px;
   line-height: 27px;
   color: #f9fbfd;
+}
+
+.form__form abutton {
+  padding: 10px;
 }
 
 .map {
