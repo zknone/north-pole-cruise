@@ -23,11 +23,11 @@
   row-gap: 30px;
   list-style-type: none;
 
-  @include vp-1439() {
-    grid-template-columns: repeat(3, 1fr);
+  @include vp-1279() {
+    grid-template-columns: repeat(3, min-content);
   }
 
-  @include vp-1279() {
+  @include vp-1023() {
     grid-template-columns: repeat(2, min-content);
   }
 
@@ -47,7 +47,7 @@
 
   width: 260px;
 
-  @include vp-1439() {
+  @include vp-1279() {
     width: 309px;
   }
 
@@ -113,7 +113,7 @@
 
   z-index: $z-index-background;
 
-  @include vp-1439() {
+  @include vp-1279() {
     width: 309px;
   }
 
@@ -150,7 +150,7 @@
   padding: 10px;
   min-height: 40px;
 
-  @include vp-1439() {
+  @include vp-1279() {
     max-width: 259px;
   }
 
