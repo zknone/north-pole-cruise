@@ -2993,6 +2993,11 @@ button,
   .tours__item picture {
     width: 309px;
   }
+
+  .form__container {
+    -ms-grid-columns: 40% auto;
+    grid-template-columns: 40% auto;
+  }
 }
 
 @media (max-width: 1023px) {
