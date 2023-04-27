@@ -2121,7 +2121,7 @@ button,
 
 .navigation__logo {
   display: block;
-  margin: 35px 0;
+  margin: 33px 0;
   width: 70px;
   height: 38px;
 }
@@ -2232,10 +2232,10 @@ button,
 
 .navigation__overlay.is-activate .navigation__button {
   cursor: pointer;
-  width: 42px;
+  width: 30px;
   height: 42px;
   margin-top: 12px;
-  margin-right: 27px;
+  margin-right: 12px;
   justify-self: flex-end;
 }
 
@@ -3059,7 +3059,7 @@ button,
   }
 
   .proposal p {
-    width: 324px;
+    max-width: 324px;
   }
 
   .proposal img {
@@ -3270,7 +3270,7 @@ button,
 
   .navigation__button {
     display: block;
-    padding: 15px;
+    padding: 15px 0;
     font-size: 0;
     background-color: transparent;
     border: none;
@@ -3316,13 +3316,14 @@ button,
   }
 
   .hero__container {
-    padding-top: 200px;
-    padding-bottom: 200px;
+    padding-top: 175px;
+    padding-bottom: 180px;
   }
 
   .hero h1 {
     font-size: 36px;
     line-height: 45px;
+    margin-bottom: 10px;
   }
 
   .hero p {
@@ -3343,14 +3344,15 @@ button,
   }
 
   .proposal h2 {
-    margin-bottom: 30px;
+    margin-bottom: 15px;
     -ms-flex-item-align: start;
     -ms-grid-row-align: start;
     align-self: start;
   }
 
   .proposal p {
-    margin-bottom: 50px;
+    margin-bottom: 40px;
+    max-width: 300px;
   }
 
   .proposal img {

@@ -52,7 +52,7 @@
   }
 
   @include vp-767() {
-    margin-bottom: 30px;
+    margin-bottom: 15px;
     align-self: start;
   }
 }
@@ -70,11 +70,12 @@
   color: $color-default-black;
 
   @include vp-1023() {
-    width: 324px;
+    max-width: 324px;
   }
 
   @include vp-767() {
-    margin-bottom: 50px;
+    margin-bottom: 40px;
+    max-width: 300px;
   }
 }
 
