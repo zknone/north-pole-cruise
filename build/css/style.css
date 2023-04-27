@@ -3001,7 +3001,7 @@ button,
   }
 
   .navigation__logo {
-    width: 28px;
+    width: 40px;
     height: 20px;
   }
 
@@ -3119,7 +3119,7 @@ button,
   .form {
     background: url("../img/background-form-tab.webp") no-repeat center, #2a5ea3;
     background-size: cover;
-    padding: 85px 60px;
+    padding: 85px 60px 100px;
   }
 
   .form__container {
@@ -3138,7 +3138,7 @@ button,
     align-self: center;
     font-size: 34px;
     line-height: 51px;
-    margin: 0;
+    margin: 0 0 5px;
   }
 
   .form p {
@@ -3146,7 +3146,16 @@ button,
     -ms-grid-row-align: center;
     align-self: center;
     max-width: 352px;
-    margin: 0;
+    margin: 0 0 55px;
+  }
+
+  .form__form {
+    margin: 0 auto;
+    max-width: 403px;
+  }
+
+  .form__form button {
+    margin-top: 3px;
   }
 
   .map {
@@ -3161,10 +3170,23 @@ button,
 
   .map__info-container {
     max-width: 324px;
+    margin: 65px 0 40px;
   }
 
   .map h3 {
-    margin: 0 0 40px;
+    margin: 0 0 30px;
+  }
+
+  .map__adress {
+    position: relative;
+    max-width: 240px;
+    margin-left: 30px;
+  }
+
+  .map__adress svg {
+    position: absolute;
+    left: -28px;
+    top: 5px;
   }
 }
 

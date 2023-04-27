@@ -18,7 +18,7 @@
       $color-background-plug;
     background-size: cover;
 
-    padding: 85px 60px;
+    padding: 85px 60px 100px;
   }
 
   @include retina-vp-1023() {
@@ -79,7 +79,7 @@
     align-self: center;
     font-size: 34px;
     line-height: 51px;
-    margin: 0;
+    margin: 0 0 5px;
   }
 
   @include vp-767() {
@@ -105,7 +105,7 @@
   @include vp-1023() {
     align-self: center;
     max-width: 352px;
-    margin: 0;
+    margin: 0 0 55px;
   }
 }
 
@@ -117,6 +117,11 @@
 
   padding: 40px 50px 50px;
   background-color: $color-default-black;
+
+  @include vp-1023() {
+    margin: 0 auto;
+    max-width: 403px;
+  }
 
   @include vp-767() {
     padding: 40px 30px;
@@ -167,4 +172,8 @@
 .form__form button {
   padding: 10px;
   margin-top: 15px;
+
+  @include vp-1023() {
+    margin-top: 3px;
+  }
 }
