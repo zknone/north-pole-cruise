@@ -53,6 +53,12 @@
   flex-wrap: wrap;
   column-gap: 34px;
 
+  @include vp-1023() {
+    max-width: 75%;
+    column-gap: 25px;
+    padding: 23px 0;
+  }
+
   @include vp-767() {
     display: none;
   }
@@ -76,6 +82,7 @@
   }
 
   @include vp-1023() {
+    padding: 10px 0;
     font-size: 14px;
     line-height: 17px;
   }

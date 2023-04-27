@@ -2511,67 +2511,12 @@ button,
   width: 260px;
 }
 
-.tours__item.focus-visible:focus picture {
-  opacity: 0;
-}
-
-.tours__item.focus-visible:focus h3 {
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 1;
-  grid-row: 1/2;
-  margin: 26px 25px 0 25px;
-  padding: 0 0 10px 0;
-  z-index: 3;
-}
-
-.tours__item.focus-visible:focus a {
-  grid-row: 3/-1;
-  margin: 25px 25px 35px 25px;
-  z-index: 3;
-}
-
-.tours__item.focus-visible:focus dl {
-  z-index: 3;
-}
-
-.tours__item:focus-within picture {
-  opacity: 0;
-}
-
-.tours__item:focus-within h3 {
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 1;
-  grid-row: 1/2;
-  margin: 26px 25px 0 25px;
-  padding: 0 0 10px 0;
-  z-index: 3;
-}
-
-.tours__item:focus-within a {
-  grid-row: 3/-1;
-  margin: 25px 25px 35px 25px;
-  z-index: 3;
-}
-
-.tours__item:focus-within dl {
-  z-index: 3;
-}
-
-.tours__item picture {
-  position: absolute;
-  grid-row: 1/-1;
-  top: 0;
-  left: 0;
-  width: 260px;
-  height: 100%;
-  -o-object-fit: cover;
-  object-fit: cover;
-  z-index: 1;
-}
-
 .tours__item h3 {
   grid-row: 3/-1;
-  margin: 0 30px 25px 30px;
+  margin-left: 25px;
+  margin-right: 25px;
+  margin-top: 0;
+  margin-bottom: 25px;
   padding: 49px 0 0 0;
   min-height: 40px;
   width: auto;
@@ -2591,7 +2536,10 @@ button,
   width: auto;
   max-width: 210px;
   overflow-wrap: break-word;
-  margin: 25px 25px 0 25px;
+  margin-right: 25px;
+  margin-left: 25px;
+  margin-top: 25px;
+  margin-bottom: 0px;
   padding: 10px;
   min-height: 40px;
 }
@@ -2600,9 +2548,72 @@ button,
   -ms-grid-row: 2;
   -ms-grid-row-span: 1;
   grid-row: 2/3;
-  margin: 1px 0 0 25px;
+  margin-left: 25px;
+  margin-bottom: 25px;
+  margin-top: 1px;
   height: 230px;
   overflow-y: auto;
+}
+
+.tours__item.focus-visible:focus picture {
+  opacity: 0;
+}
+
+.tours__item.focus-visible:focus h3 {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+  margin-bottom: 0;
+  margin-top: 26px;
+  padding: 0 0 10px 0;
+  z-index: 3;
+}
+
+.tours__item.focus-visible:focus a {
+  grid-row: 3/-1;
+  margin-top: 25px;
+  margin-bottom: 35px;
+  z-index: 3;
+}
+
+.tours__item.focus-visible:focus dl {
+  z-index: 3;
+}
+
+.tours__item:focus-within picture {
+  opacity: 0;
+}
+
+.tours__item:focus-within h3 {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+  margin-top: 26px;
+  padding: 0 0 10px 0;
+  z-index: 3;
+}
+
+.tours__item:focus-within a {
+  grid-row: 3/-1;
+  margin-top: 25px;
+  margin-bottom: 35px;
+  z-index: 3;
+}
+
+.tours__item:focus-within dl {
+  z-index: 3;
+}
+
+.tours__item picture {
+  position: absolute;
+  grid-row: 1/-1;
+  top: 0;
+  left: 0;
+  width: 260px;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  z-index: 1;
 }
 
 .tours__item dt {
@@ -2938,6 +2949,10 @@ button,
 */
 
 @media (max-width: 1279px) {
+  .tours {
+    padding-bottom: 100px;
+  }
+
   .tours__list {
     -ms-grid-columns: (-webkit-min-content)[3];
     -ms-grid-columns: (min-content)[3];
@@ -2949,12 +2964,29 @@ button,
     width: 309px;
   }
 
-  .tours__item picture {
-    width: 309px;
+  .tours__item h3 {
+    margin-left: 35px;
+    margin-right: 35px;
   }
 
   .tours__item a {
     max-width: 259px;
+    margin-left: 35px;
+    margin-right: 35px;
+  }
+
+  .tours__item dl {
+    margin-top: 1px;
+    margin-left: 35px;
+  }
+
+  .tours__item:focus-within h3 {
+    margin-top: 25px;
+    margin-bottom: 35px;
+  }
+
+  .tours__item picture {
+    width: 309px;
   }
 }
 
@@ -2973,7 +3005,16 @@ button,
     height: 20px;
   }
 
+  .navigation__list {
+    max-width: 75%;
+    -webkit-column-gap: 25px;
+    -moz-column-gap: 25px;
+    column-gap: 25px;
+    padding: 23px 0;
+  }
+
   .navigation__item-link {
+    padding: 10px 0;
     font-size: 14px;
     line-height: 17px;
   }
@@ -2983,8 +3024,12 @@ button,
     background-size: cover;
   }
 
+  .hero__container {
+    padding-bottom: 275px;
+  }
+
   .hero h1 {
-    margin: 0 0 30px 0;
+    margin: 0 0 15px 0;
     font-size: 50px;
     line-height: 60px;
   }
@@ -2995,14 +3040,62 @@ button,
     line-height: 22px;
   }
 
+  .proposal {
+    padding-top: 100px;
+    padding-bottom: 105px;
+    -ms-grid-columns: auto 324px;
+    grid-template-columns: auto 324px;
+    -webkit-column-gap: 20px;
+    -moz-column-gap: 20px;
+    column-gap: 20px;
+    -ms-grid-rows: auto 4% auto;
+    grid-template-rows: auto 4% auto;
+  }
+
+  .proposal h2 {
+    width: 220px;
+    margin-top: -10px;
+    font-size: 26px;
+    line-height: 36px;
+  }
+
+  .proposal p {
+    width: 324px;
+  }
+
   .proposal img {
     width: 324px;
     height: 175px;
   }
 
+  .advantages {
+    padding: 90px 0;
+  }
+
   .advantages h2 {
     font-size: 26px;
     line-height: 39px;
+  }
+
+  .advantages__item {
+    padding: 20px 5px 20px 20px;
+  }
+
+  .advantages__item[data-advantages=ship] svg {
+    width: 25px;
+    height: 30px;
+  }
+
+  .advantages__item[data-advantages=all-inclusive] svg {
+    width: 30px;
+    height: 35px;
+    margin-bottom: 5px;
+  }
+
+  .advantages__item[data-advantages=tours] svg {
+    width: 30px;
+    height: 35px;
+    margin-bottom: 5px;
   }
 
   .advantages__item h3 {
@@ -3013,6 +3106,7 @@ button,
   .tours h2 {
     font-size: 26px;
     line-height: 39px;
+    margin-bottom: 50px;
   }
 
   .tours__list {
@@ -3025,6 +3119,7 @@ button,
   .form {
     background: url("../img/background-form-tab.webp") no-repeat center, #2a5ea3;
     background-size: cover;
+    padding: 85px 60px;
   }
 
   .form__container {
@@ -3043,6 +3138,7 @@ button,
     align-self: center;
     font-size: 34px;
     line-height: 51px;
+    margin: 0;
   }
 
   .form p {
@@ -3050,6 +3146,7 @@ button,
     -ms-grid-row-align: center;
     align-self: center;
     max-width: 352px;
+    margin: 0;
   }
 
   .map {
@@ -3080,6 +3177,7 @@ button,
   .form {
     background: url("../img/background-form-tab@2x.webp") no-repeat center, #2a5ea3;
     background-size: cover;
+    padding: 85px 60px;
   }
 }
 
@@ -3249,12 +3347,12 @@ button,
     width: 270px;
   }
 
-  .tours__item picture {
-    width: 270px;
-  }
-
   .tours__item a {
     max-width: 220px;
+  }
+
+  .tours__item picture {
+    width: 270px;
   }
 
   .footer__logo {
@@ -3461,14 +3559,16 @@ button,
     -ms-grid-row: 1;
     -ms-grid-row-span: 1;
     grid-row: 1/2;
-    margin: 26px 25px 0 25px;
+    margin-bottom: 0;
+    margin-top: 26px;
     padding: 0 0 10px 0;
     z-index: 3;
   }
 
   .tours__item:hover:not(.focus-visible) a {
     grid-row: 3/-1;
-    margin: 25px 25px 35px 25px;
+    margin-top: 25px;
+    margin-bottom: 35px;
     z-index: 3;
   }
 
