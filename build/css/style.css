@@ -3365,7 +3365,7 @@ button,
 
   .proposal p {
     margin-bottom: 45px;
-    max-width: 300px;
+    max-width: none;
   }
 
   .proposal img {
@@ -3451,7 +3451,7 @@ button,
   .tours__item h3 {
     margin-left: 25px;
     margin-right: 25px;
-    padding-top: 55px;
+    padding-top: 61px;
     margin-bottom: 13px;
   }
 
