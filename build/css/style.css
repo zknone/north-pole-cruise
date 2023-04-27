@@ -3359,6 +3359,8 @@ button,
     -ms-flex-item-align: start;
     -ms-grid-row-align: start;
     align-self: start;
+    font-size: 24px;
+    line-height: 34px;
   }
 
   .proposal p {
