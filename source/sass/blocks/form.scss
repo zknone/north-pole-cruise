@@ -60,6 +60,11 @@
     display: flex;
     flex-direction: column;
   }
+
+  @include vp-767() {
+    padding-top: 57px;
+    padding-bottom: 65px;
+  }
 }
 
 .form h2 {
@@ -85,6 +90,8 @@
   @include vp-767() {
     font-size: 24px;
     line-height: 31px;
+    text-align: center;
+    margin: 0 0 10px;
   }
 }
 
@@ -107,6 +114,15 @@
     max-width: 352px;
     margin: 0 0 55px;
   }
+
+  @include vp-767() {
+    text-align: center;
+    max-width: 270px;
+
+    font-size: 16px;
+    line-height: 23px;
+    margin: 0 0 35px;
+  }
 }
 
 .form__form {
@@ -124,7 +140,8 @@
   }
 
   @include vp-767() {
-    padding: 40px 30px;
+    padding: 30px 30px 45px;
+    row-gap: 21px;
   }
 }
 
@@ -133,8 +150,8 @@
 
   font-family: "Montseratt", "Arial", sans-serif;
   font-weight: 400;
-  font-size: 10px;
-  line-height: 13px;
+  font-size: 16px;
+  line-height: 21px;
   color: $color-default-white;
 }
 
@@ -145,10 +162,11 @@
   border: none;
 
   &:-webkit-autofill {
-    box-shadow: inset 0 0 0 1000px rgb(10, 130, 181);
-    -webkit-text-fill-color: $color-default-white;
+    font-family: "Montseratt", "Arial", sans-serif;
+    font-weight: 400;
     font-size: 16px;
     line-height: 21px;
+    color: $color-default-white;
   }
 
   @include hover-focus {
@@ -166,8 +184,13 @@
   font-size: 18px;
   line-height: 27px;
   color: $color-default-white;
-}
 
+  @include vp-767() {
+    text-align: center;
+    margin: 0 auto 5px;
+    max-width: 230px;
+  }
+}
 
 .form__form button {
   padding: 10px;

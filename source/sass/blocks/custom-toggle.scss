@@ -25,8 +25,18 @@
   &:last-of-type {
     padding: 0 0 0 25px;
 
+    font-style: medium;
+    font-family: "Montseratt", "Arial", sans-serif;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 13px;
+    color: $color-default-white;
+
     @media screen and (max-width: 767px) {
       padding: 0 0 0 25px;
+      font-size: 10px;
+      line-height: 12px;
+      max-width: 180px;
     }
   }
 
