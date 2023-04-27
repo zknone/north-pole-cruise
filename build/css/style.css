@@ -3463,7 +3463,7 @@ button,
   }
 
   .footer__logo {
-    margin: 40px 0 30px;
+    margin: 40px 0 15px;
   }
 
   .footer__container {
@@ -3478,11 +3478,11 @@ button,
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    margin-bottom: 19px;
+    margin-bottom: 10px;
   }
 
   .footer__item {
-    padding: 11px 0;
+    padding: 10px 0;
   }
 
   .footer__item-link {
@@ -3529,23 +3529,25 @@ button,
     -webkit-box-direction: reverse;
     -ms-flex-direction: column-reverse;
     flex-direction: column-reverse;
-    padding-top: 65px;
-    padding-bottom: 65px;
+    padding-top: 0;
+    padding-bottom: 0;
   }
 
   .map__wrapper {
     width: 100%;
     height: 316px;
+    margin-bottom: 65px;
   }
 
   .map__info-container {
     max-width: -webkit-fit-content;
     max-width: -moz-fit-content;
     max-width: fit-content;
+    margin: 55px 0 0;
   }
 
   .map__phone {
-    margin-bottom: 43px;
+    margin-bottom: 35px;
   }
 }
 
