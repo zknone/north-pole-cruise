@@ -3078,6 +3078,7 @@ button,
   }
 
   .proposal p {
+    margin-top: 5px;
     max-width: 324px;
   }
 
@@ -3132,7 +3133,7 @@ button,
   .tours h2 {
     font-size: 26px;
     line-height: 39px;
-    margin-bottom: 48px;
+    margin-bottom: 50px;
   }
 
   .tours__list {
@@ -3386,6 +3387,7 @@ button,
   }
 
   .proposal p {
+    margin-top: 0;
     margin-bottom: 45px;
     max-width: none;
   }
