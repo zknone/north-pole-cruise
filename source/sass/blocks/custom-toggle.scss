@@ -23,7 +23,10 @@
   }
 
   &:last-of-type {
-    padding: 0 0 0 25px;
+    position: relative;
+    left: 5px;
+    top: 4px;
+    padding: 0 0 0 20px;
 
     font-style: medium;
     font-family: "Montseratt", "Arial", sans-serif;
@@ -33,7 +36,7 @@
     color: $color-default-white;
 
     @media screen and (max-width: 767px) {
-      padding: 0 0 0 25px;
+      padding: 0 0 0 20px;
       font-size: 10px;
       line-height: 12px;
       max-width: 180px;
@@ -80,7 +83,8 @@
       cursor: pointer;
 
       @include vp-1023() {
-        left: 0;
+        top: -5px;
+        left: -5px;
       }
 
       &::before {
