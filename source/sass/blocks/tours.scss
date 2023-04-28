@@ -1,7 +1,7 @@
 @import "../mixins";
 
 .tours {
-  padding-top: 95px;
+  padding-top: 90px;
   padding-bottom: 120px;
 
   @include vp-1279() {
@@ -16,7 +16,7 @@
 }
 
 .tours h2 {
-  margin: 0 0 40px;
+  margin: 0 0 45px;
   padding: 0;
   text-align: center;
 

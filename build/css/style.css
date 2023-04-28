@@ -1744,8 +1744,8 @@ button,
 
 .custom-toggle--checkbox .custom-toggle__icon {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: -5px;
+  left: -5px;
   width: 20px;
   height: 20px;
   -webkit-transition: 0.3s ease;
@@ -2363,7 +2363,7 @@ button,
 .proposal h2 {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
-  margin: 0 0 5px 0;
+  margin: 0;
   padding: 0;
   grid-area: a;
   -ms-grid-row-align: end;
@@ -2402,7 +2402,7 @@ button,
 }
 
 .advantages {
-  padding: 110px 0;
+  padding: 110px 0 120px;
   background: url("../img/advantages-background.webp") no-repeat center, #a6d2fe;
   background-size: cover;
 }
@@ -2433,12 +2433,12 @@ button,
 
 .advantages__item {
   max-width: 360px;
-  padding: 30px 30px 50px 30px;
+  padding: 30px 30px 40px 30px;
   background-color: #f9fbfd;
 }
 
 .advantages__item svg {
-  margin-bottom: 10px;
+  margin-bottom: 8px;
 }
 
 .advantages__item[data-advantages=all-inclusive] svg {
@@ -2464,7 +2464,6 @@ button,
 .advantages__item p {
   margin: 0;
   padding: 0;
-  max-width: 250px;
   font-family: "Montseratt", "Arial", sans-serif;
   font-weight: 500;
   font-size: 14px;
@@ -2473,12 +2472,12 @@ button,
 }
 
 .tours {
-  padding-top: 95px;
+  padding-top: 90px;
   padding-bottom: 120px;
 }
 
 .tours h2 {
-  margin: 0 0 40px;
+  margin: 0 0 45px;
   padding: 0;
   text-align: center;
   font-family: "Montseratt", "Arial", sans-serif;
@@ -2761,13 +2760,14 @@ button,
   -webkit-column-gap: 10%;
   -moz-column-gap: 10%;
   column-gap: 10%;
+  margin-top: -14px;
 }
 
 .form h2 {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: fh;
-  margin: 20px 0 0 60px;
+  margin: 10px 0 0 60px;
   padding: 0;
   align-self: flex-end;
   font-family: "Montseratt", "Arial", sans-serif;
@@ -2783,7 +2783,7 @@ button,
   grid-area: ft;
   margin: 10px 0 0 60px;
   padding: 0;
-  max-width: 340px;
+  max-width: 350px;
   font-family: "Montseratt", "Arial", sans-serif;
   font-weight: 400;
   font-size: 18px;
@@ -2801,6 +2801,7 @@ button,
   flex-direction: column;
   row-gap: 20px;
   margin-right: 60px;
+  margin-top: 15px;
   padding: 40px 50px 50px;
   background-color: #011c40;
 }
@@ -3000,6 +3001,7 @@ button,
   }
 
   .form__container {
+    margin-top: 0;
     -ms-grid-columns: 40% auto;
     grid-template-columns: 40% auto;
   }

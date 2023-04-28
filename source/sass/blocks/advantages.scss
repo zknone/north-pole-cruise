@@ -1,7 +1,7 @@
 @import "../mixins";
 
 .advantages {
-  padding: 110px 0;
+  padding: 110px 0 120px;
 
   background: url("../img/advantages-background.webp") no-repeat center,
     $color-background-plug-light;
@@ -67,7 +67,7 @@
 .advantages__item {
   max-width: 360px;
 
-  padding: 30px 30px 50px 30px;
+  padding: 30px 30px 40px 30px;
   background-color: $color-default-white;
 
   @include vp-1023() {
@@ -81,7 +81,7 @@
 }
 
 .advantages__item svg {
-  margin-bottom: 10px;
+  margin-bottom: 8px;
 }
 
 .advantages__item[data-advantages="ship"] svg {
@@ -152,8 +152,6 @@
 .advantages__item p {
   margin: 0;
   padding: 0;
-
-  max-width: 250px;
 
   font-family: "Montseratt", "Arial", sans-serif;
   font-weight: 500;
