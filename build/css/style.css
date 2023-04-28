@@ -2461,7 +2461,7 @@ button,
 .advantages__item p {
   margin: 0;
   padding: 0;
-  max-width: 295px;
+  max-width: 250px;
   font-family: "Montseratt", "Arial", sans-serif;
   font-weight: 500;
   font-size: 14px;
@@ -3441,7 +3441,7 @@ button,
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    row-gap: 35px;
+    row-gap: 28px;
   }
 
   .tours__item {
