@@ -1673,7 +1673,7 @@ button,
 
 .custom-input .input-message.is-invalid,
 .custom-textarea .input-message.is-invalid {
-  color: #ff0000;
+  color: #f9fbfd;
 }
 
 .custom-input .input-message.is-valid,
@@ -1809,12 +1809,12 @@ button,
 
 .custom-toggle .input-message {
   position: absolute;
-  right: 0;
-  bottom: 40px;
+  right: 85px;
+  bottom: -15px;
 }
 
 .custom-toggle .input-message.is-invalid {
-  color: #ff0000;
+  color: #f9fbfd;
 }
 
 .custom-toggle .input-message.is-valid {
@@ -2802,7 +2802,7 @@ button,
   background-color: #011c40;
 }
 
-.form__form label {
+.form__form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

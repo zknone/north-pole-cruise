@@ -148,11 +148,11 @@
 
   .input-message {
     position: absolute;
-    right: 0;
-    bottom: 40px;
+    right: 85px;
+    bottom: -15px;
 
     &.is-invalid {
-      color: #ff0000;
+      color: $color-default-white;
     }
 
     &.is-valid {
