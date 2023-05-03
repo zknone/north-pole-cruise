@@ -149,6 +149,8 @@
   .navigation__list {
     grid-area: menu;
     display: block;
+    max-height: 600px;
+    overflow-y: auto;
     max-width: 100%;
     row-gap: 10px;
 
