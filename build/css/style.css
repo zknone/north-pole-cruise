@@ -2402,7 +2402,7 @@ button,
 .advantages {
   padding: 110px 0 120px;
   background: url("../img/advantages-background.webp") no-repeat center, #a6d2fe;
-  background-size: cover;
+  background-size: cover, cover;
 }
 
 .advantages h2 {
@@ -2541,6 +2541,7 @@ button,
   -ms-grid-row-span: 1;
   grid-row: 1/2;
   width: auto;
+  overflow-y: auto;
   max-width: 210px;
   overflow-wrap: break-word;
   margin-right: 25px;
@@ -2683,7 +2684,7 @@ button,
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   margin: auto 0;
-  padding: 0;
+  padding: 30px 0;
   list-style-type: none;
   max-width: 70%;
   -webkit-column-gap: 33px;
@@ -2714,6 +2715,10 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  max-width: 200px;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  row-gap: 10px;
   margin: 10px 0 0 auto;
   padding: 0;
   list-style-type: none;
@@ -3780,7 +3785,7 @@ button,
 
   .advantages {
     background: url("../img/advantages-background@2x.webp") no-repeat center, #a6d2fe;
-    background-size: cover;
+    background-size: cover, cover;
   }
 
   .form {

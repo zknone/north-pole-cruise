@@ -119,6 +119,7 @@
   a {
     grid-row: 1/2;
     width: auto;
+    overflow-y: auto;
     max-width: 210px;
     overflow-wrap: break-word;
     margin-right: 25px;
