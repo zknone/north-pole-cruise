@@ -2352,6 +2352,9 @@ button,
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-column-gap: 85px;
   -moz-column-gap: 85px;
   column-gap: 85px;
@@ -2360,7 +2363,7 @@ button,
 }
 
 .proposal h2 {
-  margin: 0;
+  margin: 0 0 40px;
   padding: 0;
   -ms-flex-item-align: end;
   -ms-grid-row-align: end;
@@ -2421,6 +2424,7 @@ button,
   -webkit-column-gap: 35px;
   -moz-column-gap: 35px;
   column-gap: 35px;
+  row-gap: 35px;
   margin: 0;
   padding: 0;
   list-style-type: none;
@@ -2949,8 +2953,8 @@ button,
 
 @media (max-width: 1279px) {
   .proposal img {
-    max-width: 510px;
-    max-height: 274px;
+    max-width: 480px;
+    max-height: 258px;
   }
 
   .tours {
@@ -3055,6 +3059,9 @@ button,
   }
 
   .proposal {
+    -webkit-box-align: normal;
+    -ms-flex-align: normal;
+    align-items: normal;
     padding-top: 100px;
     padding-bottom: 105px;
     -webkit-column-gap: 50px;
@@ -3063,7 +3070,7 @@ button,
   }
 
   .proposal h2 {
-    margin-top: -10px;
+    margin: 0 0 30px;
     font-size: 26px;
     line-height: 36px;
   }
