@@ -1,13 +1,8 @@
 @import "../mixins";
 
 .proposal {
-  display: grid;
-  grid-template-areas:
-    "a c"
-    ". c"
-    "b c";
-  grid-template-columns: auto 560px;
-  grid-template-rows: auto 8% auto;
+  display: flex;
+  justify-content: space-between;
   column-gap: 85px;
 
   padding-top: 120px;
@@ -16,9 +11,7 @@
   @include vp-1023() {
     padding-top: 100px;
     padding-bottom: 105px;
-    grid-template-columns: auto 324px;
-    column-gap: 20px;
-    grid-template-rows: auto 4% auto;
+    column-gap: 50px;
   }
 
   @include vp-767() {
@@ -34,7 +27,6 @@
   margin: 0;
   padding: 0;
 
-  grid-area: a;
   align-self: end;
 
   font-family: "Montseratt", "Arial", sans-serif;
@@ -44,7 +36,6 @@
   color: $color-default-black;
 
   @include vp-1023() {
-    max-width: 220px;
     margin-top: -10px;
 
     font-size: 26px;
@@ -52,7 +43,6 @@
   }
 
   @include vp-767() {
-    max-width: none;
     margin-bottom: 15px;
     align-self: start;
 
@@ -61,11 +51,19 @@
   }
 }
 
+.proposal__info-wrapper {
+  width: auto;
+  max-width: 520px;
+
+  @include vp-767() {
+    width: auto;
+    max-width: none;
+  }
+}
+
 .proposal p {
   margin: 0;
   padding: 0;
-
-  grid-area: b;
 
   font-family: "Montseratt", "Arial", sans-serif;
   font-weight: 400;
@@ -86,22 +84,27 @@
 
 .proposal picture {
   display: block;
-  grid-area: c;
 }
 
 .proposal img {
-  width: 560px;
-  height: 301px;
+  max-width: 560px;
+  max-height: 301px;
+
+  @include vp-1279() {
+    max-width: 510px;
+    max-height: 274px;
+  }
 
   @include vp-1023() {
-    width: 324px;
-    height: 175px;
+    max-width: 324px;
+    max-height: 174px;
   }
 
   @include vp-767() {
+    max-width: none;
+    max-height: none;
     width: 100%;
     height: auto;
-
     object-fit: cover;
   }
 }

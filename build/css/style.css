@@ -2149,7 +2149,7 @@ button,
   display: flex;
   list-style-type: none;
   margin: 0;
-  padding: 0;
+  padding: 23px 0;
   max-width: 70%;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
@@ -2160,7 +2160,7 @@ button,
 
 .navigation__item-link {
   display: block;
-  padding: 45px 0;
+  padding: 25px 0;
   font-style: medium;
   font-family: "Montseratt", "Arial", sans-serif;
   font-weight: 500;
@@ -2346,13 +2346,12 @@ button,
 }
 
 .proposal {
-  display: -ms-grid;
-  display: grid;
-  grid-template-areas: "a c" ". c" "b c";
-  -ms-grid-columns: auto 85px 560px;
-  grid-template-columns: auto 560px;
-  -ms-grid-rows: auto 8% auto;
-  grid-template-rows: auto 8% auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-column-gap: 85px;
   -moz-column-gap: 85px;
   column-gap: 85px;
@@ -2361,11 +2360,9 @@ button,
 }
 
 .proposal h2 {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
   margin: 0;
   padding: 0;
-  grid-area: a;
+  -ms-flex-item-align: end;
   -ms-grid-row-align: end;
   align-self: end;
   font-family: "Montseratt", "Arial", sans-serif;
@@ -2375,12 +2372,14 @@ button,
   color: #011c40;
 }
 
+.proposal__info-wrapper {
+  width: auto;
+  max-width: 520px;
+}
+
 .proposal p {
-  -ms-grid-row: 3;
-  -ms-grid-column: 1;
   margin: 0;
   padding: 0;
-  grid-area: b;
   font-family: "Montseratt", "Arial", sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -2389,16 +2388,12 @@ button,
 }
 
 .proposal picture {
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 3;
-  -ms-grid-column: 3;
   display: block;
-  grid-area: c;
 }
 
 .proposal img {
-  width: 560px;
-  height: 301px;
+  max-width: 560px;
+  max-height: 301px;
 }
 
 .advantages {
@@ -2953,6 +2948,11 @@ button,
 */
 
 @media (max-width: 1279px) {
+  .proposal img {
+    max-width: 510px;
+    max-height: 274px;
+  }
+
   .tours {
     padding-top: 90px;
     padding-bottom: 100px;
@@ -3025,7 +3025,6 @@ button,
     -webkit-column-gap: 25px;
     -moz-column-gap: 25px;
     column-gap: 25px;
-    padding: 23px 0;
   }
 
   .navigation__item-link {
@@ -3058,17 +3057,12 @@ button,
   .proposal {
     padding-top: 100px;
     padding-bottom: 105px;
-    -ms-grid-columns: auto 324px;
-    grid-template-columns: auto 324px;
-    -webkit-column-gap: 20px;
-    -moz-column-gap: 20px;
-    column-gap: 20px;
-    -ms-grid-rows: auto 4% auto;
-    grid-template-rows: auto 4% auto;
+    -webkit-column-gap: 50px;
+    -moz-column-gap: 50px;
+    column-gap: 50px;
   }
 
   .proposal h2 {
-    max-width: 220px;
     margin-top: -10px;
     font-size: 26px;
     line-height: 36px;
@@ -3080,8 +3074,8 @@ button,
   }
 
   .proposal img {
-    width: 324px;
-    height: 175px;
+    max-width: 324px;
+    max-height: 174px;
   }
 
   .advantages {
@@ -3376,7 +3370,6 @@ button,
   }
 
   .proposal h2 {
-    max-width: none;
     margin-bottom: 15px;
     -ms-flex-item-align: start;
     -ms-grid-row-align: start;
@@ -3385,12 +3378,19 @@ button,
     line-height: 34px;
   }
 
+  .proposal__info-wrapper {
+    width: auto;
+    max-width: none;
+  }
+
   .proposal p {
     margin-top: 0;
     margin-bottom: 45px;
   }
 
   .proposal img {
+    max-width: none;
+    max-height: none;
     width: 100%;
     height: auto;
     -o-object-fit: cover;
