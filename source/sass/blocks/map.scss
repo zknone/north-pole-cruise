@@ -117,3 +117,12 @@
     margin-bottom: 35px;
   }
 }
+
+.map__phone-link {
+  cursor: pointer;
+  @include hover-focus {
+    text-decoration: underline;
+    opacity: 0.8;
+    transition: opacity 300ms ease-in;
+  }
+}

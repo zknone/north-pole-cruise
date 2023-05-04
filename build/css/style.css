@@ -2826,6 +2826,18 @@ body:has(.is-activate) {
   top: 2px;
 }
 
+.map__phone-link {
+  cursor: pointer;
+}
+
+.map__phone-link.focus-visible:focus {
+  text-decoration: underline;
+  opacity: 0.8;
+  -webkit-transition: opacity 300ms ease-in;
+  -o-transition: opacity 300ms ease-in;
+  transition: opacity 300ms ease-in;
+}
+
 /* @mixin hover-focus {
     @media (hover: hover) {
       &:hover:not(.focus-visible) {
@@ -3783,6 +3795,14 @@ body:has(.is-activate) {
 
   .form__form input:hover:not(.focus-visible) {
     background-color: #f0f2f4;
+  }
+
+  .map__phone-link:hover:not(.focus-visible) {
+    text-decoration: underline;
+    opacity: 0.8;
+    -webkit-transition: opacity 300ms ease-in;
+    -o-transition: opacity 300ms ease-in;
+    transition: opacity 300ms ease-in;
   }
 }
 
