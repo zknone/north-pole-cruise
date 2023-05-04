@@ -1736,6 +1736,7 @@ button,
 }
 
 .custom-toggle input:focus + .custom-toggle__icon {
+  outline: 1px solid #f9fbfd;
   opacity: 0.8;
   -webkit-transition: opacity 3ms ease-in;
   -o-transition: opacity 3ms ease-in;
@@ -2762,6 +2763,10 @@ body:has(.is-activate) {
 .form__form button {
   padding: 10px;
   margin-top: 15px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .map {

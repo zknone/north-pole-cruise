@@ -66,6 +66,7 @@
   }
 
   input:focus + .custom-toggle__icon {
+    outline: 1px solid $color-default-white;
     opacity: 0.8;
     transition: opacity 3ms ease-in;
   }
