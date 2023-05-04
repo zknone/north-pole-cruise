@@ -9,12 +9,6 @@
   min-height: 110px;
 }
 
-.navigation__overlay {
-  display: flex;
-  justify-content: space-between;
-  position: relative;
-}
-
 .navigation__logo-link {
   color: $color-default-white;
 }
@@ -133,109 +127,127 @@
 
 .navigation__overlay.is-activate {
   @include vp-767() {
-    position: fixed;
-    z-index: 1000;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
 
-    margin-left: 30px;
+    cursor: pointer;
+    overflow-y: hidden;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: $z-index-first-plan;
+
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    background-color: rgba(0, 43, 102, 0.5);
+
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+  }
+}
+
+.navigation__wrapper {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.navigation__wrapper.is-activate {
+  @include vp-767() {
+    position: fixed;
+    overflow-y: hidden;
+    left: 45px;
+    z-index: $z-index-popup;
     display: grid;
+
+
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: min-content auto;
     grid-template-areas: "logo eks" "menu menu";
     width: calc(100% - 45px);
     height: 100vh;
     background-color: $color-default-white;
-  }
 
-  .navigation__list {
-    grid-area: menu;
-    display: block;
-    max-height: 600px;
-    overflow-y: auto;
-    max-width: 100%;
-    row-gap: 10px;
+    position: fixed;
 
-    padding: 0 15px;
-  }
-
-  .navigation__item {
-    width: 100%;
-  }
-
-  .navigation__item-link {
-    color: $color-default-black;
-    padding: 10px;
-  }
-
-  .navigation__logo-link {
-    grid-area: logo;
-    color: $color-default-black;
-  }
-
-  .navigation__logo {
-    margin-left: 15px;
-  }
-
-  .navigation__button {
-    cursor: pointer;
-    width: 30px;
-    height: 42px;
-    margin-top: 12px;
-    margin-right: 12px;
-
-    justify-self: flex-end;
-  }
-
-  .navigation__button-element {
-    width: 24px;
-    height: 2px;
-    background-color: transparent;
-
-    &::before {
-      content: "";
-      position: relative;
+    .navigation__list {
+      grid-area: menu;
       display: block;
-      top: 0;
-      left: 0;
+      max-height: 600px;
+      overflow-y: auto;
+      max-width: 100%;
+      row-gap: 10px;
 
-      width: 24px;
-      height: 2px;
-      background-color: $color-default-black;
-
-      transform: rotate(45deg);
+      padding: 0 15px;
     }
 
-    &::after {
-      content: "";
-      position: relative;
-      display: block;
-      top: -2px;
-      left: 0;
+    .navigation__item {
+      width: 100%;
+    }
 
+    .navigation__item-link {
+      color: $color-default-black;
+      padding: 10px;
+    }
+
+    .navigation__logo-link {
+      grid-area: logo;
+      color: $color-default-black;
+    }
+
+    .navigation__logo {
+      margin-left: 15px;
+    }
+
+    .navigation__button {
+      cursor: pointer;
+      width: 30px;
+      height: 42px;
+      margin-top: 12px;
+      margin-right: 12px;
+
+      justify-self: flex-end;
+    }
+
+    .navigation__button-element {
       width: 24px;
       height: 2px;
-      background-color: $color-default-black;
-      transform: rotate(-45deg);
+      background-color: transparent;
+
+      &::before {
+        content: "";
+        position: relative;
+        display: block;
+        top: 0;
+        left: 0;
+
+        width: 24px;
+        height: 2px;
+        background-color: $color-default-black;
+
+        transform: rotate(45deg);
+      }
+
+      &::after {
+        content: "";
+        position: relative;
+        display: block;
+        top: -2px;
+        left: 0;
+
+        width: 24px;
+        height: 2px;
+        background-color: $color-default-black;
+        transform: rotate(-45deg);
+      }
     }
-  }
-}
-
-.navigation:has(.is-activate) {
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 1000;
-
-  display: flex;
-  flex-direction: column;
-  overflow-y: scroll;
-  background-color: rgba(0, 43, 102, 0.5);
-
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-
-  &::-webkit-scrollbar {
-    display: none;
   }
 }
