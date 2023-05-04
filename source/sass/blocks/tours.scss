@@ -71,7 +71,6 @@
 
 .tours__item {
   position: relative;
-  cursor: pointer;
   z-index: $z-index-regular;
   background-color: $color-default-black;
   display: grid;
@@ -156,30 +155,31 @@
       margin-left: 25px;
     }
   }
+}
 
-  @include hover-focus {
-    picture {
-      opacity: 0;
-    }
+.tours__item:hover,
+.tours__item:focus {
+  picture {
+    opacity: 0;
+  }
 
-    h3 {
-      grid-row: 1/2;
-      margin-bottom: 0;
-      margin-top: 26px;
-      padding: 0 0 10px 0;
-      z-index: $z-index-first-plan;
-    }
+  h3 {
+    grid-row: 1/2;
+    margin-bottom: 0;
+    margin-top: 26px;
+    padding: 0 0 10px 0;
+    z-index: $z-index-first-plan;
+  }
 
-    a {
-      grid-row: 3/-1;
-      margin-top: 25px;
-      margin-bottom: 35px;
-      z-index: $z-index-first-plan;
-    }
+  a {
+    grid-row: 3/-1;
+    margin-top: 25px;
+    margin-bottom: 35px;
+    z-index: $z-index-first-plan;
+  }
 
-    dl {
-      z-index: $z-index-first-plan;
-    }
+  dl {
+    z-index: $z-index-first-plan;
   }
 }
 

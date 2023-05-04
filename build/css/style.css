@@ -2421,7 +2421,6 @@ body:has(.is-activate) {
 
 .tours__item {
   position: relative;
-  cursor: pointer;
   z-index: 2;
   background-color: #011c40;
   display: -ms-grid;
@@ -2476,11 +2475,13 @@ body:has(.is-activate) {
   overflow-y: auto;
 }
 
-.tours__item.focus-visible:focus picture {
+.tours__item:hover picture,
+.tours__item:focus picture {
   opacity: 0;
 }
 
-.tours__item.focus-visible:focus h3 {
+.tours__item:hover h3,
+.tours__item:focus h3 {
   -ms-grid-row: 1;
   -ms-grid-row-span: 1;
   grid-row: 1/2;
@@ -2490,14 +2491,16 @@ body:has(.is-activate) {
   z-index: 3;
 }
 
-.tours__item.focus-visible:focus a {
+.tours__item:hover a,
+.tours__item:focus a {
   grid-row: 3/-1;
   margin-top: 25px;
   margin-bottom: 35px;
   z-index: 3;
 }
 
-.tours__item.focus-visible:focus dl {
+.tours__item:hover dl,
+.tours__item:focus dl {
   z-index: 3;
 }
 
@@ -3762,31 +3765,6 @@ body:has(.is-activate) {
     -webkit-transition: opacity 300ms ease-in;
     -o-transition: opacity 300ms ease-in;
     transition: opacity 300ms ease-in;
-  }
-
-  .tours__item:hover:not(.focus-visible) picture {
-    opacity: 0;
-  }
-
-  .tours__item:hover:not(.focus-visible) h3 {
-    -ms-grid-row: 1;
-    -ms-grid-row-span: 1;
-    grid-row: 1/2;
-    margin-bottom: 0;
-    margin-top: 26px;
-    padding: 0 0 10px 0;
-    z-index: 3;
-  }
-
-  .tours__item:hover:not(.focus-visible) a {
-    grid-row: 3/-1;
-    margin-top: 25px;
-    margin-bottom: 35px;
-    z-index: 3;
-  }
-
-  .tours__item:hover:not(.focus-visible) dl {
-    z-index: 3;
   }
 
   .footer__logo-link:hover:not(.focus-visible) {
