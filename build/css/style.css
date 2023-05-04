@@ -2456,8 +2456,6 @@ body:has(.is-activate) {
   -ms-grid-row-span: 1;
   grid-row: 1/2;
   width: auto;
-  overflow-y: auto;
-  max-width: 210px;
   overflow-wrap: break-word;
   margin-right: 25px;
   margin-left: 25px;
@@ -2511,6 +2509,7 @@ body:has(.is-activate) {
   -ms-grid-row: 1;
   -ms-grid-row-span: 1;
   grid-row: 1/2;
+  margin-bottom: 0;
   margin-top: 26px;
   padding: 0 0 10px 0;
   z-index: 3;
@@ -2915,7 +2914,6 @@ body:has(.is-activate) {
   }
 
   .tours__item a {
-    max-width: 259px;
     margin-left: 35px;
     margin-right: 35px;
   }
@@ -3519,7 +3517,6 @@ body:has(.is-activate) {
   }
 
   .tours__item a {
-    max-width: 220px;
     margin-left: 25px;
     margin-right: 25px;
   }
