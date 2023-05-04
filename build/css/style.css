@@ -2421,6 +2421,7 @@ body:has(.is-activate) {
 
 .tours__item {
   position: relative;
+  cursor: pointer;
   z-index: 2;
   background-color: #011c40;
   display: -ms-grid;

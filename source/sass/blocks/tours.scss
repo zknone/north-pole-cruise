@@ -71,6 +71,7 @@
 
 .tours__item {
   position: relative;
+  cursor: pointer;
   z-index: $z-index-regular;
   background-color: $color-default-black;
   display: grid;
