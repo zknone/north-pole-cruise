@@ -15,7 +15,6 @@
 
 .navigation__logo {
   display: block;
-  margin: 33px 0;
   width: 70px;
   height: 38px;
 
@@ -31,7 +30,6 @@
   }
 
   @include vp-767() {
-    margin: 20px 0;
     width: 42px;
     height: 22px;
   }
@@ -156,12 +154,18 @@
 .navigation__wrapper {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   position: relative;
+
+  @include vp-767() {
+    margin: 20px 0;
+  }
 }
 
 .navigation__wrapper.is-activate {
   @include vp-767() {
     position: fixed;
+    margin: 0;
     left: 45px;
     z-index: $z-index-popup;
     display: grid;
@@ -172,6 +176,7 @@
     width: calc(100% - 45px);
     height: 100vh;
     background-color: $color-default-white;
+    align-items: start;
 
     .navigation__list {
       grid-area: menu;
@@ -181,7 +186,7 @@
       max-width: 100%;
       row-gap: 10px;
 
-      padding: 0 15px;
+      padding: 0;
     }
 
     .navigation__item {
@@ -199,7 +204,7 @@
     }
 
     .navigation__logo {
-      margin-left: 15px;
+      margin: 20px 15px 20px 0;
     }
 
     .navigation__button {

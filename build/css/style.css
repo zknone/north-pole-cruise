@@ -2120,7 +2120,6 @@ button,
 
 .navigation__logo {
   display: block;
-  margin: 33px 0;
   width: 70px;
   height: 38px;
 }
@@ -2210,6 +2209,9 @@ button,
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   position: relative;
 }
 
@@ -3219,7 +3221,6 @@ body:has(.is-activate) {
   }
 
   .navigation__logo {
-    margin: 20px 0;
     width: 42px;
     height: 22px;
   }
@@ -3263,8 +3264,13 @@ body:has(.is-activate) {
     display: none;
   }
 
+  .navigation__wrapper {
+    margin: 20px 0;
+  }
+
   .navigation__wrapper.is-activate {
     position: fixed;
+    margin: 0;
     left: 45px;
     z-index: 4;
     display: -ms-grid;
@@ -3279,6 +3285,9 @@ body:has(.is-activate) {
     width: calc(100% - 45px);
     height: 100vh;
     background-color: #f9fbfd;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: start;
   }
 
   .navigation__wrapper.is-activate .navigation__list {
@@ -3288,7 +3297,7 @@ body:has(.is-activate) {
     overflow-y: auto;
     max-width: 100%;
     row-gap: 10px;
-    padding: 0 15px;
+    padding: 0;
   }
 
   .navigation__wrapper.is-activate .navigation__item {
@@ -3306,7 +3315,7 @@ body:has(.is-activate) {
   }
 
   .navigation__wrapper.is-activate .navigation__logo {
-    margin-left: 15px;
+    margin: 20px 15px 20px 0;
   }
 
   .navigation__wrapper.is-activate .navigation__button {
