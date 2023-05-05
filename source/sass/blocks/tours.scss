@@ -79,13 +79,28 @@
   row-gap: 15px;
   aspect-ratio: 260/386;
 
+  @include vp-1023() {
+    aspect-ratio: 309/386;
+  }
+
+  @include vp-767() {
+    aspect-ratio: 270/386;
+    width: 100%;
+  }
+
   h3 {
     align-self: end;
     grid-column: 2/3;
     grid-row: 2/5;
     margin: 0;
-    font-size: clamp(12px, 1.10159vw, 18px);
+
+    max-height: 200px;
+    overflow-y: auto;
+
+    font-family: "Montseratt", "Arial", sans-serif;
     font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
 
     color: $color-default-white;
 
@@ -109,7 +124,6 @@
   }
 
   dl {
-    @include scroll(#011c40);
     margin: 0;
     grid-column: 2/3;
     grid-row: 3/4;
