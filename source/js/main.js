@@ -1,7 +1,7 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
-import {onClickMenu, onOverlayClick} from './modules/switch-class';
+import {onClickMenu} from './modules/switch-class';
 
 // ---------------------------------
 

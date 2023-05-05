@@ -3,8 +3,8 @@
 
 .footer {
   background-color: $color-default-black;
-
   width: 100%;
+
   @include vp-1023() {
     min-height: 0;
   }

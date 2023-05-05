@@ -120,6 +120,7 @@
 
 .map__phone-link {
   cursor: pointer;
+
   @include hover-focus {
     text-decoration: underline;
     opacity: 0.8;

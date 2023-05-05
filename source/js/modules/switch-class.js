@@ -9,19 +9,19 @@ function removeClass(el, activator) {
 }
 
 function onOverlayOrLinkClick() {
-  removeClass("[data-menu]", "is-activate");
+  removeClass('[data-menu]', 'is-activate');
 }
 
 function onClickMenu() {
-  switchClass("[data-menu]", "is-activate");
+  switchClass('[data-menu]', 'is-activate');
   const overlay = document.querySelector('[data-menu="overlay"]');
-  overlay.addEventListener("click", onOverlayOrLinkClick, { once: true });
-  const linkItems = document.querySelectorAll("[data-item-link]");
+  overlay.addEventListener('click', onOverlayOrLinkClick, {once: true});
+  const linkItems = document.querySelectorAll('[data-item-link]');
   linkItems.forEach((el) =>
-    el.addEventListener("click", onOverlayOrLinkClick, { once: true })
+    el.addEventListener('click', onOverlayOrLinkClick, {once: true})
   );
   const logo = document.querySelector('[data-nav-logo]');
-  logo.addEventListener("click", onOverlayOrLinkClick, { once: true });
+  logo.addEventListener('click', onOverlayOrLinkClick, {once: true});
 }
 
-export { onClickMenu };
+export {onClickMenu};

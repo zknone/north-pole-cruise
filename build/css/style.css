@@ -2488,7 +2488,7 @@ body:has(.is-activate) {
   grid-row: 3/4;
   max-height: 100%;
   overflow-y: auto;
-  font-size: clamp(10px, 0.85679vw, 14px);
+  font-size: clamp(10px, 0.86vw, 14px);
   position: fixed;
   -webkit-transform: scale(0);
   -ms-transform: scale(0);
