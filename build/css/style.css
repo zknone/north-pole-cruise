@@ -2941,13 +2941,13 @@ body:has(.is-activate) {
 
   .navigation__list {
     max-width: 75%;
-    -webkit-column-gap: 25px;
-    -moz-column-gap: 25px;
-    column-gap: 25px;
+    -webkit-column-gap: 24px;
+    -moz-column-gap: 24px;
+    column-gap: 24px;
   }
 
   .navigation__item-link {
-    padding: 10px 0;
+    padding: 8px 0;
     font-size: 14px;
     line-height: 17px;
   }
@@ -2958,11 +2958,12 @@ body:has(.is-activate) {
   }
 
   .hero__container {
-    padding-bottom: 273px;
+    padding-top: 268px;
+    padding-bottom: 275px;
   }
 
   .hero h1 {
-    margin: 0 0 15px 0;
+    margin: 0 0 12px 0;
     font-size: 50px;
     line-height: 60px;
   }
@@ -2978,14 +2979,15 @@ body:has(.is-activate) {
     -ms-flex-align: normal;
     align-items: normal;
     padding-top: 100px;
-    padding-bottom: 105px;
-    -webkit-column-gap: 50px;
-    -moz-column-gap: 50px;
-    column-gap: 50px;
+    padding-bottom: 95px;
+    -webkit-column-gap: 30px;
+    -moz-column-gap: 30px;
+    column-gap: 30px;
   }
 
   .proposal h2 {
-    margin: 0 0 30px;
+    margin: -8px 0 15px;
+    max-width: 220px;
     font-size: 26px;
     line-height: 36px;
   }
