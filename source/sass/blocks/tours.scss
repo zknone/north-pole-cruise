@@ -74,86 +74,52 @@
   z-index: $z-index-regular;
   background-color: $color-default-black;
   display: grid;
-  grid-template-rows: min-content 220px min-content;
-
-  width: 260px;
-
-  @include vp-1279() {
-    width: 100%;
-  }
+  grid-template-rows: 10px min-content 1fr min-content 10px;
+  grid-template-columns: 25px 1fr 25px;
+  row-gap: 15px;
+  aspect-ratio: 260/386;
 
   h3 {
-    grid-row: 3/-1;
-    margin-left: 25px;
-    margin-right: 25px;
-    margin-top: 0;
-    margin-bottom: 25px;
-    padding: 49px 0 0 0;
-
-    min-height: 40px;
-    width: auto;
-
-    vertical-align: bottom;
-
-    font-family: "Montseratt", "Arial", sans-serif;
+    align-self: end;
+    grid-column: 2/3;
+    grid-row: 2/5;
+    margin: 0;
+    font-size: clamp(12px, 1.10159vw, 18px);
     font-weight: 500;
-    font-size: 18px;
-    line-height: 27px;
 
     color: $color-default-white;
-    z-index: $z-index-first-plan;
 
-    @include vp-1279() {
-      margin-left: 35px;
-      margin-right: 35px;
-    }
-
-    @include vp-767() {
-      margin-left: 25px;
-      margin-right: 25px;
-      padding-top: 61px;
-      margin-bottom: 13px;
-    }
+    z-index: $z-index-regular;
   }
 
   a {
-    grid-row: 1/2;
-    width: auto;
-    overflow-wrap: break-word;
-    margin-right: 25px;
-    margin-left: 25px;
-    margin-top: 25px;
-    margin-bottom: 0;
-    padding: 10px;
-    min-height: 40px;
+    grid-column: 2/3;
+    grid-row: 4/5;
+    padding: 1em;
+    font-size: clamp(10px, 0.85679vw, 14px);
+    line-height: 1.5;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    background: $color-default-white;
+    color: $color-default-black;
 
-    @include vp-1279() {
-      margin-left: 35px;
-      margin-right: 35px;
-    }
-
-    @include vp-767() {
-      margin-left: 25px;
-      margin-right: 25px;
-    }
+    position: fixed;
+    transform: scale(0);
   }
 
   dl {
-    grid-row: 2/3;
-    margin-left: 25px;
-    margin-bottom: 25px;
-    margin-top: 1px;
-    height: 230px;
+    @include scroll(#011c40);
+    margin: 0;
+    grid-column: 2/3;
+    grid-row: 3/4;
+    max-height: 100%;
     overflow-y: auto;
+    font-size: clamp(10px, 0.85679vw, 14px);
 
-    @include vp-1279() {
-      margin-top: 1px;
-      margin-left: 35px;
-    }
+    position: fixed;
+    transform: scale(0);
 
-    @include vp-767() {
-      margin-left: 25px;
-    }
   }
 }
 
@@ -162,43 +128,32 @@
 .tours__item:focus-within {
   picture {
     opacity: 0;
+    z-index: -1;
   }
 
   h3 {
-    grid-row: 1/2;
-    margin-bottom: 0;
-    margin-top: 26px;
-    padding: 0 0 10px 0;
-    z-index: $z-index-first-plan;
+    grid-row: 2/3;
+    align-self: start;
   }
 
   a {
-    grid-row: 3/-1;
-    margin-top: 25px;
-    margin-bottom: 35px;
-    z-index: $z-index-first-plan;
+    position: static;
+    transform: none;
   }
 
   dl {
-    z-index: $z-index-first-plan;
+    position: static;
+    transform: none;
   }
 }
 
-
-
-.tours__item img {
-  position: absolute;
-  grid-row: 1/ -1;
-  top: 0;
-  left: 0;
-  width: 260px;
-  height: 100%;
-  object-fit: cover;
-
-  z-index: $z-index-background;
-
-  @include vp-1279() {
+.tours__item picture {
+  grid-column: 1/-1;
+  grid-row: 1/6;
+  img {
     width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
 }
 
@@ -225,5 +180,3 @@
   line-height: 20px;
   color: $color-default-white;
 }
-
-
