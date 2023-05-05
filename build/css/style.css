@@ -3041,6 +3041,11 @@ body:has(.is-activate) {
     margin-bottom: 5px;
   }
 
+  .advantages__item[data-advantages=tours] svg {
+    margin-top: -5px;
+    margin-bottom: 5px;
+  }
+
   .advantages__item h3 {
     font-size: 18px;
     line-height: 26px;
@@ -3285,7 +3290,7 @@ body:has(.is-activate) {
   }
 
   .navigation__wrapper {
-    margin: 20px 0;
+    margin: 14px 0;
   }
 
   .navigation__wrapper.is-activate {
@@ -3416,7 +3421,7 @@ body:has(.is-activate) {
   .hero p {
     font-size: 16px;
     line-height: 22px;
-    max-width: 90%;
+    max-width: 80%;
   }
 
   .proposal {
@@ -3460,13 +3465,13 @@ body:has(.is-activate) {
   }
 
   .advantages {
-    padding: 60px 0;
+    padding: 55px 0;
   }
 
   .advantages h2 {
     font-size: 24px;
     line-height: 36px;
-    margin-bottom: 25px;
+    margin-bottom: 30px;
   }
 
   .advantages__list {
@@ -3477,7 +3482,7 @@ body:has(.is-activate) {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    row-gap: 30px;
+    row-gap: 32px;
   }
 
   .advantages__item {
@@ -3496,8 +3501,21 @@ body:has(.is-activate) {
     margin-bottom: 10px;
   }
 
+  .advantages__item h3 {
+    max-width: 75%;
+    margin: 0 0 5px 0;
+  }
+
   .advantages__item[data-advantages=tours] h3 {
     margin-bottom: 10px;
+  }
+
+  .advantages__item[data-advantages=all-inclusive] h3 {
+    margin-bottom: 10px;
+  }
+
+  .advantages__item p {
+    max-width: none;
   }
 
   .tours {
