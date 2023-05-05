@@ -2902,14 +2902,13 @@ body:has(.is-activate) {
   }
 
   .tours {
-    padding-top: 85px;
+    padding-top: 90px;
     padding-bottom: 100px;
   }
 
   .tours__list {
     -ms-grid-columns: (1fr)[3];
     grid-template-columns: repeat(3, 1fr);
-    row-gap: 29px;
   }
 
   .form__container {
@@ -3011,6 +3010,12 @@ body:has(.is-activate) {
     line-height: 39px;
   }
 
+  .advantages__list {
+    -webkit-column-gap: 30px;
+    -moz-column-gap: 30px;
+    column-gap: 30px;
+  }
+
   .advantages__item {
     padding: 20px 5px 20px 20px;
   }
@@ -3039,7 +3044,6 @@ body:has(.is-activate) {
   .advantages__item h3 {
     font-size: 18px;
     line-height: 26px;
-    max-width: 90%;
   }
 
   .advantages__item[data-advantages=tours] h3 {
@@ -3047,7 +3051,7 @@ body:has(.is-activate) {
   }
 
   .advantages__item p {
-    max-width: 90%;
+    max-width: 95%;
   }
 
   .tours h2 {
@@ -3063,6 +3067,12 @@ body:has(.is-activate) {
 
   .tours__item {
     aspect-ratio: 309/386;
+    -ms-grid-columns: 35px 1fr 35px;
+    grid-template-columns: 35px 1fr 35px;
+  }
+
+  .tours__item h3 {
+    margin: 0 0 5px 0;
   }
 
   .footer {
