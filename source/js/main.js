@@ -7,8 +7,6 @@ window.addEventListener('DOMContentLoaded', () => {
   // Utils
   // ---------------------------------
 
-  iosVhFix();
-
   // Modules
   // ---------------------------------
 
