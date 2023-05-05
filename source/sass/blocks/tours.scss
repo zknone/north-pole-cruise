@@ -83,6 +83,7 @@
   // grid-template-rows: min-content min-content min-content;
 
   aspect-ratio: 260 / 387;
+  object-fit: contain;
 
   @include vp-1279() {
     width: 100%;
@@ -146,7 +147,8 @@
   }
 
   dl {
-    grid-row: 2/3;
+    margin:0;
+    // grid-row: 2/3;
     // margin-left: 25px;
     // margin-bottom: 25px;
     // margin-top: 1px;
@@ -168,14 +170,14 @@
   flex-direction: column;
   overflow-y: auto;
   picture {
-    opacity: 0;
+    visibility: hidden;
   }
 
   h3 {
     // grid-row: 1/2;
     // margin-bottom: 0;
     // margin-top: 26px;
-    padding: 0 0 10px 0;
+    // padding: 0 0 10px 0;
     z-index: $z-index-first-plan;
   }
 
