@@ -119,8 +119,8 @@
   align-self: center;
 
   @include vp-1023() {
-    margin: 8px 0 0 auto;
-    column-gap: 12px;
+    margin: 5px 0 0 auto;
+    column-gap: 18px;
   }
 
   @include vp-767() {
@@ -133,7 +133,7 @@
   color: $color-default-white;
 
   @include vp-1023() {
-    padding: 3px;
+    padding: 1px;
 
     svg {
       width: auto;

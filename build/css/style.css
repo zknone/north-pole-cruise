@@ -3098,14 +3098,14 @@ body:has(.is-activate) {
   }
 
   .footer__social-list {
-    margin: 8px 0 0 auto;
-    -webkit-column-gap: 12px;
-    -moz-column-gap: 12px;
-    column-gap: 12px;
+    margin: 5px 0 0 auto;
+    -webkit-column-gap: 18px;
+    -moz-column-gap: 18px;
+    column-gap: 18px;
   }
 
   .footer__social-link {
-    padding: 3px;
+    padding: 1px;
   }
 
   .footer__social-link svg {
