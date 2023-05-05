@@ -2466,9 +2466,7 @@ body:has(.is-activate) {
   -ms-grid-row: 4;
   -ms-grid-row-span: 1;
   grid-row: 4/5;
-  padding: 1em;
-  font-size: clamp(10px, 0.85679vw, 14px);
-  line-height: 1.5;
+  padding: 10px;
   font-weight: 600;
   text-align: center;
   text-decoration: none;
@@ -2619,7 +2617,7 @@ body:has(.is-activate) {
 
 .footer__item-link {
   display: block;
-  padding: 12px 0;
+  padding: 20px 0;
   font-style: medium;
   font-family: "Montseratt", "Arial", sans-serif;
   font-weight: 500;
@@ -2696,7 +2694,7 @@ body:has(.is-activate) {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: fh;
-  margin: 10px 0 0 60px;
+  margin: 5px 0 0 60px;
   padding: 0;
   align-self: flex-end;
   font-family: "Montseratt", "Arial", sans-serif;
@@ -2710,7 +2708,7 @@ body:has(.is-activate) {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: ft;
-  margin: 10px 0 0 60px;
+  margin: 5px 0 0 60px;
   padding: 0;
   max-width: 350px;
   font-family: "Montseratt", "Arial", sans-serif;
@@ -2805,7 +2803,7 @@ body:has(.is-activate) {
 }
 
 .map h3 {
-  margin: 0 0 30px;
+  margin: 0 0 27px;
   padding: 0;
   font-family: "Montseratt", "Arial", sans-serif;
   font-weight: 500;
@@ -2824,9 +2822,9 @@ body:has(.is-activate) {
 }
 
 .map__adress svg {
-  margin-right: 10px;
+  margin-right: 5px;
   position: relative;
-  top: 2px;
+  top: 4px;
 }
 
 .map__phone {
@@ -2839,9 +2837,9 @@ body:has(.is-activate) {
 }
 
 .map__phone svg {
-  margin-right: 10px;
+  margin-right: 5px;
   position: relative;
-  top: 2px;
+  top: 4px;
 }
 
 .map__phone-link {

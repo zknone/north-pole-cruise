@@ -52,7 +52,7 @@
 }
 
 .map h3 {
-  margin: 0 0 30px;
+  margin: 0 0 27px;
   padding: 0;
 
   font-family: "Montseratt", "Arial", sans-serif;
@@ -76,9 +76,9 @@
   line-height: 24px;
 
   svg {
-    margin-right: 10px;
+    margin-right: 5px;
     position: relative;
-    top: 2px;
+    top: 4px;
   }
 
   @include vp-1023() {
@@ -108,9 +108,9 @@
   line-height: 24px;
 
   svg {
-    margin-right: 10px;
+    margin-right: 5px;
     position: relative;
-    top: 2px;
+    top: 4px;
   }
 
   @include vp-767() {
