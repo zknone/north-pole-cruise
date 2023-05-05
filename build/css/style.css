@@ -3298,18 +3298,16 @@ body:has(.is-activate) {
   .navigation__wrapper.is-activate {
     position: fixed;
     margin: 0;
-    left: 45px;
+    left: 35px;
     z-index: 4;
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: (1fr)[2];
     grid-template-columns: repeat(2, 1fr);
-    -ms-grid-rows: -webkit-min-content auto;
-    -ms-grid-rows: min-content auto;
-    grid-template-rows: -webkit-min-content auto;
-    grid-template-rows: min-content auto;
+    -ms-grid-rows: 75px auto;
+    grid-template-rows: 75px auto;
     grid-template-areas: "logo eks" "menu menu";
-    width: calc(100% - 45px);
+    width: calc(100% - 35px);
     height: 100vh;
     background-color: #f9fbfd;
     -webkit-box-align: start;
@@ -3319,11 +3317,20 @@ body:has(.is-activate) {
 
   .navigation__wrapper.is-activate .navigation__list {
     grid-area: menu;
-    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: start;
     max-height: 600px;
     overflow-y: auto;
     max-width: 100%;
-    row-gap: 10px;
+    row-gap: 7px;
     padding: 0;
   }
 
@@ -3332,6 +3339,9 @@ body:has(.is-activate) {
   }
 
   .navigation__wrapper.is-activate .navigation__item-link {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
     color: #011c40;
     padding: 10px;
   }
@@ -3349,8 +3359,8 @@ body:has(.is-activate) {
     cursor: pointer;
     width: 30px;
     height: 42px;
-    margin-top: 12px;
-    margin-right: 12px;
+    margin-top: 10px;
+    margin-right: -14px;
     justify-self: flex-end;
   }
 
@@ -3366,7 +3376,7 @@ body:has(.is-activate) {
     display: block;
     top: 0;
     left: 0;
-    width: 24px;
+    width: 20px;
     height: 2px;
     background-color: #011c40;
     -webkit-transform: rotate(45deg);
@@ -3380,7 +3390,7 @@ body:has(.is-activate) {
     display: block;
     top: -2px;
     left: 0;
-    width: 24px;
+    width: 20px;
     height: 2px;
     background-color: #011c40;
     -webkit-transform: rotate(-45deg);
