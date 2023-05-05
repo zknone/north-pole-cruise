@@ -3041,11 +3041,6 @@ body:has(.is-activate) {
     margin-bottom: 5px;
   }
 
-  .advantages__item[data-advantages=tours] svg {
-    margin-top: -5px;
-    margin-bottom: 5px;
-  }
-
   .advantages__item h3 {
     font-size: 18px;
     line-height: 26px;
@@ -3208,6 +3203,13 @@ body:has(.is-activate) {
   }
 }
 
+@media screen and (max-width: 1023px) {
+  .custom-toggle:last-of-type {
+    left: 3px;
+    top: 3px;
+  }
+}
+
 @media (-webkit-min-device-pixel-ratio: 1.5) and (max-width: 1023px), (-o-min-device-pixel-ratio: 3/2) and (max-width: 1023px), (min-resolution: 144dpi) and (max-width: 1023px), (min-resolution: 1.5dppx) and (max-width: 1023px) {
   .hero {
     background: url("../img/background-intro-tab@2x.webp") no-repeat center, #2a5ea3;
@@ -3241,7 +3243,7 @@ body:has(.is-activate) {
   }
 
   .custom-toggle--checkbox .custom-toggle__icon {
-    top: -2px;
+    top: 0;
     left: -5px;
   }
 
@@ -3465,7 +3467,7 @@ body:has(.is-activate) {
   }
 
   .advantages {
-    padding: 55px 0;
+    padding: 55px 0 65px;
   }
 
   .advantages h2 {
@@ -3501,6 +3503,11 @@ body:has(.is-activate) {
     margin-bottom: 10px;
   }
 
+  .advantages__item[data-advantages=tours] svg {
+    margin-top: -5px;
+    margin-bottom: 5px;
+  }
+
   .advantages__item h3 {
     max-width: 75%;
     margin: 0 0 5px 0;
@@ -3519,14 +3526,14 @@ body:has(.is-activate) {
   }
 
   .tours {
-    padding-top: 60px;
-    padding-bottom: 70px;
+    padding-top: 55px;
+    padding-bottom: 65px;
   }
 
   .tours h2 {
     font-size: 24px;
     line-height: 36px;
-    margin: 0 0 30px;
+    margin: 0 0 33px;
   }
 
   .tours__list {
@@ -3540,12 +3547,19 @@ body:has(.is-activate) {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    row-gap: 28.5px;
+    padding: 0 10px;
+    row-gap: 30px;
   }
 
   .tours__item {
+    -ms-grid-columns: 25px 1fr 25px;
+    grid-template-columns: 25px 1fr 25px;
     aspect-ratio: 270/386;
     width: 100%;
+  }
+
+  .tours__item h3 {
+    margin: 0 0 -5px 0;
   }
 
   .footer__logo {
@@ -3570,11 +3584,12 @@ body:has(.is-activate) {
     -ms-flex-direction: column;
     flex-direction: column;
     margin-left: 0;
-    margin-bottom: 10px;
+    padding: 28px 0;
+    row-gap: 17px;
   }
 
-  .footer__item {
-    padding: 12px 0;
+  .footer__item-link {
+    padding: 9px 0;
   }
 
   .footer__item-link {
@@ -3587,7 +3602,7 @@ body:has(.is-activate) {
 
   .form__container {
     padding-top: 57px;
-    padding-bottom: 65px;
+    padding-bottom: 62px;
   }
 
   .form h2 {
@@ -3617,7 +3632,7 @@ body:has(.is-activate) {
   }
 
   .form__form button {
-    margin: 0;
+    margin-top: 3px;
   }
 
   .map {
@@ -3632,7 +3647,7 @@ body:has(.is-activate) {
   .map__wrapper {
     max-width: none;
     height: 316px;
-    margin-bottom: 65px;
+    margin-bottom: 68px;
   }
 
   .map__info-container {
@@ -3698,7 +3713,7 @@ body:has(.is-activate) {
     padding: 0 0 0 23px;
     font-size: 10px;
     line-height: 12px;
-    max-width: 90%;
+    max-width: 75%;
   }
 
   .custom-select {

@@ -35,13 +35,18 @@
     line-height: 13px;
     color: $color-default-white;
 
+    @media screen and (max-width: 1023px) {
+      left: 3px;
+      top: 3px;
+    }
+
     @media screen and (max-width: 767px) {
       left: 5px;
       top: -3px;
       padding: 0 0 0 23px;
       font-size: 10px;
       line-height: 12px;
-      max-width: 90%;
+      max-width: 75%;
     }
   }
 
@@ -91,7 +96,7 @@
       }
 
       @include vp-767() {
-        top: -2px;
+        top: 0;
         left: -5px;
       }
 
