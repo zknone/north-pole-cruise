@@ -59,7 +59,8 @@
   column-gap: 33px;
 
   @include vp-1023() {
-    column-gap: 25px;
+    margin: auto 0 0 34px;
+    column-gap: 24px;
   }
 
   @include vp-767() {
@@ -89,6 +90,8 @@
   @include vp-1023() {
     font-size: 12px;
     line-height: 15px;
+
+    padding: 13px 0;
   }
 
   @include hover-focus {

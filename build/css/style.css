@@ -2731,7 +2731,7 @@ body:has(.is-activate) {
   margin-top: 15px;
   font-family: "Montseratt", "Arial", sans-serif;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 21px;
   color: #f9fbfd;
   padding: 40px 50px 50px;
@@ -3085,14 +3085,16 @@ body:has(.is-activate) {
   }
 
   .footer__list {
-    -webkit-column-gap: 25px;
-    -moz-column-gap: 25px;
-    column-gap: 25px;
+    margin: auto 0 0 34px;
+    -webkit-column-gap: 24px;
+    -moz-column-gap: 24px;
+    column-gap: 24px;
   }
 
   .footer__item-link {
     font-size: 12px;
     line-height: 15px;
+    padding: 13px 0;
   }
 
   .footer__social-list {
@@ -3137,6 +3139,7 @@ body:has(.is-activate) {
   }
 
   .form p {
+    text-align: center;
     -ms-flex-item-align: center;
     -ms-grid-row-align: center;
     align-self: center;
@@ -3145,8 +3148,21 @@ body:has(.is-activate) {
   }
 
   .form__form {
+    padding: 41px 50px 50px;
     margin: 0 auto;
     max-width: 403px;
+  }
+
+  .form__form input:-webkit-autofill {
+    font-family: "Montseratt", "Arial", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #f9fbfd;
+  }
+
+  .form__form h3 {
+    margin-bottom: 9px;
   }
 
   .form__form button {
@@ -3171,7 +3187,7 @@ body:has(.is-activate) {
   }
 
   .map h3 {
-    margin: 0 0 30px;
+    margin: 0 0 28px;
   }
 
   .map__adress {
