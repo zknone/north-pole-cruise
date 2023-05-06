@@ -255,13 +255,3 @@
     }
   }
 }
-
-body:has(.is-activate) {
-  overflow: hidden;
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-
-  &::-webkit-scrollbar {
-    display: none;
-  }
-}

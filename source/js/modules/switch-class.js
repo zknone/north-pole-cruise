@@ -10,6 +10,7 @@ function removeClass(el, activator) {
 
 function onOverlayOrLinkClick() {
   removeClass('[data-menu]', 'is-activate');
+  removeClass('body', 'scroll-lock');
 }
 
 function onClickMenu() {
@@ -22,6 +23,7 @@ function onClickMenu() {
   );
   const logo = document.querySelector('[data-nav-logo]');
   logo.addEventListener('click', onOverlayOrLinkClick, {once: true});
+  switchClass('body', 'scroll-lock');
 }
 
 export {onClickMenu};

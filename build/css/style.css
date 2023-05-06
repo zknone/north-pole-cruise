@@ -2104,16 +2104,6 @@ button,
   position: relative;
 }
 
-body:has(.is-activate) {
-  overflow: hidden;
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-}
-
-body:has(.is-activate)::-webkit-scrollbar {
-  display: none;
-}
-
 .hero {
   position: relative;
   top: 0;
