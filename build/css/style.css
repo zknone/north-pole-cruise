@@ -2034,6 +2034,8 @@ button,
   -webkit-column-gap: 34px;
   -moz-column-gap: 34px;
   column-gap: 34px;
+  max-height: 250px;
+  overflow-y: scroll;
 }
 
 .navigation__item-link {
@@ -3152,7 +3154,6 @@ button,
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    overflow-y: scroll;
     background-color: rgba(0, 43, 102, 0.5);
     -ms-overflow-style: none;
     scrollbar-width: none;
@@ -3173,6 +3174,7 @@ button,
     z-index: 4;
     display: -ms-grid;
     display: grid;
+    overflow-y: scroll;
     -ms-grid-columns: (1fr)[2];
     grid-template-columns: repeat(2, 1fr);
     -ms-grid-rows: 75px auto;
