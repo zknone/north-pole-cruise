@@ -3638,7 +3638,6 @@ button,
   .form {
     background: url("../img/background-form-mob.webp") no-repeat center, #2a5ea3;
     background-size: cover;
-    padding: 0;
   }
 }
 
@@ -3646,7 +3645,6 @@ button,
   .form {
     background: url("../img/background-form-mob@2x.webp") no-repeat center, #2a5ea3;
     background-size: cover;
-    padding: 0;
   }
 }
 

@@ -49,14 +49,12 @@
     background: url("../img/background-form-mob.webp") no-repeat center,
       $color-background-plug;
     background-size: cover;
-    padding: 0;
   }
 
   @include retina-vp-374() {
     background: url("../img/background-form-mob@2x.webp") no-repeat center,
       $color-background-plug;
     background-size: cover;
-    padding: 0;
   }
 
   div {
