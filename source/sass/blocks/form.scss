@@ -29,6 +29,22 @@
     padding: 85px 60px;
   }
 
+  @include vp-767() {
+    background: url("../img/background-form-tab.webp") no-repeat center,
+      $color-background-plug;
+    background-size: cover;
+
+    padding: 0;
+  }
+
+  @include retina-vp-767() {
+    background: url("../img/background-form-tab@2x.webp") no-repeat center,
+      $color-background-plug;
+    background-size: cover;
+
+    padding: 0;
+  }
+
   @include vp-374() {
     background: url("../img/background-form-mob.webp") no-repeat center,
       $color-background-plug;

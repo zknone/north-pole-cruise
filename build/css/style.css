@@ -3481,6 +3481,12 @@ button,
     margin: 0 auto 30px 0;
   }
 
+  .form {
+    background: url("../img/background-form-tab.webp") no-repeat center, #2a5ea3;
+    background-size: cover;
+    padding: 0;
+  }
+
   .form__container {
     padding-top: 57px;
     padding-bottom: 62px;
@@ -3619,6 +3625,12 @@ button,
   .hero {
     background: url("../img/background-intro-mob@2x.webp") no-repeat center, #2a5ea3;
     background-size: cover;
+  }
+
+  .form {
+    background: url("../img/background-form-tab@2x.webp") no-repeat center, #2a5ea3;
+    background-size: cover;
+    padding: 0;
   }
 }
 
