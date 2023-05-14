@@ -44,8 +44,6 @@
   max-width: 70%;
   flex-wrap: wrap;
   column-gap: 34px;
-  max-height: 250px;
-  overflow-y: scroll;
 
   @include vp-1023() {
     max-width: 75%;

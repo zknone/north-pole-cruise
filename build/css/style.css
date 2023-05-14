@@ -2034,8 +2034,6 @@ button,
   -webkit-column-gap: 34px;
   -moz-column-gap: 34px;
   column-gap: 34px;
-  max-height: 250px;
-  overflow-y: scroll;
 }
 
 .navigation__item-link {
@@ -3105,7 +3103,7 @@ button,
   .form {
     background: url("../img/background-form-tab@2x.webp") no-repeat center, #2a5ea3;
     background-size: cover;
-    padding: 85px 60px;
+    padding: 85px 60px 100px;
   }
 }
 

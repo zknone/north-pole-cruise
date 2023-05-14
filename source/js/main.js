@@ -1,5 +1,6 @@
 import {Form} from './modules/form-validate/form';
 import {onClickMenu} from './modules/switch-class';
+import {resizeObject} from './modules/bear-overflow';
 
 // ---------------------------------
 
@@ -20,6 +21,8 @@ window.addEventListener('DOMContentLoaded', () => {
     const menuButton = document.querySelector('[data-button]');
     menuButton.addEventListener('click', onClickMenu);
 
+    const navigationList = document.querySelector('[data-navigation-list]');
+    resizeObject.observe(navigationList);
 
     const L = window.L;
     const map = L.map('map').setView([59.9387165, 30.3230474], 13);
@@ -35,7 +38,7 @@ window.addEventListener('DOMContentLoaded', () => {
       iconSize: [38, 50],
     });
 
-    L.marker([59.9387165, 30.3230474], {icon}).addTo(map).openPopup();
+    L.marker([59.9387165, 30.3230474], { icon }).addTo(map).openPopup();
   });
 });
 
