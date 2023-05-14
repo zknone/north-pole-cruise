@@ -38,7 +38,7 @@ window.addEventListener('DOMContentLoaded', () => {
       iconSize: [38, 50],
     });
 
-    L.marker([59.9387165, 30.3230474], { icon }).addTo(map).openPopup();
+    L.marker([59.9387165, 30.3230474], {icon}).addTo(map).openPopup();
   });
 });
 
